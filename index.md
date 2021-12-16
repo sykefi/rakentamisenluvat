@@ -4,5 +4,5 @@ title: "Kaavatietomallit"
 description: ""
 id: "rakentamisenluvat"
 ---
-# Rakentamiseen liittyvien lupien, lupapäätösten ja rakentamiskohteiden tietomalli
+# Rakentamiseen liittyvien lupien ja lupapäätösten tietomalli
 

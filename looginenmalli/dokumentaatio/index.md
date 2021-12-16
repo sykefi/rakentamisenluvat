@@ -4,4 +4,4 @@ description: ""
 id: "dokumentaatio"
 status: "Ehdotus"
 ---
-# Loogisen tason rakentamiseen liittyvien lupien, lupapäätösten ja rakentamiskohteiden tietomalli
+# Loogisen tason rakentamiseen liittyvien lupien ja lupapäätösten tietomalli
