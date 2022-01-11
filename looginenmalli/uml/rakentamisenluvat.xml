@@ -613,7 +613,7 @@
 				<extendedProperties tagged="0" package_name="Rakennettu ymparisto"/>
 				<packageproperties version="1.0" owner="ior" xmiver="Enterprise Architect XMI 2.1/UML 2.1"/>
 				<paths xmlpath="Z:\rakentamisenluvat\looginenmalli\uml\rakentamisenluvat.xml"/>
-				<times created="2021-10-15 10:12:36" modified="2021-12-21 12:02:58" lastsavedate="2022-01-10 15:02:01"/>
+				<times created="2021-10-15 10:12:36" modified="2021-12-21 12:02:58" lastsavedate="2022-01-11 17:31:45"/>
 				<flags iscontrolled="TRUE" isprotected="FALSE" batchsave="0" batchload="0" usedtd="FALSE" logxml="FALSE" packageFlags="Recurse=1;"/>
 			</element>
 			<element xmi:idref="EAID_DB70E0A1_1CB8_4bda_9A83_1D0BD3723FE2" xmi:type="uml:Class" name="HuoneistonMuutos" scope="public">
@@ -1716,7 +1716,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_ED55AA62_665B_4bf4_A8E3_C010E60519FF">
-					<model ea_localid="80666" type="Class" name="Huoneisto"/>
+					<model ea_localid="80785" type="Class" name="Huoneisto"/>
 					<role name="muuttunutHuoneisto" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1786,7 +1786,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_75FFA532_FF9F_4880_AA35_1DC37E0CF36A">
-					<model ea_localid="80620" type="Class" name="VersioituObjekti"/>
+					<model ea_localid="80737" type="Class" name="VersioituObjekti"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1820,7 +1820,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_B761A014_0461_4ac2_9ABE_4B0FE198489C">
-					<model ea_localid="80623" type="Interface" name="Henkilö"/>
+					<model ea_localid="80740" type="Interface" name="Henkilö"/>
 					<role name="läsnäolija" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1890,7 +1890,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_B761A014_0461_4ac2_9ABE_4B0FE198489C">
-					<model ea_localid="80623" type="Interface" name="Henkilö"/>
+					<model ea_localid="80740" type="Interface" name="Henkilö"/>
 					<role name="toimittaja" visibility="Public" targetScope="instance"/>
 					<type multiplicity="1" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1925,7 +1925,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_C21003F4_E9DC_464b_85A7_D55DD5B0ECFE">
-					<model ea_localid="80682" type="Class" name="Rakennuskohde"/>
+					<model ea_localid="80801" type="Class" name="Rakennuskohde"/>
 					<role name="katselmoituKohde" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1995,7 +1995,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_C21003F4_E9DC_464b_85A7_D55DD5B0ECFE">
-					<model ea_localid="80682" type="Class" name="Rakennuskohde"/>
+					<model ea_localid="80801" type="Class" name="Rakennuskohde"/>
 					<role name="hyväksyttyKohde" visibility="Public" targetScope="instance"/>
 					<type multiplicity="1" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2030,7 +2030,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_EDDE71D9_BD23_4802_83F1_5D5F3A59B2DA">
-					<model ea_localid="80605" type="Class" name="Määräys"/>
+					<model ea_localid="80722" type="Class" name="Määräys"/>
 					<role name="poikettavaMääräys" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..1" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2099,7 +2099,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_C21003F4_E9DC_464b_85A7_D55DD5B0ECFE">
-					<model ea_localid="80682" type="Class" name="Rakennuskohde"/>
+					<model ea_localid="80801" type="Class" name="Rakennuskohde"/>
 					<role name="kohdeEnnenMuutosta" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2134,7 +2134,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_C21003F4_E9DC_464b_85A7_D55DD5B0ECFE">
-					<model ea_localid="80682" type="Class" name="Rakennuskohde"/>
+					<model ea_localid="80801" type="Class" name="Rakennuskohde"/>
 					<role name="kohdeMuutoksenJälkeen" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2169,7 +2169,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_75FFA532_FF9F_4880_AA35_1DC37E0CF36A">
-					<model ea_localid="80620" type="Class" name="VersioituObjekti"/>
+					<model ea_localid="80737" type="Class" name="VersioituObjekti"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2342,7 +2342,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_869668CC_B6F0_44c7_9547_B0F457BED9CA">
-					<model ea_localid="80587" type="Class" name="AlueidenkäyttölupaAsia"/>
+					<model ea_localid="80706" type="Class" name="AlueidenkäyttölupaAsia"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2376,7 +2376,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_7AD3A66E_E93F_41a4_9FCA_5D088A04274F">
-					<model ea_localid="80627" type="Interface" name="Osoite"/>
+					<model ea_localid="80744" type="Interface" name="Osoite"/>
 					<role name="rakennuspaikanOsoite" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2411,7 +2411,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_6192D7E3_8615_4969_AEFD_312C2DB53892">
-					<model ea_localid="80635" type="Class" name="Kaava"/>
+					<model ea_localid="80752" type="Class" name="Kaava"/>
 					<role name="kaava" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2446,7 +2446,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_CCDEA216_16F7_47c8_9BFD_D0AFF7E8788F">
-					<model ea_localid="80612" type="Class" name="RakennetunYmpäristönKohde"/>
+					<model ea_localid="80729" type="Class" name="RakennetunYmpäristönKohde"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2480,7 +2480,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_42DC94D4_24B3_42b3_AE76_59E036A77DD2">
-					<model ea_localid="80649" type="Class" name="Kaavayksikkö"/>
+					<model ea_localid="80768" type="Class" name="Kaavayksikkö"/>
 					<role name="kaavayksikkö" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2550,7 +2550,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_75FFA532_FF9F_4880_AA35_1DC37E0CF36A">
-					<model ea_localid="80620" type="Class" name="VersioituObjekti"/>
+					<model ea_localid="80737" type="Class" name="VersioituObjekti"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2584,7 +2584,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_04A7A8F5_4A61_41b8_ADDA_7FAE5BC7CE87">
-					<model ea_localid="80628" type="Interface" name="Toimija"/>
+					<model ea_localid="80745" type="Interface" name="Toimija"/>
 					<role name="hankkeeseenRyhtyvä" visibility="Public" targetScope="instance"/>
 					<type multiplicity="1" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2619,7 +2619,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_B761A014_0461_4ac2_9ABE_4B0FE198489C">
-					<model ea_localid="80623" type="Interface" name="Henkilö"/>
+					<model ea_localid="80740" type="Interface" name="Henkilö"/>
 					<role name="työnjohtaja" visibility="Public" targetScope="instance"/>
 					<type multiplicity="1" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2654,7 +2654,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_04A7A8F5_4A61_41b8_ADDA_7FAE5BC7CE87">
-					<model ea_localid="80628" type="Interface" name="Toimija"/>
+					<model ea_localid="80745" type="Interface" name="Toimija"/>
 					<role name="suunnittelija" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2689,7 +2689,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_4E6F5137_F7EF_4358_9076_50A79955E54B">
-					<model ea_localid="80586" type="Class" name="Alueidenkäyttölupa"/>
+					<model ea_localid="80705" type="Class" name="Alueidenkäyttölupa"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2723,7 +2723,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_915025C3_905F_4153_AE3D_3C724B45EB60">
-					<model ea_localid="80685" type="Class" name="Rakennussuunnitelma"/>
+					<model ea_localid="80804" type="Class" name="Rakennussuunnitelma"/>
 					<role name="rakennussuunnitelma" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2758,7 +2758,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_756CA55C_8F0B_4da9_954A_42E08A4FF6BE">
-					<model ea_localid="80687" type="Class" name="Rakennustietomalli"/>
+					<model ea_localid="80806" type="Class" name="Rakennustietomalli"/>
 					<role name="suunnitelmamalli" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2793,7 +2793,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_A31D33E9_B7E9_41f6_B698_E622D79305C7">
-					<model ea_localid="80588" type="Class" name="Alueidenkäyttölupahakemus"/>
+					<model ea_localid="80707" type="Class" name="Alueidenkäyttölupahakemus"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2827,7 +2827,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_8CF1A36D_A7C5_4748_915C_FE80DA2F9F9B">
-					<model ea_localid="80604" type="Class" name="Lupamääräys"/>
+					<model ea_localid="80721" type="Class" name="Lupamääräys"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2861,7 +2861,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_B761A014_0461_4ac2_9ABE_4B0FE198489C">
-					<model ea_localid="80623" type="Interface" name="Henkilö"/>
+					<model ea_localid="80740" type="Interface" name="Henkilö"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
