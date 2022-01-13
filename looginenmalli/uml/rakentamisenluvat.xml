@@ -613,7 +613,7 @@
 				<extendedProperties tagged="0" package_name="Rakennettu ymparisto"/>
 				<packageproperties version="1.0" owner="ior" xmiver="Enterprise Architect XMI 2.1/UML 2.1"/>
 				<paths xmlpath="Z:\rakentamisenluvat\looginenmalli\uml\rakentamisenluvat.xml"/>
-				<times created="2021-10-15 10:12:36" modified="2021-12-21 12:02:58" lastsavedate="2022-01-12 13:55:39"/>
+				<times created="2021-10-15 10:12:36" modified="2021-12-21 12:02:58" lastsavedate="2022-01-13 11:30:26"/>
 				<flags iscontrolled="TRUE" isprotected="FALSE" batchsave="0" batchload="0" usedtd="FALSE" logxml="FALSE" packageFlags="Recurse=1;"/>
 			</element>
 			<element xmi:idref="EAID_DB70E0A1_1CB8_4bda_9A83_1D0BD3723FE2" xmi:type="uml:Class" name="HuoneistonMuutos" scope="public">
@@ -913,7 +913,7 @@
 					<tag xmi:id="EAID_F9638764_49E8_2849_B9EA_475701F7E9B5" name="noPropertyType" value="false#NOTES#Values: true,false&#xA;Default: false&#xA;Description: Suppress creation of a named complex type ( property type ) that supports inline or byReference encoding&#xA;" modelElement="EAID_D4AEE613_C2E3_44e7_86FB_1F88976A6ACA"/>
 				</tags>
 				<xrefs value="$XREFPROP=$XID={1518DC0C-2BA0-486c-951D-BED1EF9E4B6B}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=DataType;FQName=GML::DataType;@ENDSTEREO;$DES;$CLT={D4AEE613-C2E3-44e7-86FB-1F88976A6ACA}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
-				<extendedProperties tagged="0" package_name="Rakentamisen luvat ja hankeet" ea_attsclassified="{CD45A762-9456-4591-92C1-6A821DA0C654},{EFED8455-C951-47a4-8A7C-DF9FEF3C9793}"/>
+				<extendedProperties tagged="0" package_name="Rakentamisen luvat ja hankeet" ea_attsclassified="{EFED8455-C951-47a4-8A7C-DF9FEF3C9793},{CD45A762-9456-4591-92C1-6A821DA0C654}"/>
 				<attributes>
 					<attribute xmi:idref="EAID_A76D7C6C_5691_46c2_BF8E_03DB795E3837" name="poikkeamisenLaji" scope="Public">
 						<initial/>
@@ -1716,7 +1716,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_ED55AA62_665B_4bf4_A8E3_C010E60519FF">
-					<model ea_localid="80817" type="Class" name="Huoneisto"/>
+					<model ea_localid="80849" type="Class" name="Huoneisto"/>
 					<role name="muuttunutHuoneisto" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1925,7 +1925,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_C21003F4_E9DC_464b_85A7_D55DD5B0ECFE">
-					<model ea_localid="80833" type="Class" name="Rakennuskohde"/>
+					<model ea_localid="80864" type="Class" name="Rakennuskohde"/>
 					<role name="katselmoituKohde" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1995,7 +1995,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_C21003F4_E9DC_464b_85A7_D55DD5B0ECFE">
-					<model ea_localid="80833" type="Class" name="Rakennuskohde"/>
+					<model ea_localid="80864" type="Class" name="Rakennuskohde"/>
 					<role name="hyväksyttyKohde" visibility="Public" targetScope="instance"/>
 					<type multiplicity="1" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2168,7 +2168,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_915025C3_905F_4153_AE3D_3C724B45EB60">
-					<model ea_localid="80836" type="Class" name="Rakennussuunnitelma"/>
+					<model ea_localid="80867" type="Class" name="Rakennussuunnitelma"/>
 					<role name="rakennussuunnitelma" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2203,7 +2203,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_756CA55C_8F0B_4da9_954A_42E08A4FF6BE">
-					<model ea_localid="80838" type="Class" name="Rakennustietomalli"/>
+					<model ea_localid="80869" type="Class" name="Rakennustietomalli"/>
 					<role name="suunnitelmamalli" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2272,7 +2272,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_C21003F4_E9DC_464b_85A7_D55DD5B0ECFE">
-					<model ea_localid="80833" type="Class" name="Rakennuskohde"/>
+					<model ea_localid="80864" type="Class" name="Rakennuskohde"/>
 					<role name="kohdeEnnenMuutosta" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2307,7 +2307,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_C21003F4_E9DC_464b_85A7_D55DD5B0ECFE">
-					<model ea_localid="80833" type="Class" name="Rakennuskohde"/>
+					<model ea_localid="80864" type="Class" name="Rakennuskohde"/>
 					<role name="kohdeMuutoksenJälkeen" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
