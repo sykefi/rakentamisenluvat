@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.1", "1", "Rakennuskohteet ja huoneistot", "EARoot/EA1/EA5.html", "34.png", "", "", "{D6C3D384-E1AB-459d-A379-08AC00D747A1}", "Package");
-tocTab[tocTab.length] = new Array("0.2", "1", "Rakentamisen luvat ja hankeet", "EARoot/EA2/EA42.html", "34.png", "", "", "{725DACB2-DAB9-4b52-ABE2-4C02B87BAE21}", "Package");
-tocTab[tocTab.length] = new Array("0.3", "1", "Kaavatiedot", "EARoot/EA3/EA74.html", "34.png", "", "", "{FCB0EA38-A78E-42b8-BE04-2E5B89486FF7}", "Package");
+tocTab[tocTab.length] = new Array("0.1", "1", "Rakennuskohteet ja huoneistot", "EARoot/EA1/EA5.html", "32.png", "", "", "{D6C3D384-E1AB-459d-A379-08AC00D747A1}", "Package");
+tocTab[tocTab.length] = new Array("0.2", "1", "Rakentamisen luvat ja hankeet", "EARoot/EA2/EA42.html", "33.png", "", "", "{725DACB2-DAB9-4b52-ABE2-4C02B87BAE21}", "Package");
+tocTab[tocTab.length] = new Array("0.3", "1", "Kaavatiedot", "EARoot/EA3/EA74.html", "31.png", "", "", "{FCB0EA38-A78E-42b8-BE04-2E5B89486FF7}", "Package");
 tocTab[tocTab.length] = new Array("0.4", "1", "«ApplicationSchema» Yhteiset tietokomponentit", "EARoot/EA4/EA119.html", "34.png", "", "", "{8C35E32F-0806-4134-A70C-FF48008FD604}", "Package");
