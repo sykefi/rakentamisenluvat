@@ -6,6 +6,24 @@ id: "muutosloki"
 # Muutosloki
 {:.no_toc}
 
+## 9.11.2022
+
+- Muokattu Ilmastoselvitykseen liittyvien luokkien attribuuttien ja assosiaatioden pakollisuuksia vastaamaan valmiin ilmastoselvityksen vaatimuksia:
+   - Ilmastoselvitys
+      - rakennuspaikanPintaAla 0..1 -> 1
+      - rakennuksenSuunniteltuKäyttäjämäärä 0..1 -> 1
+      - rakennuksenLaskennallinenOstoenergianKulutus 0..* -> 1..*
+      - rakennuksenTavoitteellinenKäyttöikä 0..1 -> 1
+      - käytetytLaskentaohjelmistot 0..* -> 1..*
+      - laatimuspäivä 0..1 -> 1
+      - käytetynArviointijaksonPituus 0..1 -> 1
+      - hiilijalanjälki 0..* -> 1
+      - hiilikädenjälki 0..* -> 1
+      - laatija 0..* -> 1..*
+   - RakennuskohteenVähähiilisyystiedot
+      - käyttötarkoitusluokka 1..* -> 1  
+ - Lisätty Kaava-luokka ja Rakennuspaikka.rakentamistaOhjaavaKaava-assosiaatio näkyviin Ilmastoselvitys-luokkakaavioon.
+
 ## 7.11.2022
 
 - Siirretty toimenpidealueenLämmitettyNettoala-attribuutti Ilmastoselvitys-luokasta RakennuskohteenVähähiilisyystiedot-luokkaan.
