@@ -373,7 +373,7 @@ Arvioidun hiilijalanjäljen ilmoittamisessa suhteessa pinta-alaan ja ajanjaksoon
 Arvioidun hiilikädenjäljen ilmoittamisessa suhteessa pinta-alaan ja ajanjaksoon sekä rakennuksen lämmitetyn nettoalan että rakennuspaikan pinta-alan osalta on käytettävä mittayksikköä hiilidioksidiekvivalenttikilo per neliömetri per vuosi (```kgCO2e/m2/a```).
 {% include common/clause_end.html %}
 
-#### Hiilikädenjälkitiedot rakennuksen elinkaaren vaiheittain
+#### Hiilikädenjälkitiedot osatekijöittäin
 
 {% include common/clause_start.html type="req" id="laatu/vaat-hiilikadenjalki-rakennuksen-elinkaarienvaiheittain" %}
 Sekä [Hiilikädenjälkitiedot](dokumentaatio/#hiilikädenjälkitiedot)-luokan objektiin liitettyjen [Rakennuskohteenvähähiilisyystiedot](dokumentaatio/#rakennuskohteenvähähiilisyystiedot)-luokan objektien että [RakennuspaikanVähähiilisyystiedot](dokumentaatio/rakennuspaikanvähähiilisystiedot)-luokan objektien tulee sisältää arviot vältettyjen tai poistettujen kasvihuonekaasupäästöjen määristä ennen rakennuksen käyttöä, rakennuksen käytön aikaa ja käytön jälkeistä aikaa seuraavien osatekijöiden osalta:
