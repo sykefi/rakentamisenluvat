@@ -356,7 +356,7 @@ Arvioidun kokonaishiilijalanjäljen ilmoittamisessa koko seuranta-ajanjaksolla s
 {% include common/clause_end.html %}
 
 {% include common/clause_start.html type="req" id="laatu/vaat-hiilijalanjalki-per-ala-per-vuosi-yksikko" %}
-Arvioidun hiilijalanjäljen ilmoittamisessa suhteessa pinta-alaan ja ajanjaksoon sekä rakennuksen lämmitetyn nettoalan että rakennuspaikan pinta-alan osalta on käytettävä mittayksikköä hiilidioksidiekvivalenttikilo per neliömetri per vuosi (```kgCO2e/m2/a```).
+Arvioidun hiilijalanjäljen ilmoittamisessa suhteessa pinta-alaan ja ajanjaksoon sekä rakennuksen lämmitetyn nettoalan että rakennuspaikan pinta-alan osalta on käytettävä mittayksikköä hiilidioksidiekvivalenttikilogramma per neliömetri per vuosi (```kgCO2e/m2/a```).
 {% include common/clause_end.html %}
  
 
@@ -375,7 +375,7 @@ Arvioidun hiilijalanjäljen ilmoittamisessa suhteessa pinta-alaan ja ajanjaksoon
 {% include common/clause_end.html %}
 
 {% include common/clause_start.html type="req" id="laatu/vaat-hiilikadenjalki-per-ala-per-vuosi-yksikko" %}
-Arvioidun hiilikädenjäljen ilmoittamisessa suhteessa pinta-alaan ja ajanjaksoon sekä rakennuksen lämmitetyn nettoalan että rakennuspaikan pinta-alan osalta on käytettävä mittayksikköä hiilidioksidiekvivalenttikilo per neliömetri per vuosi (```kgCO2e/m2/a```).
+Arvioidun hiilikädenjäljen ilmoittamisessa suhteessa pinta-alaan ja ajanjaksoon sekä rakennuksen lämmitetyn nettoalan että rakennuspaikan pinta-alan osalta on käytettävä mittayksikköä hiilidioksidiekvivalenttikilogramma per neliömetri per vuosi (```kgCO2e/m2/a```).
 {% include common/clause_end.html %}
 
 #### Hiilikädenjälkitiedot osatekijöittäin
