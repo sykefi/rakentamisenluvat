@@ -408,7 +408,7 @@ Hiilikädenjäljen arvioinnin on sisällettävä ainoastaan sellaiset vältetyt 
 {% include common/clause_end.html %}
 
 {% include common/clause_start.html type="req" id="laatu/vaat-rakennuskohteenvahahiilisyystiedot-lammitetty-nettoala" %}
-Rakennuksen lämmitetyllä nettoalalla tarkoitetaan lämmitettyjen kerrostasoalojen summaa kerrostasoja ympäröivien ulkoseinien sisäpintojen mukaan laskettuna. Rakennuksen lämmitetty nettoalalla kunkin käyttötarkoituksen osalta ilmoitetaan [RakennuskohteenVähähiilisyystiedot](dokumentaatio/#rakennuskohteenvahaliilisyystiedot)-luokan objektien ```lämmitettyNettoala```-attribuuttien avulla, yksikkönä neliömetri (```m2```).  
+Rakennuksen lämmitetyllä nettoalalla tarkoitetaan lämmitettyjen kerrostasoalojen summaa kerrostasoja ympäröivien ulkoseinien sisäpintojen mukaan laskettuna. Rakennuksen lämmitetty nettoalalla kunkin käyttötarkoituksen osalta ilmoitetaan [RakennuskohteenVähähiilisyystiedot](dokumentaatio/#rakennuskohteenvahaliilisyystiedot)-luokan objektien ```toimenpidealueenLämmitettyNettoala```-attribuuttien avulla, yksikkönä neliömetri (```m2```).  
 {% include common/clause_end.html %}
 
 ### RakennuspaikanVähähiilisyystiedot 
