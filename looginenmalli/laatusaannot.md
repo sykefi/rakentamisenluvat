@@ -156,7 +156,9 @@ Aikavälejä kuvaavat attribuutit voidaan antaa joko sekä alku- että loppuajan
 ### Katselmus
 
 ### Ilmastoselvitys
-TODO: rakennuspaikan pinta-alan yksikkö = m2
+{% include common/clause_start.html type="req" id="laatu/vaat-ilmastoselvitys-rakennuspaikan-pinta-ala-yksikko" %}
+[Ilmastoselvitys](dokumentaatio/#ilmastoselvitys)-luokan ```rakennuspaikanPintaAla```-attribuutin arvon yksikön tulee olla neliömetri (```m2```).
+{% include common/clause_end.html %}
 
 TODO: käytetyn arviointijakso pituus yksikkö = vuosi
 
@@ -170,16 +172,16 @@ Kuhunkin [Ilmastoselvitys](dokumentaatio/#ilmastoselvitys)-luokan objektiin tule
 Rakennusta tai sen osaa koskevan [Ilmastoselvitys](dokumentaatio/#ilmastoselvitys)-luokan objektin tulee sisältää tiedot ko. rakennuksen laskennallisesta ostoenergian kulutuksesta energialähteittäin. Kunkin energialähteen osuus ostoenergian arvioidusta kokonaiskulutuksesta annetaan oman ```rakennuksenLaskennallinenOstoenergianKulutus``` -attribuutin avulla.
 {% include common/clause_end.html %}
 
-#### Rakennuksen elinkaaren vaiheiden vähähiilisyyden arvioinnin tulosten arvot 
+#### Rakentamisen vähähiilisyyden arvioinnin tulosten arvot
 
 {% include common/clause_start.html type="req" id="laatu/vaat-vahahiilisyystiedot-elinkaarienvaiheittain-suureen-arvo" %}
-Sekä [Rakennuskohteenvähähiilisyystiedot](dokumentaatio/#rakennuskohteenvähähiilisyystiedot)-luokkien että [RakennuspaikanVähähiilisyystiedot](dokumentaatio/rakennuspaikanvähähiilisystiedot)-luokkien rakennuksen elinkaaren vaiheiden vähähiilisyyden arvioinnin tuloksia koskevat ```ominaisuus```-attribuuttien arvot sekä hiilijalanjäljen että hiilikädenjäljen osalta annetaan luokan {% include common/moduleLink.html moduleId="ry-yhteiset" path="looginenmalli/dokumentaatio/#suureenarvo" title="SuureenArvo" %} objekteina siten, että niiden ```arvo```-attribuuttien arvot ovat luokan {% include common/moduleLink.html moduleId="ry-yhteiset" path="looginenmalli/dokumentaatio/#numeerinenarvo" title="NumeerinenArvo" %} objekteja, joiden attribuutin arvo ```yksikkö``` on hiilidioksidiekvivalenttikilogramma per pinta-alan neliö per vuosi (kgCO2e/m2/a), ja joiden ```numero``` -attribuutin arvo ilmoitettu pyöristettynä symmetrisesti kahden desimaalin tarkkuudella.
+Sekä [Rakennuskohteenvähähiilisyystiedot](dokumentaatio/#rakennuskohteenvähähiilisyystiedot)-luokkien että [RakennuspaikanVähähiilisyystiedot](dokumentaatio/rakennuspaikanvähähiilisystiedot)-luokkien rakennuksen elinkaaren vaiheiden vähähiilisyyden arvioinnin tuloksia koskevat ```ominaisuus```-attribuuttien arvot sekä hiilijalanjäljen että hiilikädenjäljen osalta annetaan luokan {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#suureenarvo" title="SuureenArvo" %} objekteina siten, että niiden ```arvo```-attribuuttien arvot ovat luokan {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#numeerinenarvo" title="NumeerinenArvo" %} objekteja, joiden attribuutin arvo ```yksikkö``` on hiilidioksidiekvivalenttikilogramma per pinta-alan neliö per vuosi (kgCO2e/m2/a), ja joiden ```numero``` -attribuutin arvo ilmoitettu pyöristettynä symmetrisesti kahden desimaalin tarkkuudella.
 {% include common/clause_end.html %}
 
 ### Energiankulutus 
 
 {% include common/clause_start.html type="req" id="laatu/vaat-energiamaaran-mittayksikko" %}
-[Energiankulutus](dokumentaatio/#energiankulutus)-luokan objektin ```energiamääräVuodessa``` -attribuutin on oltava tyyppiä NumeerinenArvo ja sen mittayksikkö -attribuutin on oltava kilowattitunti (```kWh```) tai megajoule (```MJ```).
+[Energiankulutus](dokumentaatio/#energiankulutus)-luokan objektin ```energiamääräVuodessa``` -attribuutin on oltava tyyppiä {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#numeerinenarvo" title="NumeerinenArvo" %} ja sen ```mittayksikkö``` -attribuutin arvon on oltava kilowattitunti (```kWh```) tai megajoule (```MJ```).
 {% include common/clause_end.html %}
  
 
@@ -200,7 +202,7 @@ Sekä [Rakennuskohteenvähähiilisyystiedot](dokumentaatio/#rakennuskohteenväh�
 #### Hiilijalanjälkitiedot rakennuksen elinkaaren vaiheittain
 
 {% include common/clause_start.html type="req" id="laatu/vaat-hiilijalanjalki-rakennuksen-elinkaarienvaiheittain" %}
-Sekä [Hiilijalanjälkitiedot](dokumentaatio/#hiilijalanjälkitiedot)-luokan objekteihin liitettyjen [Rakennuskohteenvähähiilisyystiedot](dokumentaatio/#rakennuskohteenvähähiilisyystiedot)-luokan että [RakennuspaikanVähähiilisyystiedot](dokumentaatio/rakennuspaikanvähähiilisystiedot)-luokan objektien tulee sisältää arviot syntyvien hiilipäästöjen määristä seuraavien rakentamisen elinkaaren vaiheiden osalta:
+[Hiilijalanjälkitiedot](dokumentaatio/#hiilijalanjälkitiedot)-luokan objekteihin liitettyjen [Rakennuskohteenvähähiilisyystiedot](dokumentaatio/#rakennuskohteenvähähiilisyystiedot)-luokan ja [RakennuspaikanVähähiilisyystiedot](dokumentaatio/rakennuspaikanvähähiilisystiedot)-luokan objektien tulee sisältää arviot syntyvien hiilipäästöjen määristä seuraavien rakentamisen elinkaaren vaiheiden osalta:
 
 * A1-3 - Rakennustuotteiden valmistus
 * A4 - Kuljetukset
@@ -212,7 +214,7 @@ Sekä [Hiilijalanjälkitiedot](dokumentaatio/#hiilijalanjälkitiedot)-luokan obj
 * C3 - Purkujätteen käsittely
 * C4 - Purkujätteen loppusijoitus
 
-Yllä luetellut päästötiedot ilmoitetaan [Rakennuskohteenvähähiilisyystiedot](dokumentaatio/#rakennuskohteenvähähiilisyystiedot)- ja [RakennuspaikanVähähiilisyystiedot](dokumentaatio/rakennuspaikanvähähiilisystiedot)-luokkien yhteisen yläluokan {% include common/moduleLink.html moduleId="ry-yhteiset" path="looginenmalli/dokumentaatio/#tietoyksikkö" title="Tietoyksikkö" %} ```ominaisuus```-attribuutin arvojen avulla siten, että sekä [RakennuskohteenVähähiilisyystiedot](dokumentaatio/#rakennuskohteenvähähiilisyystiedot)-luokan objektit että [RakennuspaikanVähähiilisyystiedot](dokumentaatio/rakennuspaikanvähähiilisystiedot)-luokan objektit sisältävät tasan yhden (1) kappaleen kutakin yllä lueteltua rakennuksen elinkaaren vaiheen päästötietoa koskevaa ```ominaisuus```-attribuutin arvoa. Näiden ```ominaisuus```-attribuutin arvojen {% include common/moduleLink.html moduleId="ry-yhteiset" path="looginenmalli/dokumentaatio/#suureenarvo" title="SuureenArvo" %}-luokan ```suure```-attribuutin ```tunnus```-attribuutin arvojen on oltava [IlmastoselvityksenHiilijalanjälkisuure](dokumentaatio/#ilmastoselvityksenhiilijalanjälkisuure)-koodiston koodien tunnuksia. Muiden ```ominaisuus```-attribuutin arvojen käyttöä ei ole rajoitettu.
+Yllä luetellut päästötiedot ilmoitetaan [Rakennuskohteenvähähiilisyystiedot](dokumentaatio/#rakennuskohteenvähähiilisyystiedot)- ja [RakennuspaikanVähähiilisyystiedot](dokumentaatio/rakennuspaikanvähähiilisystiedot)-luokkien yhteisen yläluokan {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#tietoyksikkö" title="Tietoyksikkö" %} ```ominaisuus```-attribuutin arvojen avulla siten, että sekä [RakennuskohteenVähähiilisyystiedot](dokumentaatio/#rakennuskohteenvähähiilisyystiedot)-luokan objektit että [RakennuspaikanVähähiilisyystiedot](dokumentaatio/rakennuspaikanvähähiilisystiedot)-luokan objektit sisältävät tasan yhden (1) kappaleen kutakin yllä lueteltua rakennuksen elinkaaren vaiheen päästötietoa koskevaa ```ominaisuus```-attribuutin arvoa. Näiden ```ominaisuus```-attribuutin arvojen {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#suureenarvo" title="SuureenArvo" %}-luokan ```suure```-attribuutin ```tunnus```-attribuutin arvojen on oltava [IlmastoselvityksenHiilijalanjälkisuure](dokumentaatio/#ilmastoselvityksenhiilijalanjälkisuure)-koodiston koodien tunnuksia. Muiden ```ominaisuus```-attribuutin arvojen käyttöä ei ole rajoitettu.
 {% include common/clause_end.html %}
 
 #### Hiilijalanjäljen summat rakennuksen koko toimenpidealan osalta
@@ -260,7 +262,7 @@ tulos = tulos * ilmastoselvitys.käytetynArviointijaksonPituus.value;
 
 {% include common/clause_start.html type="req" id="laatu/vaat-hiilijalanjalki-summa-rakennuksen-kayttotarkoitukselle-per-ala-per-vuosi" %}
 Rakentamistoimenpiteestä aiheutuva arvioitu hiilijalanjälki rakennuksen toimenpidealueen tiettyyn käyttötarkoitukseen tarkoitetun lämmitetyn nettoalan osalta neliömetriä kohti vuodessa lasketaan seuraavasti:
-[Hiilijalanjälkitiedot](dokumentaatio/#hiilijalanjälki)-luokan objektiin liitetyn sen[RakennuskohteenVähähiilisyystiedot](dokumentaatio/#rakennuskohteenvähähiilisyystiedot)-luokan objektin, jonka ```käyttötarkoitusluokka```-attribuutin arvo vastaa haluttua käyttötarkoitusta, niiden ```ominaisuus```-attribuuttien ```arvo```-attribuuttien ```numero```-attribuuttien summa, jonka ```suure```-attribuutin ```tunnus```-attribuutin arvo on jokin [IlmastoselvityksenHiilijalanjälkisuure](dokumentaatio/#ilmastoselvityksenhiilijalanjälkisuure)-koodiston koodeista.
+[Hiilijalanjälkitiedot](dokumentaatio/#hiilijalanjälki)-luokan objektiin liitetyn sen [RakennuskohteenVähähiilisyystiedot](dokumentaatio/#rakennuskohteenvähähiilisyystiedot)-luokan objektin, jonka ```käyttötarkoitusluokka```-attribuutin arvo vastaa haluttua käyttötarkoitusta, niiden ```ominaisuus```-attribuuttien ```arvo```-attribuuttien ```numero```-attribuuttien summa, jonka ```suure```-attribuutin ```tunnus```-attribuutin arvo on jokin [IlmastoselvityksenHiilijalanjälkisuure](dokumentaatio/#ilmastoselvityksenhiilijalanjälkisuure)-koodiston koodeista.
 {% include common/clause_end.html %}
 
 Seuraava pseudokoodiesitys kuvaa yllä kuvatun vaatimuksen laskenta-algoritmia:
@@ -383,7 +385,7 @@ Sekä [Hiilikädenjälkitiedot](dokumentaatio/#hiilikädenjälkitiedot)-luokan o
 * D5 - Karbonatisoituminen
 * D6 - Istutettu puusto
 
-Hiilikädenjäljen arvioinnin on sisällettävä ainoastaan sellaiset vältetyt ja poistetut kasvihuonekaasupäästöt, joita ei aiheutuisi ilman rakennushanketta. Yllä luetellut osatekijöiden tiedot ilmoitetaan [Rakennuskohteenvähähiilisyystiedot](dokumentaatio/#rakennuskohteenvähähiilisyystiedot)- ja [RakennuspaikanVähähiilisyystiedot](dokumentaatio/rakennuspaikanvähähiilisystiedot)-luokkien yhteisen yläluokan {% include common/moduleLink.html moduleId="ry-yhteiset" path="looginenmalli/dokumentaatio/#tietoyksikkö" title="Tietoyksikkö" %} ```ominaisuus```-attribuutin arvojen avulla siten, että sekä [RakennuskohteenVähähiilisyystiedot](dokumentaatio/#rakennuskohteenvähähiilisyystiedot)-luokan objektit että [RakennuspaikanVähähiilisyystiedot](dokumentaatio/rakennuspaikanvähähiilisystiedot)-luokan objektit sisältävät tasan yhden (1) kappaleen kutakin yllä lueteltua osatekijää koskevaa ```ominaisuus```-attribuutin arvoa. Näiden ```ominaisuus```-attribuutin arvojen {% include common/moduleLink.html moduleId="ry-yhteiset" path="looginenmalli/dokumentaatio/#suureenarvo" title="SuureenArvo" %}-luokan ```suure```-attribuutin ```tunnus```-attribuutin arvojen on oltava [IlmastoselvityksenHiilikädenjälkisuure](dokumentaatio/#ilmastoselvityksenhiilikädenjälkisuure)-koodiston koodien tunnuksia. Muiden ```ominaisuus```-attribuutin arvojen käyttöä ei ole rajoitettu.
+Hiilikädenjäljen arvioinnin on sisällettävä ainoastaan sellaiset vältetyt ja poistetut kasvihuonekaasupäästöt, joita ei aiheutuisi ilman rakennushanketta. Yllä luetellut osatekijöiden tiedot ilmoitetaan [Rakennuskohteenvähähiilisyystiedot](dokumentaatio/#rakennuskohteenvähähiilisyystiedot)- ja [RakennuspaikanVähähiilisyystiedot](dokumentaatio/rakennuspaikanvähähiilisystiedot)-luokkien yhteisen yläluokan {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#tietoyksikkö" title="Tietoyksikkö" %} ```ominaisuus```-attribuutin arvojen avulla siten, että sekä [RakennuskohteenVähähiilisyystiedot](dokumentaatio/#rakennuskohteenvähähiilisyystiedot)-luokan objektit että [RakennuspaikanVähähiilisyystiedot](dokumentaatio/rakennuspaikanvähähiilisystiedot)-luokan objektit sisältävät tasan yhden (1) kappaleen kutakin yllä lueteltua osatekijää koskevaa ```ominaisuus```-attribuutin arvoa. Näiden ```ominaisuus```-attribuutin arvojen {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#suureenarvo" title="SuureenArvo" %}-luokan ```suure```-attribuutin ```tunnus```-attribuutin arvojen on oltava [IlmastoselvityksenHiilikädenjälkisuure](dokumentaatio/#ilmastoselvityksenhiilikädenjälkisuure)-koodiston koodien tunnuksia. Muiden ```ominaisuus```-attribuutin arvojen käyttöä ei ole rajoitettu.
 {% include common/clause_end.html %}
 
 ### RakennuskohteenVähähiilisyystiedot 
@@ -396,14 +398,13 @@ Hiilikädenjäljen arvioinnin on sisällettävä ainoastaan sellaiset vältetyt 
 [RakennuskohteenVähähiilisyystiedot](dokumentaatio/#rakennuskohteenvahaliilisyystiedot)-luokan assosiaatio ```ryhmä``` on rajoitettu viittaamaan vain [Hiilijalanjälkitiedot](dokumentaatio/#hiilijalajjalkitiedot) tai [Hiilikädenjälkitiedot](dokumentaatio/hiilikadenjalkitiedot)-luokkien tai niiden aliluokkien objekteihin. 
 {% include common/clause_end.html %}
 
-{% include common/clause_start.html type="req" id="laatu/vaat-rakennuskohteenvahahiilisyystiedot-arvot-per-pinta-alan-per-vuosi" %}
+{% include common/clause_start.html type="req" id="laatu/vaat-rakennuskohteenvahahiilisyystiedot-arvot-per-pinta-ala-per-vuosi" %}
 [RakennuskohteenVähähiilisyystiedot](dokumentaatio/#rakennuskohteenvahaliilisyystiedot)-luokan objektien hiilijalan- tai kädenjälken arvioinnin tuloksia kuvaavien ```ominaisuus```-attribuuttien numeeriset arvot annetaan hiilidioksidiekvivalenttikilogrammoina per rakennuskohteen annettuun käyttötarkoitukseen tarkoitetun osan lämmitetty nettoala per vuosi, yksikkönä ```kgCO2e/m2/a```.
 {% include common/clause_end.html %}
 
 {% include common/clause_start.html type="req" id="laatu/vaat-rakennuskohteenvahahiilisyystiedot-lammitetty-nettoala" %}
 Rakennuksen lämmitetyllä nettoalalla tarkoitetaan lämmitettyjen kerrostasoalojen summaa kerrostasoja ympäröivien ulkoseinien sisäpintojen mukaan laskettuna. Rakennuksen lämmitetty nettoalalla kunkin käyttötarkoituksen osalta ilmoitetaan [RakennuskohteenVähähiilisyystiedot](dokumentaatio/#rakennuskohteenvahaliilisyystiedot)-luokan objektien ```lämmitettyNettoala```-attribuuttien avulla, yksikkönä neliömetri (```m2```).  
 {% include common/clause_end.html %}
-
 
 ### RakennuspaikanVähähiilisyystiedot 
 
@@ -415,6 +416,6 @@ Rakennuksen lämmitetyllä nettoalalla tarkoitetaan lämmitettyjen kerrostasoalo
 [RakennuspaikanVähähiilisyystiedot](dokumentaatio/#rakennuspaikanvahaliilisyystiedot)-luokan assosiaatio ```ryhmä``` on rajoitettu viittaamaan vain [Hiilijalanjälkitiedot](dokumentaatio/#hiilijalajjalkitiedot) tai [Hiilikädenjälkitiedot](dokumentaatio/hiilikadenjalkitiedot)-luokkien tai niiden aliluokkien objekteihin. 
 {% include common/clause_end.html %}
 
-{% include common/clause_start.html type="req" id="laatu/vaat-rakennuspaikanvahahiilisyystiedot-arvot-per-pinta-alan-per-vuosi" %}
-[RakennuspaikanVähähiilisyystiedot](dokumentaatio/#rakennuspaikanvahaliilisyystiedot)-luokan objektien hiilijalan- tai kädenjälken arvioinnin tuloksia kuvaavien ```ominaisuus```-attribuuttien numeeriset arvot annetaan hiilidioksidiekvivalenttikilogrammoina per rakennuspaikan pinta-ala per vuosi, yksikkönä ```kgCO2e/m2/a```.
+{% include common/clause_start.html type="req" id="laatu/vaat-rakennuspaikanvahahiilisyystiedot-arvot-per-pinta-ala-per-vuosi" %}
+[RakennuspaikanVähähiilisyystiedot](dokumentaatio/#rakennuspaikanvahaliilisyystiedot)-luokan objektien hiilijalan- tai kädenjäljen arvioinnin tuloksia kuvaavien ```ominaisuus```-attribuuttien numeeriset arvot annetaan hiilidioksidiekvivalenttikilogrammoina per rakennuspaikan pinta-ala per vuosi, yksikkönä ```kgCO2e/m2/a```.
 {% include common/clause_end.html %}
