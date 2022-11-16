@@ -6,6 +6,10 @@ id: "muutosloki"
 # Muutosloki
 {:.no_toc}
 
+## 16.11.2022
+
+- Lisätty ensimmäiset versiot laatu- ja elinkaarisäännöistä, painottuen ilmastoselvityksen tietoihin.
+
 ## 9.11.2022
 
 - Muokattu Ilmastoselvitykseen liittyvien luokkien attribuuttien ja assosiaatioden pakollisuuksia vastaamaan valmiin ilmastoselvityksen vaatimuksia:
