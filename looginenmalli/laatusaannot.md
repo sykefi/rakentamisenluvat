@@ -156,13 +156,18 @@ Aikavälejä kuvaavat attribuutit voidaan antaa joko sekä alku- että loppuajan
 ### Katselmus
 
 ### Ilmastoselvitys
+
 {% include common/clause_start.html type="req" id="laatu/vaat-ilmastoselvitys-rakennuspaikan-pinta-ala-yksikko" %}
 [Ilmastoselvitys](dokumentaatio/#ilmastoselvitys)-luokan ```rakennuspaikanPintaAla```-attribuutin arvon yksikön tulee olla neliömetri (```m2```).
 {% include common/clause_end.html %}
 
-TODO: käytetyn arviointijakso pituus yksikkö = vuosi
+{% include common/clause_start.html type="req" id="laatu/vaat-ilmastoselvitys-arviointijakso-yksikko" %}
+[Ilmastoselvitys](dokumentaatio/#ilmastoselvitys)-luokan ```käytetynArviointijaksonPituus```-attribuutin arvon yksikön tulee olla yksi vuosi (```a```).
+{% include common/clause_end.html %}
 
-TODO: rakennuksen tavoitteellinen käyttöikä yksikkö = vuosi
+{% include common/clause_start.html type="req" id="laatu/vaat-ilmastoselvitys-rakennuksen-kayttoika-yksikko" %}
+[Ilmastoselvitys](dokumentaatio/#ilmastoselvitys)-luokan ```rakennuksenTavoitteellinenKäyttöikä```-attribuutin arvon yksikön tulee olla yksi vuosi (```a```).
+{% include common/clause_end.html %}
 
 {% include common/clause_start.html type="req" id="laatu/vaat-ilmastoselvitys-rakennuskohde-pysyva-rakennustunnus-oltava" %}
 Kuhunkin [Ilmastoselvitys](dokumentaatio/#ilmastoselvitys)-luokan objektiin tulee liittyä vähintään yksi (1) {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohde" title="Rakennuskohde" %}-luokan aliluokkien objekti, jonka kautta ilmastoselvitys voidaan liittää rakennuksen pysyvään rakennustunnukseen. 
@@ -375,7 +380,7 @@ Arvioidun hiilikädenjäljen ilmoittamisessa suhteessa pinta-alaan ja ajanjaksoo
 
 #### Hiilikädenjälkitiedot osatekijöittäin
 
-{% include common/clause_start.html type="req" id="laatu/vaat-hiilikadenjalki-rakennuksen-elinkaarienvaiheittain" %}
+{% include common/clause_start.html type="req" id="laatu/vaat-hiilikadenjalki-osatekijoittain" %}
 Sekä [Hiilikädenjälkitiedot](dokumentaatio/#hiilikädenjälkitiedot)-luokan objektiin liitettyjen [Rakennuskohteenvähähiilisyystiedot](dokumentaatio/#rakennuskohteenvähähiilisyystiedot)-luokan objektien että [RakennuspaikanVähähiilisyystiedot](dokumentaatio/rakennuspaikanvähähiilisystiedot)-luokan objektien tulee sisältää arviot vältettyjen tai poistettujen kasvihuonekaasupäästöjen määristä ennen rakennuksen käyttöä, rakennuksen käytön aikaa ja käytön jälkeistä aikaa seuraavien osatekijöiden osalta:
 
 * D1 - Uudelleenkäyttö ja kierrätys
