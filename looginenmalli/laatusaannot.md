@@ -107,7 +107,7 @@ Aluemaisen geometrian ulkoreunan ja reikien reunaviivat eivät saa leikata itse�
 Aluemaisen geometrian sisäosan on oltava yhtenevä, eli minkä tahansa kahden alueen sisäpisteen välillä on voitava muodostaa yhtenäinen käyrä, joka kulkee kokonaan alueen sisällä.
 {% include common/clause_end.html %}
 
-{% include common/clause_start.html type="req" id="laatu/vaat-yhteneva-alue" %}
+{% include common/clause_start.html type="req" id="laatu/vaat-mitattava-alue" %}
 Aluemaisen geometrian sisäosan pinta-ala on oltava mitattavissa, eli alueeseen tulee sisältyä pisteitä, jotka eivät ole osa alueen ulkoreunaa.
 {% include common/clause_end.html %}
 

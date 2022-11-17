@@ -8,7 +8,8 @@ id: "muutosloki"
 
 ## 17.11.2022
 
--  Lisätty kuvailevaa tekstiä selittämään ilmastoselvityksen laatusääntöjen vaatimuksia.
+- Lisätty kuvailevaa tekstiä selittämään ilmastoselvityksen laatusääntöjen vaatimuksia.
+- Korjattu alueen mitattavuutta koskevan vaatimuksen tunnus `laatu/vaat-yhteneva-alue` -> `laatu/vaat-mittava-alue`. Nyt `laatu/vaat-yhteneva-alue`-vaatimuksia on vain yksi.
 
 ## 16.11.2022
 
