@@ -6,6 +6,10 @@ id: "muutosloki"
 # Muutosloki
 {:.no_toc}
 
+## 17.11.2022
+
+-  Lisätty kuvailevaa tekstiä selittämään ilmastoselvityksen laatusääntöjen vaatimuksia.
+
 ## 16.11.2022
 
 - Lisätty ensimmäiset versiot laatu- ja elinkaarisäännöistä, painottuen ilmastoselvityksen tietoihin.

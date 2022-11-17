@@ -166,6 +166,8 @@ Aikavälejä kuvaavat attribuutit voidaan antaa joko sekä alku- että loppuajan
 [Ilmastoselvitys](dokumentaatio/#ilmastoselvitys)-luokan ```rakennuksenTavoitteellinenKäyttöikä```-attribuutin arvon yksikön tulee olla yksi vuosi (```a```).
 {% include common/clause_end.html %}
 
+Ilmastoselvitys tulee voida aina liittää rakennukseen sen pysyvän rakennustunnuksen (PRT) kautta. Rakentamisen lupapäätösten tietomallissa [Ilmastoselvitys](dokumentaatio/#ilmaistoselvitys)-luokalla on ```1..*``` assosiaatio {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohde" title="Rakennuskohde" %}-luokkaan, jonka konkreettisia aliluokkia ovat muun muassa {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennus" title="Rakennus" %} ja {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuksenosa" title="RakennuksenOsa" %}. Ilmastoselvitys liitetään tavallisesti joko suoraan koko rakennusta kuvaavaan {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennus" title="Rakennus" %}-luokan objektiin tai siihen {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuksenosa" title="RakennuksenOsa" %}-luokan objektiin, jota luvanvaraisella toimenpiteellä muutetaan, tai joka syntyy suunnitellun laajennuksen tuloksena. Jälkimmäisessä tapauksessa yhteys pyvyvään rakennustunnukseen syntyy {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuksenosa" title="RakennuksenOsa" %}-luokan pakollisen ```rakennus:Rakennus```-assosiaation kautta.
+
 {% include common/clause_start.html type="req" id="laatu/vaat-ilmastoselvitys-rakennuskohde-pysyva-rakennustunnus-oltava" %}
 Kuhunkin [Ilmastoselvitys](dokumentaatio/#ilmastoselvitys)-luokan objektiin tulee liittyä vähintään yksi (1) {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohde" title="Rakennuskohde" %}-luokan aliluokkien objekti, jonka kautta ilmastoselvitys voidaan liittää rakennuksen pysyvään rakennustunnukseen. 
 {% include common/clause_end.html %}
@@ -175,6 +177,8 @@ Rakennusta tai sen osaa koskevan [Ilmastoselvitys](dokumentaatio/#ilmastoselvity
 {% include common/clause_end.html %}
 
 #### Rakentamisen vähähiilisyyden arvioinnin tulosten arvot
+
+Ilmastoselvityksen vähähiilisyystiedot ilmoitetaan joko suunnitellun rakentamistoimenpiteen arvioitua hiilijalan- tai -kädenjälkeä kuvaavina numeroarvoina.
 
 {% include common/clause_start.html type="req" id="laatu/vaat-vahahiilisyystiedot-suureen-arvo" %}
 Sekä [Rakennuskohteenvähähiilisyystiedot](dokumentaatio/#rakennuskohteenvähähiilisyystiedot)-luokkien että [RakennuspaikanVähähiilisyystiedot](dokumentaatio/rakennuspaikanvähähiilisystiedot)-luokkien vähähiilisyyden arvioinnin tuloksia koskevat ```ominaisuus```-attribuuttien arvot sekä hiilijalanjäljen että hiilikädenjäljen osalta annetaan luokan {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#suureenarvo" title="SuureenArvo" %} objekteina siten, että niiden ```arvo```-attribuuttien arvot ovat luokan {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#numeerinenarvo" title="NumeerinenArvo" %} objekteja, joiden attribuutin arvo ```yksikkö``` on hiilidioksidiekvivalenttikilogramma per pinta-alan neliö per vuosi (kgCO2e/m2/a), ja joiden ```numero``` -attribuutin arvo ilmoitettu pyöristettynä symmetrisesti kahden desimaalin tarkkuudella.
@@ -221,6 +225,8 @@ Yllä luetellut päästötiedot ilmoitetaan [Rakennuskohteenvähähiilisyystiedo
 
 #### Hiilijalanjäljen summat rakennuksen koko toimenpidealan osalta
 
+Useita eri käyttötarkoituksia sisältävän rakennuksen toimenpidealueen hiilijalanjälkitiedot ilmoitetaan erikseen kuhunkin käyttötarkoitukseen tarkoitetun lämmitetyn nettopinta-alan osalta. Koko toimenpidealueen kaikkien käyttötarkoituskohtaisten lämmitettyjen nettopinta-alojen hiilijalanjäljen osuuksien summaa (```kgCO2e/m2/a```) ei ilmoiteta erikseen, vaan se lasketaan ilmoitettujen käyttötarkoituskohtaisten hiilijalanjälkiarvioiden summana.
+
 {% include common/clause_start.html type="req" id="laatu/vaat-hiilijalanjalki-summa-rakennukselle-per-ala-per-vuosi" %}
 Rakentamistoimenpiteestä aiheutuva arvioitu hiilijalanjälki rakennuksen osalta toimenpidealueen lämmitettyä nettoneliömetriä kohti vuodessa lasketaan seuraavasti:
 Kaikkien [Hiilijalanjälkitiedot](dokumentaatio/#hiilijalanjälki)-luokan objektiin liitettyjen [RakennuskohteenVähähiilisyystiedot](dokumentaatio/#rakennuskohteenvähähiilisyystiedot)-luokan objektien niiden ```ominaisuus```-attribuuttien ```arvo```-attribuuttien ```numero```-attribuuttien summa, joiden ```suure```-attribuutin ```tunnus```-attribuutin arvo on jokin [IlmastoselvityksenHiilijalanjälkisuure](dokumentaatio/#ilmastoselvityksenhiilijalanjälkisuure)-koodiston koodeista.
@@ -239,6 +245,8 @@ for each ilmastoselvitys.hiilijalanjälki.jäsen as j {
   }
 }
 ```
+
+Vastaavasti koko toimenpidealueen kaikkien käyttötarkoitusalueiden kokonaishiilijalanjäljen summaa (```kgCOe```) ei ilmoiteta erikseen, vaan se lasketaan ilmoitettujen käyttötarkoituskohtaisten hiilijalanjälkiarvioiden summana kerrottuna kunkin käyttötarkoituksen lämmitetyn nettoalan määrällä ja käytetyn arviontijakson pituudella. 
 
 {% include common/clause_start.html type="req" id="laatu/vaat-hiilijalanjalki-summa-rakennukselle-arviointijaksolla" %}
 Rakentamistoimenpiteestä aiheutuva arvioitu kokonaishiilijalanjälki rakennuksen toimenpidealueen osalta koko arviointijakson aikana lasketaan seuraavasti:
@@ -262,6 +270,8 @@ tulos = tulos * ilmastoselvitys.käytetynArviointijaksonPituus.value;
 
 #### Hiilijalanjäljen summat rakennuksen käyttötarkoituksittain
 
+Rakennuksen toimenpidealueen tiettyyn käyttötarkoitukseen tarkoitettua osaa koskevaa kaikkien sen rakentamisen elinkaaren vaiheiden hiilijalanjäljen summaa (```kgCO2e/m2/a```) ei ilmoiteta erikseen, vaan se lasketaan elinkaarenvaihekohtaisesti ilmoitettujen hiilijalanjälkitietojen summana. 
+
 {% include common/clause_start.html type="req" id="laatu/vaat-hiilijalanjalki-summa-rakennuksen-kayttotarkoitukselle-per-ala-per-vuosi" %}
 Rakentamistoimenpiteestä aiheutuva arvioitu hiilijalanjälki rakennuksen toimenpidealueen tiettyyn käyttötarkoitukseen tarkoitetun lämmitetyn nettoalan osalta neliömetriä kohti vuodessa lasketaan seuraavasti:
 [Hiilijalanjälkitiedot](dokumentaatio/#hiilijalanjälki)-luokan objektiin liitetyn sen [RakennuskohteenVähähiilisyystiedot](dokumentaatio/#rakennuskohteenvähähiilisyystiedot)-luokan objektin, jonka ```käyttötarkoitusluokka```-attribuutin arvo vastaa haluttua käyttötarkoitusta, niiden ```ominaisuus```-attribuuttien ```arvo```-attribuuttien ```numero```-attribuuttien summa, jonka ```suure```-attribuutin ```tunnus```-attribuutin arvo on jokin [IlmastoselvityksenHiilijalanjälkisuure](dokumentaatio/#ilmastoselvityksenhiilijalanjälkisuure)-koodiston koodeista.
@@ -283,6 +293,8 @@ for each ilmastoselvitys.hiilijalanjälki.jäsen as j {
   }
 }
 ```
+
+Vastaavasti rakennuksen toimenpidealueen tiettyyn käyttötarkoitukseen tarkoitettua osaa koskevaa kokonaishiilijalanjälkeä (```kgCO2e```) ei ilmoiteta erikseen, vaan se lasketaan sen ko. käyttötarkoitusta koskevan rakennuksen osan elinkaarivaihekohtaisten arvojen summana kerrottuna ko. käyttötarkoituksen lämmitetyn nettoalan määrällä ja käytetyn arviontijakson pituudella.
 
 {% include common/clause_start.html type="req" id="laatu/vaat-hiilijalanjalki-summa-rakennuksen-kayttotarkoitukselle-arviointijaksolla" %}
 Rakentamistoimenpiteestä aiheutuva arvioitu kokonaishiilijalanjälki rakennuksen tiettyyn käyttötarkoitukseen tarkoitetun toimenpidealueen osalta koko arviointijakson aikana lasketaan seuraavasti:
@@ -309,6 +321,8 @@ tulos = tulos * ilmastoselvitys.käytetynArviointijaksonPituus.value;
 
 #### Hiilijalanjäljen summat rakennuspaikan osalta
 
+Samoin kuin rakennuksen osalta, rakennuspaikan ominaisuuksista johtuvan arvioidun rakentamisen hiilijalanjäljen yhteismäärää rakennuspaikan pinta-alan suhteen (```kgCO2e/m2/a```) ei ilmoiteta erikseen, vaan se lasketaan rakennuspaikan osalta eri rakentamisen elinkaarivaiheille ilmoitettujen arvojen summana. 
+
 {% include common/clause_start.html type="req" id="laatu/vaat-hiilijalanjalki-summa-rakennuspaikalle-per-ala-per-vuosi" %}
 Rakentamistoimenpiteestä aiheutuva arvioitu hiilijalanjälki rakennuspaikan osalta sen pinta-alan neliömetriä kohti vuodessa lasketaan seuraavasti:
 [Hiilijalanjälkitiedot](dokumentaatio/#hiilijalanjälki)-luokan objektiin liitetyn [RakennuspaikanVähähiilisyystiedot](dokumentaatio/#rakennuspaikanvähähiilisyystiedot)-luokan objektin niiden ```ominaisuus```-attribuuttien ```arvo```-attribuuttien ```numero```-attribuuttien summa, joiden ```suure```-attribuutin ```tunnus```-attribuutin arvo on jokin [IlmastoselvityksenHiilijalanjälkisuure](dokumentaatio/#ilmastoselvityksenhiilijalanjälkisuure)-koodiston koodeista.
@@ -327,6 +341,7 @@ for each ilmastoselvitys.hiilijalanjälki.jäsen as j {
   }
 }
 ```
+Vastaavasti rakennuspaikan ominaisuuksista johtuvan kokonaishiilijalanjäljen arviota (```kgCO2e```) ei ilmoiteta erikseen, vaan se lasketaan ilmoitetuista rakentamisen elikaaren vaiheiden summana kerrotuna rakennuspaikan pinta-alan määrällä ja arviointijakson pituudella. 
 
 {% include common/clause_start.html type="req" id="laatu/vaat-hiilijalanjalki-summa-rakennuspaikalle-arviointijaksolla" %}
 Rakentamistoimenpiteestä aiheutuva arvioitu kokonaishiilijalanjälki rakennuspaikan osalta koko arviointijakson aikana lasketaan seuraavasti:
