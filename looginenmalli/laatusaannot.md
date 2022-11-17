@@ -99,10 +99,6 @@ Geometrioiden ilmaisemisessa tulee noudattaa kunkin koordinaatiston määritelm�
 Mikäli viiva on osa aluemaisen geometrian reunaviivaa, on sen oltava suljettu, eli sen alku- ja loppuppisteiden on oltava samat.
 {% include common/clause_end.html %}
 
-{% include common/clause_start.html type="req" id="laatu/vaat-viiva-kielletyt-leikkaukset" %}
-Viivamainen geometria ei saa leikata itseään.
-{% include common/clause_end.html %}
-
 {% include common/clause_start.html type="req" id="laatu/vaat-alue-kielletyt-leikkaukset" %}
 Aluemaisen geometrian ulkoreunan ja reikien reunaviivat eivät saa leikata itseään tai toisiaan. Kukin reunaviiva saa koskettaa alueen ulkoreunaa tai reiän reunaa, mukaanlukien se itse, vain yksittäisissä pisteissä.
 {% include common/clause_end.html %}
@@ -111,6 +107,7 @@ Aluemaisen geometrian ulkoreunan ja reikien reunaviivat eivät saa leikata itse�
 Aluemaisen geometrian sisäosan on oltava yhtenevä, eli minkä tahansa kahden alueen sisäpisteen välillä on voitava muodostaa yhtenäinen käyrä, joka kulkee kokonaan alueen sisällä.
 {% include common/clause_end.html %}
 
+{% include common/clause_start.html type="req" id="laatu/vaat-yhteneva-alue" %}
 Aluemaisen geometrian sisäosan pinta-ala on oltava mitattavissa, eli alueeseen tulee sisältyä pisteitä, jotka eivät ole osa alueen ulkoreunaa.
 {% include common/clause_end.html %}
 
@@ -179,8 +176,8 @@ Rakennusta tai sen osaa koskevan [Ilmastoselvitys](dokumentaatio/#ilmastoselvity
 
 #### Rakentamisen vähähiilisyyden arvioinnin tulosten arvot
 
-{% include common/clause_start.html type="req" id="laatu/vaat-vahahiilisyystiedot-elinkaarienvaiheittain-suureen-arvo" %}
-Sekä [Rakennuskohteenvähähiilisyystiedot](dokumentaatio/#rakennuskohteenvähähiilisyystiedot)-luokkien että [RakennuspaikanVähähiilisyystiedot](dokumentaatio/rakennuspaikanvähähiilisystiedot)-luokkien rakennuksen elinkaaren vaiheiden vähähiilisyyden arvioinnin tuloksia koskevat ```ominaisuus```-attribuuttien arvot sekä hiilijalanjäljen että hiilikädenjäljen osalta annetaan luokan {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#suureenarvo" title="SuureenArvo" %} objekteina siten, että niiden ```arvo```-attribuuttien arvot ovat luokan {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#numeerinenarvo" title="NumeerinenArvo" %} objekteja, joiden attribuutin arvo ```yksikkö``` on hiilidioksidiekvivalenttikilogramma per pinta-alan neliö per vuosi (kgCO2e/m2/a), ja joiden ```numero``` -attribuutin arvo ilmoitettu pyöristettynä symmetrisesti kahden desimaalin tarkkuudella.
+{% include common/clause_start.html type="req" id="laatu/vaat-vahahiilisyystiedot-suureen-arvo" %}
+Sekä [Rakennuskohteenvähähiilisyystiedot](dokumentaatio/#rakennuskohteenvähähiilisyystiedot)-luokkien että [RakennuspaikanVähähiilisyystiedot](dokumentaatio/rakennuspaikanvähähiilisystiedot)-luokkien vähähiilisyyden arvioinnin tuloksia koskevat ```ominaisuus```-attribuuttien arvot sekä hiilijalanjäljen että hiilikädenjäljen osalta annetaan luokan {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#suureenarvo" title="SuureenArvo" %} objekteina siten, että niiden ```arvo```-attribuuttien arvot ovat luokan {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#numeerinenarvo" title="NumeerinenArvo" %} objekteja, joiden attribuutin arvo ```yksikkö``` on hiilidioksidiekvivalenttikilogramma per pinta-alan neliö per vuosi (kgCO2e/m2/a), ja joiden ```numero``` -attribuutin arvo ilmoitettu pyöristettynä symmetrisesti kahden desimaalin tarkkuudella.
 {% include common/clause_end.html %}
 
 ### Energiankulutus 
@@ -270,7 +267,7 @@ Rakentamistoimenpiteestä aiheutuva arvioitu hiilijalanjälki rakennuksen toimen
 [Hiilijalanjälkitiedot](dokumentaatio/#hiilijalanjälki)-luokan objektiin liitetyn sen [RakennuskohteenVähähiilisyystiedot](dokumentaatio/#rakennuskohteenvähähiilisyystiedot)-luokan objektin, jonka ```käyttötarkoitusluokka```-attribuutin arvo vastaa haluttua käyttötarkoitusta, niiden ```ominaisuus```-attribuuttien ```arvo```-attribuuttien ```numero```-attribuuttien summa, jonka ```suure```-attribuutin ```tunnus```-attribuutin arvo on jokin [IlmastoselvityksenHiilijalanjälkisuure](dokumentaatio/#ilmastoselvityksenhiilijalanjälkisuure)-koodiston koodeista.
 {% include common/clause_end.html %}
 
-Seuraava pseudokoodiesitys kuvaa yllä kuvatun vaatimuksen laskenta-algoritmia:
+Seuraava pseudokoodiesitys kuvaa yllä kuvatun vaatimuksen laskenta-algoritmia (esimerkin käyttötapausluokka '2 - Asuinkerrostalo'):
 ```
 let tulos = 0;
 let kt = '2 - Asuinkerrostalo';
@@ -292,7 +289,7 @@ Rakentamistoimenpiteestä aiheutuva arvioitu kokonaishiilijalanjälki rakennukse
 [Hiilijalanjälkitiedot](dokumentaatio/#hiilijalanjälki)-luokan objektiin liitetyn sen[RakennuskohteenVähähiilisyystiedot](dokumentaatio/#rakennuskohteenvähähiilisyystiedot)-luokan objektin, jonka ```käyttötarkoitusluokka```-attribuutin arvo vastaa haluttua käyttötarkoitusta, niiden ```ominaisuus```-attribuuttien ```arvo```-attribuuttien ```numero```-attribuuttien summa, joiden ```suure```-attribuutin ```tunnus```-attribuutinarvo on jokin [IlmastoselvityksenHiilijalanjälkisuure](dokumentaatio/#ilmastoselvityksenhiilijalanjälkisuure)-koodiston koodeista, kerrottuna sekä kyseisen [RakennuskohteenVähähiilisyystiedot](dokumentaatio/#rakennuskohteenvähähiilisyystiedot)-luokan objektin ```toimenpidealueenLämmitettyNettoala```-attribuutin ```value```-attribuutin arvolla että [Ilmastoselvitys](dokumentaatio/#ilmastoselvitys)-luokan objektin ```käytetynArviointijaksonPituus```-attribuutin ```value```-attribuutin arvolla.
 {% include common/clause_end.html %}
 
-Seuraava pseudokoodiesitys kuvaa yllä kuvatun vaatimuksen laskenta-algoritmia:
+Seuraava pseudokoodiesitys kuvaa yllä kuvatun vaatimuksen laskenta-algoritmia (esimerkin käyttötapausluokka '2 - Asuinkerrostalo'):
 ```
 let tulos = 0;
 let kt = '2 - Asuinkerrostalo';
