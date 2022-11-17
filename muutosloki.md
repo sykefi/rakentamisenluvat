@@ -8,8 +8,12 @@ id: "muutosloki"
 
 ## 17.11.2022
 
-- Lisätty kuvailevaa tekstiä selittämään ilmastoselvityksen laatusääntöjen vaatimuksia.
+- Lisätty kuvailevaa tekstiä selittämään ilmastoselvitystä koskevien laatusääntöjen vaatimuksia.
 - Korjattu alueen mitattavuutta koskevan vaatimuksen tunnus `laatu/vaat-yhteneva-alue` -> `laatu/vaat-mittava-alue`. Nyt `laatu/vaat-yhteneva-alue`-vaatimuksia on vain yksi.
+- Tehty uusi luokkakaavio 'Hankkeen ja katselmukset' ja selvyyden vuoksi siirretty hankkeen aikana päivitettävät tiedot sinne Rakentamisen luvat -kaaviosta.
+- Lisätty uusi luokka ToimenpiteenJatkoaikapäätös, poistettu RakennuskohteenToimenpide-luokasta attribuutti `jatkoajanPäättymispäivämäärä`. Perustelu: Näin lupapäätöksellä hyväksyttyä RakentamiskohteenToimenpide-luokan objektia ei tarvitse muuttaa jatkoajaikaluvan hyväksymisen yhteydessä.
+- Ilmastoselvitys-luokka lisätty sekä Rakentamisen luvat - että Hankkeen ja katselmukset -kaaviolle.
+- Järjestelty luokkakaavioita uudelleen selkeyttämistarkoituksessa.
 
 ## 16.11.2022
 
