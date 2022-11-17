@@ -402,7 +402,13 @@ Sekä [Hiilikädenjälkitiedot](dokumentaatio/#hiilikädenjälkitiedot)-luokan o
 * D5 - Karbonatisoituminen
 * D6 - Istutettu puusto
 
+Osatekijä "D6 - Istutettu puusto" tulee sisällyttää ainoastaan sellaisiin ilmastoselvityksiin, jotka koskevat asemakaava-alueella tapahtumaa rakentamista.
+
 Hiilikädenjäljen arvioinnin on sisällettävä ainoastaan sellaiset vältetyt ja poistetut kasvihuonekaasupäästöt, joita ei aiheutuisi ilman rakennushanketta. Yllä luetellut osatekijöiden tiedot ilmoitetaan [Rakennuskohteenvähähiilisyystiedot](dokumentaatio/#rakennuskohteenvähähiilisyystiedot)- ja [RakennuspaikanVähähiilisyystiedot](dokumentaatio/rakennuspaikanvähähiilisystiedot)-luokkien yhteisen yläluokan {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#tietoyksikkö" title="Tietoyksikkö" %} ```ominaisuus```-attribuutin arvojen avulla siten, että sekä [RakennuskohteenVähähiilisyystiedot](dokumentaatio/#rakennuskohteenvähähiilisyystiedot)-luokan objektit että [RakennuspaikanVähähiilisyystiedot](dokumentaatio/rakennuspaikanvähähiilisystiedot)-luokan objektit sisältävät tasan yhden (1) kappaleen kutakin yllä lueteltua osatekijää koskevaa ```ominaisuus```-attribuutin arvoa. Näiden ```ominaisuus```-attribuutin arvojen {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#suureenarvo" title="SuureenArvo" %}-luokan ```suure```-attribuutin ```tunnus```-attribuutin arvojen on oltava [IlmastoselvityksenHiilikädenjälkisuure](dokumentaatio/#ilmastoselvityksenhiilikädenjälkisuure)-koodiston koodien tunnuksia. Muiden ```ominaisuus```-attribuutin arvojen käyttöä ei ole rajoitettu.
+{% include common/clause_end.html %}
+
+{% include common/clause_start.html type="req" id="laatu/vaat-hiilikadenjalki-istutettu-puusto" %}
+
 {% include common/clause_end.html %}
 
 ### RakennuskohteenVähähiilisyystiedot 

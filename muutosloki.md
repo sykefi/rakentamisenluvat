@@ -14,6 +14,7 @@ id: "muutosloki"
 - Lisätty uusi luokka ToimenpiteenJatkoaikapäätös, poistettu RakennuskohteenToimenpide-luokasta attribuutti `jatkoajanPäättymispäivämäärä`. Perustelu: Näin lupapäätöksellä hyväksyttyä RakentamiskohteenToimenpide-luokan objektia ei tarvitse muuttaa jatkoajaikaluvan hyväksymisen yhteydessä.
 - Ilmastoselvitys-luokka lisätty sekä Rakentamisen luvat - että Hankkeen ja katselmukset -kaaviolle.
 - Järjestelty luokkakaavioita uudelleen selkeyttämistarkoituksessa.
+- Lisätty ilmastoselvityksen laatusääntöjen vaatimukseen `laatu/vaat-hiilikadenjalki-osatekijoittain`  huomautus osatekijän D6 vaadittavuudesta ainoastaan asemakaava-alueella.
 
 ## 16.11.2022
 
