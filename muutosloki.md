@@ -6,18 +6,6 @@ id: "muutosloki"
 # Muutosloki
 {:.no_toc}
 
-## 25.11.2022
-
-- Muutettu RakennuskohteenToimenpide-luokan attribuutin suunniteltuMuutos kardinaliteetti 0..* -> 1..* (tehty pakolliseksi). Ei ole mieltä kuvata toimenpidettä, jossa ei kuvata suunniteltua muutosta ja siten sen kohdistumista Rakennuskohteeseen.
-- Poistettu RakennuskohteenToimenpide-luokan attribuutti `raukeamispäivämäärä`. Rakentamisluvissa ei anneta erikseen toimenpidekohtaisia määräaikoja, ja kun jatkoaika kuvataan erillisellä luokalla, niin toimenpiteen (alkuperäinen) raukeamispäivämäärä ei voi poiketa luvan (alkuperäisestä) raukeamispäivämäärästä.
-- Muutettu RakennuskohteenToimenpide-luokan assosiaation `paikka:Rakennuspaikka` kardinaliteetti 0..* -> 1..* (tehty pakolliseksi).
-- Lisätty Rakennuspaikka-luokalle rajoitus, joka tekee sen perityn `geometria`-attribuutin pakolliseksi.
-- Muutettu RakennuskohteenToimenpide-luokan assosiaation `asia` kardinaliteetti 1 -> 0..1. Mahdollistaa myös ei-luvanvaraisten toimenpiteiden kuvaamisen (esim. pienten muutosten ilmoittaminen).
-- Lisätty koodistot tyhjinä RakentamislupaAsianElinkaaritila, RakentamislupamääräyksenLaji, RakentamisluvanElinkaaritila, RakentamisluvanLaji, PurkamistoimenpiteenLaji, RakentamistoinepiteenLaji ja HuonesitnMuutoksenLaji. Kytkentä Yhteentoimivuusalustan koodistoihin puuttuu toistaiseksi. Muutettu luokkien Rakentamislupahakemus, Rakentamislupa, Purkamistoimenpide, Rakentamistoimenpide ja HuoneistonMuutos koodistoattribuutit käyttämään luotuja koodilista-luokkia.
-- Lisätty RakentamislupaAsia-luokkaan rajoitus, joka koskee ```elinkaaritila```-attribuutin tyyppiä.
-- Lisätty Rakentamislupa-luokkaan rajoitus, joka koskee ```elinkaaritila```-attribuutin tyyppiä ja toinen, joka koskee ```määräys```-assosiaatiolla liitettävän Lupamääräys-luokan attribuutin ```määräyksenLaji``` tyyppiä.
-- Luonnosteltu elinkaarisääntöjä 
-
 ## 17.11.2022
 
 - Lisätty kuvailevaa tekstiä selittämään ilmastoselvitystä koskevien laatusääntöjen vaatimuksia.
