@@ -253,13 +253,13 @@ Lupahakemuksessa tunnistetut rakentamistoimenpiteen toteuttamisen vaatimat väh�
 Yhteen [RakentamislupaAsiaan](dokumentaatio/#rakentamislupaasia) voidaan liittää myös useampi kuin yksi [Rakentamislupahakemus](dokumentaatio/#rakentamislupahakemus). Esimerkiksi voidaan hakea ensin sijoitamislupaa ja täydentää sitä toteuttamislupahakemuksella. Lupa-asiassa voidaan tällöin tehdä päätös, jolla myönnetään vain yksi [Rakentamislupa](dokumentaatio/#rakentamislupa), jonka ```lupatyyppi``` on yhdistetty sijoittamis- ja toteuttamislupa. 
 
 #### Rakennuskohteen toimenpiteen synty
-{% include common/clause_start.html type="req" id="elinkaari/vaat-rakennuskohteen-maaritelmä" %}
+{% include common/clause_start.html type="req" id="elinkaari/vaat-rakennuskohteen-toimepide-maaritelma" %}
 RakennuskohteenToimenpide kuvaa toimenpiteen, joka kohdistuu yhden Rakennuskohteen rakentamiseen, korjaamiseen, laajentamiseen tai purkamiseen. Erikoistapauksena sama toimenpide voi kohdistua useampaan kuin yhteen Rakennuskohteeseen silloin, kun toimenpiteen johdosta yhdistetään useampia aiemmin erillisiä Rakennuskohteita yhdeksi tai kun pilkotaan yksi Rakennnuskohde useammaksi Rakennuskohteeksi.
 
 Rakennuspaikat, joihin rakennuskohteen toimenpide kohdistuu, tulee liittää luotavaan objektiin assosiaation ```paikka``` avulla.
 {% include common/clause_end.html %}
 
-{% include common/clause_start.html type="req" id="elinkaari/vaat-rakennuskohteen-synty-lupaprosessissa" %}
+{% include common/clause_start.html type="req" id="elinkaari/vaat-rakennuskohteen-toimepide-synty-lupaprosessissa" %}
 Luvanvaraisia toimenpiteitä kuvaavat [RakennuskohteenToimenpide](dokumentaatio/#rakennuskohteentoimenpide)-luokan alaluokkien objektit syntyvät samalla kun luodaan ensimmäinen kyseiseen lupa-asiaan liittyvä lupahakemus.
 
 [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia), johon toimenpide kuuluu, tulee liittää luotavaan objektiin assosiaation ```asia``` avulla.
@@ -267,8 +267,16 @@ Luvanvaraisia toimenpiteitä kuvaavat [RakennuskohteenToimenpide](dokumentaatio/
 RakennuskohteenToimenpide ja [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia), johon se kuuluuu voidaan luoda tietojärjestelmään myös vasta luvan myöntämisen yhteydessä. 
 {% include common/clause_end.html %}
 
-{% include common/clause_start.html type="req" id="elinkaari/vaat-rakennuskohteen-synty-ilman-lupa-asiaa" %}
+{% include common/clause_start.html type="req" id="elinkaari/vaat-rakennuskohteen-toimepide-synty-ilman-lupa-asiaa" %}
 RakennuskohteenToimenpide-luokan avulla voidaan kuvata myös ei-luvanvaraisia toimenpiteitä. Tällöin assosiaatiota ```asia``` ei käytetä.
+{% include common/clause_end.html %}
+
+{% include common/clause_start.html type="req" id="elinkaari/vaat-toimenpiteen-kohde" %}
+[RakennuskohteenToimenpide](dokumentaatio/#rakennuskohteentoimenpide)-luokan objektin on sisällettävä vähintään yksi [RakennuskohteenMuutos](dokumentaatio/#rakennuskohteenmuutos)-luokan kuvaama tietotyyppi attribuutin ```suunniteltuMuutos``` arvona.
+
+RakennuskohteenMuutos-luokan assosiaation ```kohdeEnnenMuutosta``` tulee viitata {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohde" title="Rakennuskohde" %}-luokan objektiin, johon suunniteltu muuutos kohdistuu. Mikäli kyseessä on uusi rakennuskohde (esim. uudisrakennus), ei assosiaatiota ```kohdeEnnenMuutosta``` käytetä.
+
+RakennuskohteenMuutos-luokan assosiaation ```kohdeMuutoksenJälkeen``` tulee viitata {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohde" title="Rakennuskohde" %}-luokan objektiin, joka kuvaa rakennuskohteen uutta tilaa suunnitellun muutoksen toteuttamisen jälkeen. Mikäli kyseessä on uusi rakennuskohde (esim. uudisrakennus), tulee tässä vaiheessa luoda uusi, suunniteltu rakennuskohdetta kuvaava Rakennuskohde-luokan objekti, johon assosiaatio viittaa.
 {% include common/clause_end.html %}
 
 ### Hakemuksen käsittely ja luvan myöntäminen
@@ -295,7 +303,7 @@ Myönnettävään rakentamislupaan sisältyvät lupamääräykset kuvataan {% in
 {% include common/clause_end.html %}
 
 {% include common/clause_start.html type="req" id="elinkaari/vaat-myonnetty-poikkeamislupa" %}
-Mikäli rakentamisluvan myöntämiseen tarvitaan erillinen myönnetty poikkeamislupa, se liitetään luotavaan[Rakentamislupa](dokumentaatio/#rakentamislupa)-luokan objektiin assosiaation ```liitttyväLupa``` avulla.
+Mikäli rakentamisluvan myöntämiseen tarvitaan erillinen myönnetty poikkeamislupa, se liitetään luotavaan [Rakentamislupa](dokumentaatio/#rakentamislupa)-luokan objektiin assosiaation ```liitttyväLupa``` avulla.
 {% include common/clause_end.html %}
 
 {% include common/clause_start.html type="req" id="elinkaari/vaat-kielteinen-lupapäätös" %}
