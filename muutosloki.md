@@ -6,6 +6,15 @@ id: "muutosloki"
 # Muutosloki
 {:.no_toc}
 
+## 30.11.2022
+
+- Lisätty luokkaan Rakentamislupahakemus uusi pakollinen attribuutti 'elinkaaritila'.
+- Uudelleennimetty DataType-luokka ToimenpiteenTila -> HankkeenToimenpide.
+- Lisätty koodistot tyhjinä: RakentamislupahakemuksenElinkaaritila, RakennuskohteenToimenpiteenTila, RakentamishankkeenKatselmuksenLaji, KatselmuksenLopullisuudenLaji, KatselmuksenTila
+- Uudelleennimetty selvyyden vuoksi assosiaatio Rakentamishanke.työnjohtaja -> vastaavaTyönjohtaja.
+- Väljennetty Katselmus-luokan liittyväHanke-assosiaaation kardinaliteettia 1 -> 1..*. Sama katselmus voidaan näin liittää useampaan saman Rakentamishanke-objektin versioon.
+- Uudelleenimetty Katselmus.toteutunutMuutos -> kohteenMuutos. Katselmuksen yhteydessä tai niiden välissä myös vain rakennuskohteen suunnitelmat saattavat muuttua, vaikka mitään ei olisi toteutettu.
+
 ## 25.11.2022
 
 - Muutettu RakennuskohteenToimenpide-luokan attribuutin suunniteltuMuutos kardinaliteetti 0..* -> 1..* (tehty pakolliseksi). Ei ole mieltä kuvata toimenpidettä, jossa ei kuvata suunniteltua muutosta ja siten sen kohdistumista Rakennuskohteeseen.
@@ -13,7 +22,7 @@ id: "muutosloki"
 - Muutettu RakennuskohteenToimenpide-luokan assosiaation `paikka:Rakennuspaikka` kardinaliteetti 0..* -> 1..* (tehty pakolliseksi).
 - Lisätty Rakennuspaikka-luokalle rajoitus, joka tekee sen perityn `geometria`-attribuutin pakolliseksi.
 - Muutettu RakennuskohteenToimenpide-luokan assosiaation `asia` kardinaliteetti 1 -> 0..1. Mahdollistaa myös ei-luvanvaraisten toimenpiteiden kuvaamisen (esim. pienten muutosten ilmoittaminen).
-- Lisätty koodistot tyhjinä RakentamislupaAsianElinkaaritila, RakentamislupamääräyksenLaji, RakentamisluvanElinkaaritila, RakentamisluvanLaji, PurkamistoimenpiteenLaji, RakentamistoinepiteenLaji ja HuonesitnMuutoksenLaji. Kytkentä Yhteentoimivuusalustan koodistoihin puuttuu toistaiseksi. Muutettu luokkien Rakentamislupahakemus, Rakentamislupa, Purkamistoimenpide, Rakentamistoimenpide ja HuoneistonMuutos koodistoattribuutit käyttämään luotuja koodilista-luokkia.
+- Lisätty koodistot tyhjinä RakentamislupaAsianElinkaaritila, RakentamislupamääräyksenLaji, RakentamisluvanElinkaaritila, RakentamisluvanLaji, PurkamistoimenpiteenLaji, RakentamistoimenpiteenLaji ja HuoneistonMuutoksenLaji. Kytkentä Yhteentoimivuusalustan koodistoihin puuttuu toistaiseksi. Muutettu luokkien Rakentamislupahakemus, Rakentamislupa, Purkamistoimenpide, Rakentamistoimenpide ja HuoneistonMuutos koodistoattribuutit käyttämään luotuja koodilista-luokkia.
 - Lisätty RakentamislupaAsia-luokkaan rajoitus, joka koskee ```elinkaaritila```-attribuutin tyyppiä.
 - Lisätty Rakentamislupa-luokkaan rajoitus, joka koskee ```elinkaaritila```-attribuutin tyyppiä ja toinen, joka koskee ```määräys```-assosiaatiolla liitettävän Lupamääräys-luokan attribuutin ```määräyksenLaji``` tyyppiä.
 - Luonnosteltu elinkaarisääntöjä 
