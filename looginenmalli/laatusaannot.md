@@ -2,7 +2,7 @@
 layout: "default"
 description: ""
 id: "laatusaannot"
-status: "Keskeneräinen"
+status: "Luonnos"
 ---
 # Laatusäännöt
 {:.no_toc}
@@ -150,9 +150,17 @@ Rakentamislupa-asiaan liittyvät rakentamislupahakemukset tulee liittää [Raken
 [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan objektin ```toimenpide```-assosiaatioiden arvot kuvaavat ne rakentamis- ja purkamistoimenpiteet, joita koskevien lupien myöntämistä rakentamislupa-asiassa käsitellään.
 {% include common/clause_end.html %}
 
-RakentamislupaAsia-luokan objektin attribuutille ```aluerajaus``` arvoksi on annettava aluemainen tai monialuegeometria, joka sisältää kaikkien hakemuksella luvitettaviksi haluttujen toimenpiteiden rakennuspaikkojen sijannit.
+{% include common/clause_start.html type="req" id="laatu/vaat-lupa-asian-aluerajaus" %}
+[RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan objektin attribuutille ```aluerajaus``` arvoksi on annettava aluemainen tai monialuegeometria, joka sisältää kaikkien hakemuksella luvitettaviksi haluttujen toimenpiteiden rakennuspaikkojen sijannit.
+{% include common/clause_end.html %}
 
-Kukin lupahakemuksen liitetiedosto tulee kuvata RakentamislupaAsia-luokan objektin attribuutin ```asianLiite``` avulla, mukaanlukien hakemuksen mukana mahdollisesti toimitettavat BIM-suunnitelmamallit ja rakennussuunnitelmat.
+{% include common/clause_start.html type="req" id="laatu/vaat-lupa-asian-liitteet" %}
+Kukin lupahakemuksen liitetiedosto tulee kuvata [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan objektin attribuutin ```asianLiite``` avulla, mukaanlukien hakemuksen mukana mahdollisesti toimitettavat BIM-suunnitelmamallit ja rakennussuunnitelmat.
+{% include common/clause_end.html %}
+
+{% include common/clause_start.html type="req" id="laatu/vaat-lupa-asian-elinkaaritila" %}
+[RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan ```elinkaaritila```-attribuutin arvona tulee käyttää koodiston [RakentamislupaAsianElinkaaritila](dokumentaatio/#rakentamisluvanelinkaaritila) arvoja.
+{% include common/clause_end.html %}
 
 ### Rakentamislupahakemus
 
@@ -188,29 +196,45 @@ Lupahakemuksessa tunnistetut rakentamistoimenpiteen toteuttamisen vaatimat väh�
 Kun lupahakemus on peruttu jättäjän toimesta, tulee [Rakentamislupahakemus](dokumentaatio/#rakentamislupahakemus)-luokan objektin attribuutilla ```elinkaaritila``` olla arvo ```Peruttu```.
 {% include common/clause_end.html %}
 
-### RakennetunYmpäristönLupapäätös
-
 ### Rakentamislupa
 
-{% include common/clause_start.html type="req" id="elinkaari/vaat-myonnetyt-poikkeamiset" %}
+{% include common/clause_start.html type="req" id="laatu/vaat-myonnetyt-poikkeamiset" %}
 Lupapäätöksellä myönnetyt rakentamistoimenpiteen toteuttamisen vaatimat vähäiset poikkeamiset {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#alueidenkäyttöjarakentamismääräys" title="AlueidenkäyttöJaRakentamismääräys" %}-luokan avulla kuvatuista rakentamista koskevista määräyksistä kuvataan [Rakentamislupa](dokumentaatio/#rakentamislupa)-luokan perityn ```myönnettyPoikkeaminen```-attribuutin arvojen avulla.
 {% include common/clause_end.html %}
 
-{% include common/clause_start.html type="req" id="elinkaari/vaat-lupamaaraykset" %}
+{% include common/clause_start.html type="req" id="laatu/vaat-lupamaaraykset" %}
 Myönnettyyn rakentamislupaan sisältyvät lupamääräykset kuvataan {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#lupamääräys" title="Lupamääräys" %}-luokan objektien avulla, ja ne liitetään osaksi luotavaa [Rakentamislupa](dokumentaatio/#rakentamislupa)-luokan objektia sen assosiaation ```määräys``` avulla. Rakentamislupaan kuuluvien määräysten ```määräyksenLaji```-attribuutin arvon tulee olla koodiston [RakentamislupamääryksenLaji](dokumentaatio/#rakentamislupamääräyksenlaji) koodi.
 {% include common/clause_end.html %}
 {% include common/clause_start.html type="req" id="elinkaari/vaat-myonnetty-poikkeamislupa" %}
 Mikäli rakentamisluvan myöntämisen edellytyksenä on ollut erillinen poikkeamislupa, se liitetään luotavaan [Rakentamislupa](dokumentaatio/#rakentamislupa)-luokan objektiin assosiaation ```liittyväLupa``` avulla.
 {% include common/clause_end.html %}
+
 ### Rakennuspaikka
 
-TODO: Rakennuspaikan osoite
+{% include common/clause_start.html type="req" id="laatu/vaat-rakennuspaikan-osoite" %}
+[Rakennuspaikka](dokumentaatio/#rakennuspaikka)-luokan objektin, joka on liitetty [RakennuskohteenToimenpide](dokumentaatio/#rakennuskohteentoimenpide)-luokan objektiin assosiaation ```paikka``` avulla, tulee sisältää vähintään yksi assosiaation ```rakennuspaikanOsoite``` avulla kuvattu osoitetieto.
+{% include common/clause_end.html %}
+
+{% include common/clause_start.html type="req" id="laatu/vaat-rakennuspaikan-kaava" %}
+[Rakennuspaikka](dokumentaatio/#rakennuspaikka)-luokan objektin, joka on liitetty [RakennuskohteenToimenpide](dokumentaatio/#rakennuskohteentoimenpide)-luokan objektiin assosiaation ```paikka``` avulla, ja joka sijaitsee rakentamista ohjaavan kaavan alueella, tulee viitata rakentamista kyseisellä rakennuspaikalla ohjaavaan kaavaan assosiaation ```rakentamistaOhjaavaKaava``` avulla.
+{% include common/clause_end.html %}
+
+{% include common/clause_start.html type="req" id="laatu/vaat-rakennuspaikan-kaavayksikko" %}
+mMikäli vähintään yksi [Rakennuspaikka](dokumentaatio/#rakennuspaikka)-luokan objektin ```rakentamistaOhjaavaKaava``` assosiaation {% include common/moduleLink.html moduleId="kaavatiedot" path="looginenmalli/dokumentaatio/#kaava" title="Kaava" %}-luokan attribuutin ```laji``` koodiarvo on jokin koodin ```3 - Asemakaava``` alikoodi, on rakennuspaikan kaavayksikkö annettava assosiaation ```kaavayksikkö``` avulla.
+{% include common/clause_end.html %}
+
+{% include common/clause_start.html type="req" id="laatu/vaat-rakennuspaikan-geometria" %}
+[Rakennuspaikka](dokumentaatio/#rakennuspaikka)-luokan objektilla on oltava ```geometria``` attribuutin arvo, joka kuvaa kyseisen rakennuspaikan maantieteellisen sijainnin tai alueen joko piste- tai aluemaisena.
+{% include common/clause_end.html %}
 
 ### RakennuskohteenToimenpide
-{% include common/clause_start.html type="req" id="lattu/vaat-rakennuskohteen-toimenpide-maaritelma" %}
-RakennuskohteenToimenpide kuvaa toimenpiteen, joka kohdistuu yhden Rakennuskohteen rakentamiseen, korjaamiseen, laajentamiseen tai purkamiseen. Erikoistapauksena sama toimenpide voi kohdistua useampaan kuin yhteen Rakennuskohteeseen silloin, kun toimenpiteen johdosta yhdistetään useampia aiemmin erillisiä Rakennuskohteita yhdeksi tai kun pilkotaan yksi Rakennnuskohde useammaksi Rakennuskohteeksi.
 
-Rakennuspaikat, joihin rakennuskohteen toimenpide kohdistuu, tulee liittää luotavaan objektiin assosiaation ```paikka``` avulla.
+{% include common/clause_start.html type="req" id="laatu/vaat-rakennuskohteen-toimenpide-maaritelma" %}
+[RakennuskohteenToimenpide](dokumentaatio/#rakennuskohteentoimenpide) kuvaa toimenpiteen, joka kohdistuu yhden Rakennuskohteen rakentamiseen, korjaamiseen, laajentamiseen tai purkamiseen. Erikoistapauksena sama toimenpide voi kohdistua useampaan kuin yhteen Rakennuskohteeseen silloin, kun toimenpiteen johdosta yhdistetään useampia aiemmin erillisiä Rakennuskohteita yhdeksi tai kun pilkotaan yksi Rakennnuskohde useammaksi Rakennuskohteeksi.
+{% include common/clause_end.html %}
+
+{% include common/clause_start.html type="req" id="laatu/vaat-rakennuskohteen-toimenpide-rakennuspaikat" %}
+[Rakennuspaikat](dokumentaatio/#rakennuspaikka), joihin rakennuskohteen toimenpide kohdistuu, tulee liittyä [RakennuskohteenToimenpide](dokumentaatio/#rakennuskohteentoimenpide)-luokan objektiin assosiaation ```paikka``` avulla.
 {% include common/clause_end.html %}
 
 {% include common/clause_start.html type="req" id="laatu/vaat-toimenpiteen-kohde" %}
@@ -221,19 +245,43 @@ RakennuskohteenMuutos-luokan assosiaation ```kohdeEnnenMuutosta``` tulee viitata
 RakennuskohteenMuutos-luokan assosiaation ```kohdeMuutoksenJälkeen``` tulee viitata {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohde" title="Rakennuskohde" %}-luokan objektiin, joka kuvaa rakennuskohteen uutta tilaa suunnitellun muutoksen toteuttamisen jälkeen. Mikäli kyseessä on uusi rakennuskohde (esim. uudisrakennus), tulee tässä vaiheessa luoda uusi, suunniteltu rakennuskohdetta kuvaava Rakennuskohde-luokan objekti, johon assosiaatio viittaa.
 {% include common/clause_end.html %}
 
-### Rakennuskohde
-
-TODO: rakennuskohteen sijaintikiinteistö
-
 ### Rakentamishanke
 
-TODO: Yhdessä hankkeessa voidaan toteuttaa useiden eri rakentamislupaprosessien kautta luvitettuja toimenpiteitä, sekä toimenpiteitä, jotka eivät vaadi rakentamislupaa.
+Yhdessä Rakentamishankkeessa voidaan toteuttaa useiden eri rakentamislupaprosessien kautta luvitettuja toimenpiteitä, sekä toimenpiteitä, jotka eivät vaadi rakentamislupaa.
 
 {% include common/clause_start.html type="req" id="laatu/vaat-rakentamishankkeen-luvat" %}
 Mikäli rakentamishankkeen toteuttamiseen vaaditaan yksi tai useampi myönnetty rakentamislupa tai muu rakennetun ympäristön lupa, ne tulee liittää [Rakentamishanke](dokumentaatio/#rakentamishanke)-luokan objektiin assosiaation ```vaadittuLupa``` avulla.
 {% include common/clause_end.html %}
 
+{% include common/clause_start.html type="req" id="laatu/vaat-rakentamishankkeeseen-ryhtyva" %}
+Hankkeeseen ryhtyvän toimijan tiedot on annettava assosiaation ```hankkeeseenRyhtyvä``` avulla.
+{% include common/clause_end.html %}
+
+{% include common/clause_start.html type="req" id="laatu/vaat-rakentamishankkeen-tyonjohtaja" %}
+Hankkeen vastaavan työnjohtajan tiedot on annettava assosiaation ```vastaavaTyönjohtaja``` avulla.
+{% include common/clause_end.html %}
+
+{% include common/clause_start.html type="req" id="laatu/vaat-rakentamishankkeen-tyonjohtaja" %}
+Rakentamishankkeen pääsuunnittelija, {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennussuunnitelma" title="Rakennussuunnitelmista" %} vastaava rakennussuunnittelija ja {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#erityissuunnitelma" title="Erityissuunnitelmista" %} vastaavat erityissuunnittelijat tulee liittää [Rakentamishanke](dokumentaatio/#rakentamishanke)-luokan objektiin assosiaation ```suunnittelija``` avulla.
+{% include common/clause_end.html %}
+
+{% include common/question.html content="Onko tarvetta olla erilliset assosiaatiot hankkeen pääsuunnittelijalle, vastaavalle rakennussuunnittelijalle ja vastaaville erityissuunnittejoille?" %}
+
 ### Katselmus
+
+Katselmuksen tietoihin tulee sisällyttää viitaus sekä katselmoitavan {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohde" title="Rakennuskohteen" %} alkuperäisestä, luvan hakemisen aikaiseen tilaan (mikäli kyseessä ei ole uudisrakennus) että uusimpaan suunniteltuun tai toteutuneeseen Rakennnuskohteen tilaan katselmoinnin suorittamisen aikana.
+
+{% include common/clause_start.html type="req" id="laatu/vaat-katselmuksen-kohde" %}
+[Katselmus](dokumentaatio/#katselmus)-luokan objektin rakenteisen ```kohteenMuutos```-attribuutin assosiaation ```kohdeMuutoksenJälkeen``` tulee osoittaa {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohde" title="Rakennuskohde" %}-luokan objektin uusimpaan versioon, joka sisältää katselmoinnissa käsitellyt tiedot. Assosiaation ```kohdeEnnenMuutosta``` tulee osoittaa samaan {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohde" title="Rakennuskohde" %}-luokan objektin versioon, johon kyseistä rakennuskohdetta koskevan, ```katselmoituToimenpide```-assosiaatiolla viitatun [RakennuskohteenToimenpide](dokumentaatio/#rakennuskohteentoimenpide)-luokan objektin rakenteisen attribuutin ```suunnniteltuMuutos``` assosiaatio ```kohdeEnnenMuutosta``` osoittaa. Uudisrakennuksen rakentamistoimenpiteen tapauksessa [Katselmus](dokumentaatio/#katselmus)- ja [RakennuskohteenToimenpide](dokumentaatio/#rakennuskohteentoimenpide)-luokkien sisältämien [RakennuskohteenMuutos](dokumentaatio/#rakennuskohteenmuutos)-luokan ```kohdeEnnenMuutosta```-assosiaatioita ei tule käyttää.
+{% include common/clause_end.html %}
+
+{% include common/clause_start.html type="req" id="laatu/vaat-katselmuksen-toimittaja" %}
+Katselmuksen toimittajan tiedot tulee antaa [Katselmus](dokumentaatio/#katselmus)-luokan ```toimittaja```-assosiaation avulla.
+{% include common/clause_end.html %}
+
+{% include common/clause_start.html type="req" id="laatu/vaat-katselmuksen-lasnaolijat" %}
+Katselmuksen läsnäolijoiden tiedot tulee antaa [Katselmus](dokumentaatio/#katselmus)-luokan ```läsnäolija```-assosiaation avulla.
+{% include common/clause_end.html %}
 
 ### Ilmastoselvitys
 
@@ -521,3 +569,7 @@ Rakennuksen lämmitetyllä nettoalalla tarkoitetaan lämmitettyjen kerrostasoalo
 {% include common/clause_start.html type="req" id="laatu/vaat-rakennuspaikanvahahiilisyystiedot-arvot-per-pinta-ala-per-vuosi" %}
 [RakennuspaikanVähähiilisyystiedot](dokumentaatio/#rakennuspaikanvahaliilisyystiedot)-luokan objektien hiilijalan- tai kädenjäljen arvioinnin tuloksia kuvaavien ```ominaisuus```-attribuuttien numeeriset arvot annetaan hiilidioksidiekvivalenttikilogrammoina per rakennuspaikan pinta-ala per vuosi, yksikkönä ```kgCO2e/m2/a```.
 {% include common/clause_end.html %}
+
+### Materiaaliseloste
+
+TODO

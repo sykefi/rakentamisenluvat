@@ -2,7 +2,7 @@
 layout: "default"
 description: ""
 id: "elinkaarisaannot"
-status: "Keskeneräinen"
+status: "Luonnos"
 ---
 # Elinkaarisäännöt
 {:.no_toc}
@@ -326,14 +326,6 @@ Uusi rakentamishanke tulee kuvata [Rakentamishanke](dokumentaatio/#rakentamishan
 Mikäli hankkeessa pidetään aloituskokous, sen tiedot tulee kuvata [Katselmus](dokumentaatio/#katselmus)-luokan objektina, jonka ```katselmuksenLaji```-attribuutin arvo on ```Aloituskokous```. Katselmus liitetään hankkeeseen assosiaatiolla ```liittyväHanke``` ja vastaavasti Rakentamishanke Katselmukseen assosiaatiolla ```toimitettuKatselmus```.
 {% include common/clause_end.html %}
 
-{% include common/clause_start.html type="req" id="elinkaari/vaat-rakentamishankkeeseen-ryhtyva" %}
-Hankkeeseen ryhtyvän toimijan tiedot on annettava assosiaation ```hankkeeseenRyhtyvä``` avulla vietäessä Rakentamishankeen tiedot tietomalliin.
-{% include common/clause_end.html %}
-
-{% include common/clause_start.html type="req" id="elinkaari/vaat-rakentamishankkeen-tyonjohtaja" %}
-Hankkeen vastaavan työnjohtajan tiedot on annettava assosiaation ```vastaavaTyönjohtaja``` avulla vietäessä Rakentamishankeen tiedot tietomalliin.
-{% include common/clause_end.html %}
-
 ### Hankkeen aikaiset muutokset
 
 {% include common/clause_start.html type="req" id="elinkaari/vaat-rakentamishankkeen-tilan-paivitys" %}
@@ -360,7 +352,7 @@ Kukin rakentamishankkeen aikana pidettävä viranomaiskatselmus tulee kuvata oma
 
 Katselmuksen tuloksena siihen liittyvästä [Rakentamishanke](dokumentaatio/#rakentamishanke)-luokan objektista luodaan uusi versio, jonka tiedot vastaavat hankkeen ja sen toimenpiteiden tilan tietoja katselmuksessa todetuilta osin. Katselmuksessa katselmoidut [RakennuskohteenToimenpide](dokumentaatio/#rakennuskohteentoimenpide)-luokan objektit liitetään Katselmus-objektiin sen assosiaation ```katselmoituToimenpide``` avulla. Uuteen versioon [Rakentamishanke](dokumentaatio/#rakentamishanke)-luokan objektista liitetään myös aiempaan versioon liitetyt, hyväksytysti pidettyjen katselmusten tiedot.
 
-Rakentamishankkeen piiriin kuuluvien toimenpiteiden kohteena oleviin {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohde" title="Rakennuskohde" %}-luokan objekteihin tai niihin liittyviin suunnitelmiin voidaan tehdä päivityksiä, lisäyksiä tai muutoksia rakentamisluvan myöntämisen jälkeen tai katselmusten välillä. [Katselmus](dokumentaatio/#katselmus)-luokan objektin rakenteisen ```kohteenMuutos```-attribuutin assosiaation ```kohdeMuutoksenJälkeen``` osoittaa {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohde" title="Rakennuskohde" %}-luokan objektin uusimpaan versioon.
+Rakentamishankkeen piiriin kuuluvien toimenpiteiden kohteena oleviin {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohde" title="Rakennuskohde" %}-luokan objekteihin tai niihin liittyviin suunnitelmiin voidaan tehdä päivityksiä, lisäyksiä tai muutoksia rakentamisluvan myöntämisen jälkeen tai katselmusten välillä. [Katselmus](dokumentaatio/#katselmus)-luokan objektin rakenteisen ```kohteenMuutos```-attribuutin assosiaation ```kohdeMuutoksenJälkeen``` tulee osoittaa {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohde" title="Rakennuskohde" %}-luokan objektin uusimpaan versioon, joka sisältää katselmoinnissa käsitellyt tiedot.
 {% include common/clause_end.html %}
 
 {% include common/clause_start.html type="req" id="elinkaari/vaat-kayttoonottokatselmus" %}
