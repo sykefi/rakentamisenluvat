@@ -11,6 +11,9 @@ id: "muutosloki"
 - Uudelleenimetty Katselmus.toteutunutMuutos -> kohteenMuutos. Katselmuksen yhteydessä tai niiden välissä myös vain rakennuskohteen suunnitelmat saattavat muuttua, vaikka mitään ei olisi toteutettu.
 - Uudelleennimetty selkeyden vuoksi ToimenpiteenJatkoaikapäätös.lupa -> jatkettuLupa. Sekaannusmahdollisuus perityn myönnettyLupa-assosiaation kanssa. Vaihdettu ToimenpiteenJatkoaikapäätös yläluokka RakennetunYmpäristönLupapäätös -> AlueidenkäyttöJaRakentamispäätös, koska ToimenpiteenJatkoaikapäätöksellä ei myönnetä lupaa.
 - Lisätty attribuutti RakennetunYmpäristönLupapäätös.lupaMyönnetty.
+- Poistettu assosiaatio Katselmus.katselmuksenKohde: Katselmuksen liitos katselmoitavaan Rakentamiskohteeseen tulee jo kohteenMuutos-attribuutin (RakennuskohteenMuutos) kautta, ja olisi epäselvää, pitääkö katselmuksenKohde-assosiaation viitata kohteen versioon ennen suunniteltua muutosta, uusimpaan suunniteltuun kohteen versioon, vai katselmuksen hetkellä uusimpaan toteutuneeseen kohteen versioon.
+- Tehty Katselmus.kohteenMuutos-attribuutista pakollinen (kardinaliteetti 0..* -> 1..*). Ilman tätä tietoa katselmusta ei voida liittää Rakennuskohteeseen.
+- Muutettu attribuutin Katselmus.huomautukset nimi -> huomautus, ja kardinaliteetti 1 -> 0..*.
 
 ## 30.11.2022
 
