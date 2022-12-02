@@ -6,6 +6,12 @@ id: "muutosloki"
 # Muutosloki
 {:.no_toc}
 
+## 1.12.2022
+
+- Uudelleenimetty Katselmus.toteutunutMuutos -> kohteenMuutos. Katselmuksen yhteydessä tai niiden välissä myös vain rakennuskohteen suunnitelmat saattavat muuttua, vaikka mitään ei olisi toteutettu.
+- Uudelleennimetty selkeyden vuoksi ToimenpiteenJatkoaikapäätös.lupa -> jatkettuLupa. Sekaannusmahdollisuus perityn myönnettyLupa-assosiaation kanssa. Vaihdettu ToimenpiteenJatkoaikapäätös yläluokka RakennetunYmpäristönLupapäätös -> AlueidenkäyttöJaRakentamispäätös, koska ToimenpiteenJatkoaikapäätöksellä ei myönnetä lupaa.
+- Lisätty attribuutti RakennetunYmpäristönLupapäätös.lupaMyönnetty.
+
 ## 30.11.2022
 
 - Lisätty luokkaan Rakentamislupahakemus uusi pakollinen attribuutti 'elinkaaritila'.
@@ -13,7 +19,6 @@ id: "muutosloki"
 - Lisätty koodistot tyhjinä: RakentamislupahakemuksenElinkaaritila, RakennuskohteenToimenpiteenTila, RakentamishankkeenKatselmuksenLaji, KatselmuksenLopullisuudenLaji, KatselmuksenTila
 - Uudelleennimetty selvyyden vuoksi assosiaatio Rakentamishanke.työnjohtaja -> vastaavaTyönjohtaja.
 - Väljennetty Katselmus-luokan liittyväHanke-assosiaaation kardinaliteettia 1 -> 1..*. Sama katselmus voidaan näin liittää useampaan saman Rakentamishanke-objektin versioon.
-- Uudelleenimetty Katselmus.toteutunutMuutos -> kohteenMuutos. Katselmuksen yhteydessä tai niiden välissä myös vain rakennuskohteen suunnitelmat saattavat muuttua, vaikka mitään ei olisi toteutettu.
 
 ## 25.11.2022
 

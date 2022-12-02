@@ -247,19 +247,19 @@ Rakentamislupa-asiaan liittyviä tietoja voidaan muuttaa ja täydentää asian o
 {% include common/clause_end.html %}
 
 {% include common/clause_start.html type="req" id="elinkaari/vaat-vaaditut-liitteet" %}
-[RakentamislupaAsian](dokumentaatio/#rakentamislupaasia) myöntämisen edellytyksenä olevat asiakirjat ja aineistot on oltava toimitettu hyväkytysti ennen kuin myönteinen lupapäätös voidaan tehdä. 
+[RakentamislupaAsian](dokumentaatio/#rakentamislupaasia) myöntämisen edellytyksenä olevat asiakirjat ja aineistot on oltava toimitettu hyväksytysti ennen kuin myönteinen lupapäätös voidaan tehdä. 
 
 Mikäli rakentamisluvan myöntämiseen vaaditaan toimitettu rakennussuunnitelma, se tulee olla kuvattu luokan {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennussuunnitelma" title="Rakennussuunnitelma" %} mukaisesti ja liitetty [Rakentamislupahakemus](dokumentaatio/#rakentamislupahakemus)-luokan objektiin assosiaatiolla ```rakennussuunnitelma```.
 
 Mikäli rakentamisluvan myöntämiseen vaaditaan toimitettu suunnitelmamalli, se tulee olla kuvattu luokan  {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennustietomalli" title="Rakennustietomalli" %} mukaisesti ja liitetty [Rakentamislupahakemus](dokumentaatio/#rakentamislupahakemus)-luokan objektiin assosiaatiolla ```suunnitelmamalli```.
 
-Mikäli rakentamisluvan myöntämiseen vaaditaan toimitettu ilmastoselvityksiä, niiden tulee olla kuvattu luokan [Ilmastoselvitys](dokumentaatio/#ilmastoselvitys) mukaisesti ja liitetty [Rakentamislupahakemus](dokumentaatio/#rakentamislupahakemus)-luokan objektiin liitettyyn [Rakentamistoimenpide](dokumentaatio/#rakentamistoimenpide)-luokan objektin rakenteiseen attribuuttiin ```suunniteltuMuutos``` assosiaatiolla ```ilmastoselvitys```. 
+Mikäli rakentamisluvan myöntämiseen vaaditaan toimitettuja ilmastoselvityksiä, niiden tulee olla kuvattu luokan [Ilmastoselvitys](dokumentaatio/#ilmastoselvitys) mukaisesti ja liitetty [Rakentamislupahakemus](dokumentaatio/#rakentamislupahakemus)-luokan objektiin liitettyyn [Rakentamistoimenpide](dokumentaatio/#rakentamistoimenpide)-luokan objektin [RakennukohteenMuutos](dokumentaatio/#rakennnuskohteenmuutos)-luokan määrittelemään rakenteiseen  ```suunniteltuMuutos```-attribuuttiin assosiaatiolla ```ilmastoselvitys```. 
 
 **TODO: vaaditut materiaaliselosteet**
 {% include common/clause_end.html %}
 
 {% include common/clause_start.html type="req" id="elinkaari/vaat-peruutettu-hakemus" %}
-Mikäli rakentamislupahakemus peruutetaan rakentamislupa-asian virellä ollessa, muutetaan kyseisen [Rakentamislupahakemus](dokumentaatio/#rakentamislupahakemus)-luokan objektin ```elinkaaritila```-attribuutin arvoksi ```Peruutettu```. Mikäli rakentamislupa-asiaan ei liity muita jätettyjä Rakentamislupahakemuksia, ja lupa-asian käsittely keskeytetään muutetaan [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan objektin attribuutin ```elinkaaritila``` arvoksi ```Käsittely keskeytetty```.
+Mikäli rakentamislupahakemus peruutetaan rakentamislupa-asian virellä ollessa, muutetaan kyseisen [Rakentamislupahakemus](dokumentaatio/#rakentamislupahakemus)-luokan objektin ```elinkaaritila```-attribuutin arvoksi ```Peruutettu```. Mikäli rakentamislupa-asiaan ei liity muita jätettyjä Rakentamislupahakemuksia, ja lupa-asian käsittely keskeytetään, muutetaan [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan objektin attribuutin ```elinkaaritila``` arvoksi ```Käsittely keskeytetty```.
 {% include common/clause_end.html %}
 
 #### Päätöksen tekeminen rakentamislupa-asiassa
@@ -268,12 +268,12 @@ Kun rakentamislupa-asiassa tehdään päätös, vaihtuu sitä kuvaavan [Rakentam
 {% include common/clause_end.html %}
 
 {% include common/clause_start.html type="req" id="elinkaari/vaat-myonteinen-lupapaatos" %}
-Mikäli päätös rakentamislupa-asiassa tehdään myönteinen päätös, luodaan uusi [Rakentamislupa](dokumentaatio/#rakentamislupa)-luokan objekti, joka liitetään [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan objektiin ja {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#rakennetunympäristönlupapäätös" title="RakennetunYmpäristönLupapäätös" %}-luokan objektiin niiden assosiaatioiden ```myönnettyLupa``` avulla. Vastaavasti luotu [Rakentamislupa](dokumentaatio/#rakentamislupa)-luokan objekti liitetään [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan objektiin ```asia```-asssosiaation ja {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#rakennetunympäristönlupapäätös" title="RakennetunYmpäristönLupapäätös" %}-luokan objektiin ```myöntämispäätös```-assosiaation avulla.
+Mikäli päätös rakentamislupa-asiassa tehdään myönteinen päätös, luodaan uusi [Rakentamislupa](dokumentaatio/#rakentamislupa)-luokan objekti, joka liitetään [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan objektiin ja {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#rakennetunympäristönlupapäätös" title="RakennetunYmpäristönLupapäätös" %}-luokan objektiin niiden assosiaatioiden ```myönnettyLupa``` avulla. Vastaavasti luotu [Rakentamislupa](dokumentaatio/#rakentamislupa)-luokan objekti liitetään [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan objektiin ```asia```-asssosiaation ja {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#rakennetunympäristönlupapäätös" title="RakennetunYmpäristönLupapäätös" %}-luokan objektiin ```myöntämispäätös```-assosiaation avulla. {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#rakennetunympäristönlupapäätös" title="RakennetunYmpäristönLupapäätös" %}-luokan objektin ```lupaMyönnetty```-attrbuutin arvoksi tulee ```true```.
 {% include common/clause_end.html %}
 
 
 {% include common/clause_start.html type="req" id="elinkaari/vaat-kielteinen-lupapaatos" %}
-[RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan objektin assosiaatiota ```myönnettyLupa```  ei käytetä, jos lupahakemuksen osalta tehdään kielteinen päätös.
+[RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan objektin assosiaatiota ```myönnettyLupa```  ei käytetä, jos lupahakemuksen osalta tehdään kielteinen päätös. Tällöin {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#rakennetunympäristönlupapäätös" title="RakennetunYmpäristönLupapäätös" %}-luokan objektin ```lupaMyönnetty```-attrbuutin arvoksi tulee ```false```.
 {% include common/clause_end.html %}
 
 Rakentamislupa-asiassa annetusta päätöksestä voidaan valittaa, mikä voi johtaa päätöksen kumoamiseen. 
@@ -304,7 +304,7 @@ Luvanvarainen rakentamishanke käynnistyy aloitusilmoituksella tai -kokouksella.
 
 ### Luvitetun rakentamistoimenpiteen jatkoaika
 {% include common/clause_start.html type="req" id="elinkaari/vaat-toimepiteen-jatkoaika" %}
-Myönnetyn rakentamisluvan piiriin kuuluvan rakentamiskohteen toimenpiteen aloittamisen jatkoajasta tehty päätös kuvataan tietomallissa [ToimenpiteenJatkoaikapäätös](dokumentaatio/#toimenpiteenjatkoaikapäätös)-luokan objektina. Assosiaation ```lupa``` tulee kohdistua siihen [Rakentamislupa](dokumentaatio/#rakentamislupa)-luokan objektiin, johon kuuluvia toimenpiteitä jatkoaika koskee. Assosiaation ```toimenpide``` tulee viitata niihin [RakentamiskohteenToimenpide](dokumentaatio/#rakentamiskohteentoimenpide)-luokan objekteihin, joiden aloittamista jatkoaikapäätös koskee. Jatkoaikapäätöksen ```jatkoajanPäättymispäivämäärä```-attribuutin arvoa käytetään kyseisen [Rakentamislupa](dokumentaatio/#rakentamislupa)-luokan objektin ```raukeamispäivämäärä```-attribuutin sijaan arvoitaessa rakentamisluvan voimassaoloa kyseisten rakentamiskohteen toimenpiteiden osalta. Luvan lainvoimaiseksi tullessa asetettua alkuperäistä Rakentamislupa-luokan ```raukeamispäivämäärä```-attribuutin arvoa ei muuteta jatkoaikapäätöksen yhteydessä.
+Myönnetyn rakentamisluvan piiriin kuuluvan rakentamiskohteen toimenpiteen aloittamisen jatkoajasta tehty päätös kuvataan tietomallissa [ToimenpiteenJatkoaikapäätös](dokumentaatio/#toimenpiteenjatkoaikapäätös)-luokan objektina. Assosiaation ```jatkettuLupa``` tulee kohdistua siihen [Rakentamislupa](dokumentaatio/#rakentamislupa)-luokan objektiin, johon kuuluvia toimenpiteitä jatkoaika koskee. Assosiaation ```toimenpide``` tulee viitata niihin [RakentamiskohteenToimenpide](dokumentaatio/#rakentamiskohteentoimenpide)-luokan objekteihin, joiden aloittamista jatkoaikapäätös koskee. Jatkoaikapäätöksen ```jatkoajanPäättymispäivämäärä```-attribuutin arvoa käytetään kyseisen [Rakentamislupa](dokumentaatio/#rakentamislupa)-luokan objektin ```raukeamispäivämäärä```-attribuutin sijaan arvoitaessa rakentamisluvan voimassaoloa kyseisten rakentamiskohteen toimenpiteiden osalta. Luvan lainvoimaiseksi tullessa asetettua alkuperäistä Rakentamislupa-luokan ```raukeamispäivämäärä```-attribuutin arvoa ei muuteta jatkoaikapäätöksen yhteydessä.
 {% include common/clause_end.html %}
 
 Toimenpiteen jatkoaika-asiassa annetusta päätöksestä voidaan valittaa, mikä voi johtaa päätöksen kumoamiseen. 
