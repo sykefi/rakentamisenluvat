@@ -253,7 +253,7 @@ Mikäli rakentamisluvan myöntämiseen vaaditaan toimitettu rakennussuunnitelma,
 
 Mikäli rakentamisluvan myöntämiseen vaaditaan toimitettu suunnitelmamalli, se tulee olla kuvattu luokan  {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennustietomalli" title="Rakennustietomalli" %} mukaisesti ja liitetty [Rakentamislupahakemus](dokumentaatio/#rakentamislupahakemus)-luokan objektiin assosiaatiolla ```suunnitelmamalli```.
 
-Mikäli rakentamisluvan myöntämiseen vaaditaan toimitettuja ilmastoselvityksiä, niiden tulee olla kuvattu luokan [Ilmastoselvitys](dokumentaatio/#ilmastoselvitys) mukaisesti ja liitetty [Rakentamislupahakemus](dokumentaatio/#rakentamislupahakemus)-luokan objektiin liitettyyn [Rakentamistoimenpide](dokumentaatio/#rakentamistoimenpide)-luokan objektin [RakennukohteenMuutos](dokumentaatio/#rakennnuskohteenmuutos)-luokan määrittelemään rakenteiseen  ```suunniteltuMuutos```-attribuuttiin assosiaatiolla ```ilmastoselvitys```. 
+Mikäli rakentamisluvan myöntämiseen vaaditaan toimitettuja ilmastoselvityksiä, niiden tulee olla kuvattu luokan [Ilmastoselvitys](dokumentaatio/#ilmastoselvitys) mukaisesti ja liitetty [Rakentamislupahakemus](dokumentaatio/#rakentamislupahakemus)-luokan objektiin liitettyyn [Rakentamistoimenpide](dokumentaatio/#rakentamistoimenpide)-luokan objektiin  assosiaatiolla ```ilmastoselvitys```.
 
 **TODO: vaaditut materiaaliselosteet**
 {% include common/clause_end.html %}
