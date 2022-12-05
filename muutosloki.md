@@ -6,6 +6,11 @@ id: "muutosloki"
 # Muutosloki
 {:.no_toc}
 
+## 5.12.2022
+
+- Siirretty RakennuskohteenMuutos-, HuoneistonMuutos- ja HuoneistonMuutoksenLaji-luokat Rakentamisen lupapäätökset -tietomallista Rakennukohteiden tietomalliin. Peruste: näin saadaan lupapäätösprosessista riippumaton rakennuskohteiden ja huoneistojen muutosten elinkaari kuvattua Rakennuskohteiden tietomallissa ilman riippuvuutta Rakentamissen lupapäätösten tietomalliin.
+- Kun RakennuskohteenMuutos-luokka siirrettiin pois tietomallista, kytketty Rakentamistoimenpide-luokka suoraan Ilmastoselvitys-luokkaan kahdensuuntaisella assosiaatiolla.
+
 ## 2.12.2022
 
 - Poistettu assosiaatio Katselmus.katselmuksenKohde: Katselmuksen liitos katselmoitavaan Rakentamiskohteeseen tulee jo kohteenMuutos-attribuutin (RakennuskohteenMuutos) kautta, ja olisi epäselvää, pitääkö katselmuksenKohde-assosiaation viitata kohteen versioon ennen suunniteltua muutosta, uusimpaan suunniteltuun kohteen versioon, vai katselmuksen hetkellä uusimpaan toteutuneeseen kohteen versioon.

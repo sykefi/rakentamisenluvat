@@ -1,6 +1,5 @@
 ---
 layout: "default"
-title: "Kaavatietomallit"
 description: ""
 id: "rakentamisenluvat"
 ---
