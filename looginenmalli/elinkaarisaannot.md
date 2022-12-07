@@ -239,7 +239,7 @@ Rakentamislupa-asiaan liittyviä tietoja voidaan muuttaa ja täydentää asian o
 
 #### Lupahakemuksen käsittelyn aikaiset täydennykset ja muutokset
 {% include common/clause_start.html type="req" id="elinkaari/vaat-vireilla-olevan-asian-muutokset" %}
-[RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan objekteista ja niihin liitetyistä [Rakentamislupahakemus](dokumentaatio/#rakentamislupahakemus)- ja {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohteentoimenpide" title="RakennuskohteenToimenpide" %}-luokkien objeista, ja edelleen niihin liittyvistä {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuspaikka" title="Rakennuspaikka" %})-, {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennustietomalli" title="Rakennustietomalli" %}-, ja {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennussuunnitelma" title="Rakennussuunnitelma" %}-luokkien objekteista voidaan tehdä päivitettyjä versiota vain mikäli [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan objektin attribuutin ```elinkaaritila``` arvo on ```Vireillä```.
+[RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan objekteista ja niihin liitetyistä [Rakentamislupahakemus](dokumentaatio/#rakentamislupahakemus)- ja {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohteentoimenpide" title="RakennuskohteenToimenpide" %}-luokkien objeista, ja edelleen niihin liittyvistä {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuspaikka" title="Rakennuspaikka" %}-, {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennustietomalli" title="Rakennustietomalli" %}-, ja {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennussuunnitelma" title="Rakennussuunnitelma" %}-luokkien objekteista voidaan tehdä päivitettyjä versiota vain mikäli [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan objektin attribuutin ```elinkaaritila``` arvo on ```Vireillä```.
 {% include common/clause_end.html %}
 
 {% include common/clause_start.html type="req" id="elinkaari/vaat-vaaditut-liitteet" %}
@@ -287,8 +287,8 @@ Lupapäätösen tultua lainvoimaiseksi seuraavien lupaprosessissa tuotettujen lu
 
 * [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)
 * [Rakentamislupahakemus](dokumentaatio/#rakentamislupahakemus)
-* {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakentamistoimenpide" title="Rakentamisoimenpide" %}
-* {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#purkamistoimenpide" title="Purkamistoimenpide" %}
+* {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakentamistoimenpide" title="Rakentamistoimenpide" %} (kun kyseessä rakentamislupa-asiaan liittyvä toimenpide)
+* {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#purkamistoimenpide" title="Purkamistoimenpide" %} (kun kyseessä rakentamislupa-asiaan liittyvä toimenpide)
 * [Rakentamislupa](dokumentaatio/#rakentamislupa)
 *  {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#lupamääräys" title="Lupamääräys" %} (kun kyseessä rakentamislupaan sisältyvä määräys)
 *  {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#rakennetunympäristönlupapäätös" title="RakennetunYmpäristönLupapäätös" %} (kun kyseessä päätös rakentamislupa-asiassa)
@@ -300,7 +300,7 @@ Luvanvarainen rakentamishanke käynnistyy aloitusilmoituksella tai -kokouksella.
 
 ### Luvitetun rakentamistoimenpiteen jatkoaika
 {% include common/clause_start.html type="req" id="elinkaari/vaat-toimepiteen-jatkoaika" %}
-Myönnetyn rakentamisluvan piiriin kuuluvan rakentamiskohteen toimenpiteen aloittamisen jatkoajasta tehty päätös kuvataan tietomallissa [ToimenpiteenJatkoaikapäätös](dokumentaatio/#toimenpiteenjatkoaikapäätös)-luokan objektina. Assosiaation ```jatkettuLupa``` tulee kohdistua siihen [Rakentamislupa](dokumentaatio/#rakentamislupa)-luokan objektiin, johon kuuluvia toimenpiteitä jatkoaika koskee. Assosiaation ```toimenpide``` tulee viitata niihin {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohteentoimenpide" title="RakennuskohteenToimenpide" %}-luokan objekteihin, joiden aloittamista jatkoaikapäätös koskee. Jatkoaikapäätöksen ```jatkoajanPäättymispäivämäärä```-attribuutin arvoa käytetään kyseisen [Rakentamislupa](dokumentaatio/#rakentamislupa)-luokan objektin ```raukeamispäivämäärä```-attribuutin sijaan arvoitaessa rakentamisluvan voimassaoloa kyseisten rakentamiskohteen toimenpiteiden osalta. Luvan lainvoimaiseksi tullessa asetettua alkuperäistä Rakentamislupa-luokan ```raukeamispäivämäärä```-attribuutin arvoa ei muuteta jatkoaikapäätöksen yhteydessä.
+Mikäli toimenpiteen, jolle on voimassa oleva rakentamislupa, aloittamiseen myönnetään jatkoaikaa, kuvataan myönnetty jatkoaikapäätös luokan[ToimenpiteenJatkoaikapäätös](dokumentaatio/#toimenpiteenjatkoaikapäätös)-luokan avulla. Rakentamislupapäätösen lainvoimaiseksi tullessa asetettua alkuperäistä [Rakentamislupa](dokumentaatio/#rakentamislupa)-luokan ```raukeamispäivämäärä```-attribuutin arvoa ei muuteta jatkoaikapäätöksen yhteydessä.
 {% include common/clause_end.html %}
 
 Toimenpiteen jatkoaika-asiassa annetusta päätöksestä voidaan valittaa, mikä voi johtaa päätöksen kumoamiseen. 
@@ -333,7 +333,7 @@ Rakennushankkeen aikana {% include common/moduleLink.html moduleId="rakennuskoht
 {% include common/clause_end.html %}
 
 {% include common/clause_start.html type="req" id="elinkaari/vaat-toimenpiteen-tilan-paivitys" %}
-Hankkeen edistyessä hankkeen piirissä olevvie toimenpiteiden tilaa päivitetään tekemällä sellainen uusi versio [Rakentamishanke](dokumentaatio/#rakentamishanke)-luokan objektista,jossa päivitettäviä toimenpiteitä koskevien rakenteisten ```toimenpide```-attribuuttien [HankkeenToimenpide](dokumentaatio/#hankkeentoimenpide)-luokan mukaiset arvoja on muutettu attribuuttien ```rakentamistöidenAloituspäivämäärä```, ```valmistumispäivämäärä``` ja ```toimenpiteenTila``` osalta. 
+Hankkeen edistyessä hankkeen piirissä olevien toimenpiteiden tilaa päivitetään tekemällä sellainen uusi versio [Rakentamishanke](dokumentaatio/#rakentamishanke)-luokan objektista,jossa päivitettäviä toimenpiteitä koskevien rakenteisten ```toimenpide```-attribuuttien [HankkeenToimenpide](dokumentaatio/#hankkeentoimenpide)-luokan mukaiset arvoja on muutettu attribuuttien ```rakentamistöidenAloituspäivämäärä```, ```valmistumispäivämäärä``` ja ```toimenpiteenTila``` osalta. 
 {% include common/clause_end.html %}
 
 Rakentamishankkeen aikana sen piiriin voidaan ottaa uusia toteutettavia toimenpiteitä, tai osa aloitusvaiheessa kuvatuista toimenpiteistä voidaan keskeyttää tai päättää jättää toteuttamatta.
