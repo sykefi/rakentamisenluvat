@@ -209,6 +209,12 @@ Myönnettyyn rakentamislupaan sisältyvät lupamääräykset kuvataan {% include
 Mikäli rakentamisluvan myöntämisen edellytyksenä on ollut erillinen poikkeamislupa, se liitetään luotavaan [Rakentamislupa](dokumentaatio/#rakentamislupa)-luokan objektiin assosiaation ```liittyväLupa``` avulla.
 {% include common/clause_end.html %}
 
+### ToimenpiteenJatkoaikapäätös
+
+{% include common/clause_start.html type="req" id="laatu/vaat-toimepiteen-jatkoaika" %}
+Myönnetyn rakentamisluvan piiriin kuuluvan rakentamiskohteen toimenpiteen aloittamisen jatkoajasta tehty päätös kuvataan tietomallissa [ToimenpiteenJatkoaikapäätös](dokumentaatio/#toimenpiteenjatkoaikapäätös)-luokan objektina. Assosiaation ```jatkettuLupa``` tulee kohdistua siihen [Rakentamislupa](dokumentaatio/#rakentamislupa)-luokan objektiin, johon kuuluvia toimenpiteitä jatkoaika koskee. Assosiaation ```toimenpide``` tulee viitata niihin {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohteentoimenpide" title="RakennuskohteenToimenpide" %}-luokan objekteihin, joiden aloittamista jatkoaikapäätös koskee. Jatkoaikapäätöksen ```jatkoajanPäättymispäivämäärä```-attribuutin arvoa käytetään kyseisen [Rakentamislupa](dokumentaatio/#rakentamislupa)-luokan objektin ```raukeamispäivämäärä```-attribuutin sijaan arvoitaessa rakentamisluvan voimassaoloa kyseisten rakentamiskohteen toimenpiteiden osalta. Luvan lainvoimaiseksi tullessa asetettua alkuperäistä Rakentamislupa-luokan ```raukeamispäivämäärä```-attribuutin arvoa ei muuteta jatkoaikapäätöksen yhteydessä.
+{% include common/clause_end.html %}
+
 ### Rakentamishanke
 
 Yhdessä Rakentamishankkeessa voidaan toteuttaa useiden eri rakentamislupaprosessien kautta luvitettuja toimenpiteitä, sekä toimenpiteitä, jotka eivät vaadi rakentamislupaa.
