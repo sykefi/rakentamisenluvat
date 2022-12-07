@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Yhteiset tietokomponentit::HallinnollinenAlue</title>
+<title>Yhteiset tietokomponentit::Kiinteistö</title>
 <link href="../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,11 +34,11 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("HallinnollinenAlue", " : "))</script>  : Public abstract  Interface</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Kiinteistö", " : "))</script>  : Public abstract  Interface</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">5.11.2020 10.18.42</td>
+			<td width="85%" class="ObjectDetailsValue">17.12.2021 16.16.03</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
@@ -87,11 +87,11 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{76FA6711-6356-45e2-9C3B-5C3782617634}</td>
+			<td class="ObjectDetailsValue">{C63FD523-5D07-4688-A598-9DC9706263D9}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA3/EA87.html">Kaavatiedot</a>, <a href="EA134.html">Ydin</a>, <a href="EA128.html">Rakennetun ympäristön luvat</a>, <a href="EA122.html">Alueidenkäyttö</a></td>
+			<td class="ObjectDetailsValue"><a href="EA122.html">Apuluokat</a>, <a href="../EA1/EA7.html">Rakennuskohteet ja huoneistot</a></td>
 		</tr>
 	</table>
 	
@@ -109,13 +109,13 @@ function nameClassifier(name, separator)
 						<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<strong>tunnus</strong>():CharacterString
+					<strong>kiinteistöTunnus</strong>():CharacterString
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations657" onclick="parent.toggleDiv('detailsDIVOperations657','DetailsImageOperations657')" />Details:
-						<div id="detailsDIVOperations657" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations659" onclick="parent.toggleDiv('detailsDIVOperations659','DetailsImageOperations659')" />Details:
+						<div id="detailsDIVOperations659" class="DetailsDiv" >
 					<i>Sequential  </i>
 					<table>
 						<tr>
@@ -133,13 +133,13 @@ function nameClassifier(name, separator)
 			<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<strong>alue</strong>():Geometry
+					<strong>laji</strong>():<a href="EA165.html">KiinteistörekisteriyksikönLaji</a>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations658" onclick="parent.toggleDiv('detailsDIVOperations658','DetailsImageOperations658')" />Details:
-						<div id="detailsDIVOperations658" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations660" onclick="parent.toggleDiv('detailsDIVOperations660','DetailsImageOperations660')" />Details:
+						<div id="detailsDIVOperations660" class="DetailsDiv" >
 					<i>Sequential  </i>
 					<table>
 						<tr>
@@ -157,24 +157,23 @@ function nameClassifier(name, separator)
 			<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<strong>nimi</strong>(					<a href="#" onclick="parent.toggleData('param{97BA1C51-6328-4bdd-A455-A99CD5540DCB}')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="param{97BA1C51-6328-4bdd-A455-A99CD5540DCB}" border="0" />kielikoodi: LanguageCode</a>, 
+					<strong>nimi</strong>(					<a href="#" onclick="parent.toggleData('param{A112D25A-113E-415e-82D4-7CCB283C50DF}')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="param{A112D25A-113E-415e-82D4-7CCB283C50DF}" border="0" />kieli: LanguageCode</a>, 
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{97BA1C51-6328-4bdd-A455-A99CD5540DCB}00" style="display: none;">
+						<tr id="param{A112D25A-113E-415e-82D4-7CCB283C50DF}00" style="display: none;">
 							<td width="50"><strong>Default:</strong></td>
 							<td></td>
 						</tr>
-						<tr id="param{97BA1C51-6328-4bdd-A455-A99CD5540DCB}01" style="display: none;">
+						<tr id="param{A112D25A-113E-415e-82D4-7CCB283C50DF}01" style="display: none;">
 							<td width="50"><strong>Kind:</strong></td>
 							<td>in</td>
 						</tr>
-						<tr id="param{97BA1C51-6328-4bdd-A455-A99CD5540DCB}02" style="display: none;">
+						<tr id="param{A112D25A-113E-415e-82D4-7CCB283C50DF}02" style="display: none;">
 							<td width="50"><strong>Stereotype: </strong></td>
 							<td></td>
 						</tr>
-						<tr id="param{97BA1C51-6328-4bdd-A455-A99CD5540DCB}03" style="display: none;">
+						<tr id="param{A112D25A-113E-415e-82D4-7CCB283C50DF}03" style="display: none;">
 							<td width="50"></td>
-							<td><div class="ObjectDetailsNotes">kielikoodi</div>
-</td>
+							<td></td>
 						</tr>
 					</table>
 ):CharacterString
@@ -182,8 +181,8 @@ function nameClassifier(name, separator)
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations659" onclick="parent.toggleDiv('detailsDIVOperations659','DetailsImageOperations659')" />Details:
-						<div id="detailsDIVOperations659" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations661" onclick="parent.toggleDiv('detailsDIVOperations661','DetailsImageOperations661')" />Details:
+						<div id="detailsDIVOperations661" class="DetailsDiv" >
 					<i>Sequential  </i>
 					<table>
 						<tr>
@@ -209,7 +208,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA149.html">«FeatureType» AlueidenkäyttöJaRakentamisasia</a><br />
+						<a href="../EA1/EA42.html">«FeatureType» Rakennuskohde</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -217,14 +216,14 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> hallinnollinenAlue<br />
+						<strong>Name:</strong> sijaintikiinteistö<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink660" onclick="parent.toggleDiv('detailsDIVLink660','DetailsImageLink660')" />Details:
-							<div id="detailsDIVLink660" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink662" onclick="parent.toggleDiv('detailsDIVLink662','DetailsImageLink662')" />Details:
+							<div id="detailsDIVLink662" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>

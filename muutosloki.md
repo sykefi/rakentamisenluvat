@@ -6,6 +6,10 @@ id: "muutosloki"
 # Muutosloki
 {:.no_toc}
 
+## 7.12.2022
+
+- Siirretty rakentamis- ja purkamistoimenpiteet ja ilmastoselvitys kokonaisuudessaan Rakentamisen lupapäätökset -tietomallista osaksi Rakennuskohteet ja huoneistot -tietomallia. Peruste: Rakennuskohteiden elinkaareen olennaisesti liittyvät rakentamis- ja purkamistoimenpiteet ovat nyt osa rakennuskohteiden tietomallia riippumatta siitä vaativatko ne rakentamislupaa vai eivät. Ilmastoselvityksen tiedot liittyvät rakennuskohteeseen ja rakentamistoimenpiteeseen, jotka molemmat nyt rakennuskohteiden tietomallissa. Mahdollistaa ilmastoselvityksen tuottamisen myös toimenpiteiden yhteydessä, joissa rakentamislupaa ei tarvita. Seuraavat luokat tuotu sellaisenaan lupapäätösten tietomallista: RakennuskohteenToimenpide, Rakentamistoimenpide, Purkamistoimenpide,  RakentamistoimenpiteenLaji, PurkamistoimenpiteenLaji, Ilmastoselvitys, Hiilijalanjälkitiedot, Hiilikädenjälkitiedot, Energiankulutus, RakennuskohteenVähähiilisyystiedot, RakennuspaikanVähähiilisyystiedot, PoikkeamisenPeruste, Energialähde, RakennuksenKäyttötarkoitusluokkaEnergiatehokkuudenArvioinnissa, IlmastoselvityksenrajaArvoistapoikkeamisenPerusteenLaji, IlmastoselvityksenHiilijalanjälkisuure, IlmastoselvityksenHiilikädenjälkisuure.
+
 ## 5.12.2022
 
 - Siirretty RakennuskohteenMuutos-, HuoneistonMuutos- ja HuoneistonMuutoksenLaji-luokat Rakentamisen lupapäätökset -tietomallista Rakennukohteiden tietomalliin. Peruste: näin saadaan lupapäätösprosessista riippumaton rakennuskohteiden ja huoneistojen muutosten elinkaari kuvattua Rakennuskohteiden tietomallissa ilman riippuvuutta Rakentamissen lupapäätösten tietomalliin.
