@@ -210,7 +210,7 @@ Attribuutin ```viimeisinMuutos``` arvo kuvaa ajanhetkeä, jolloin ko. tietokohte
 ## Lupaprosessin aikaiset muutokset
 
 ### Ennakkoneuvottelu ja lupahakemuksen jättäminen
-Varsinainen lupaprosessi alkaa tietomallin näkökulmasta joko rakentamisluvan jättämisestä, jolloin rakentamislupa-asia tulee suoraan vireille, tai rakennusvalvonnan ja luvan hakijan ennakkoneuvottelusta. Mikäli lupahakemusprosessin kulkua ei kuitenkaan haluta tukea tietomallin avulla, voidaan [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia) ja siihen liitetyt [Rakentamislupahakemus](dokumentaatio/#rakentamislupahakemus)-, [RakennuskohteenToimenpide](dokumentaatio/#rakennuskohteentoimenpide)-, {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#rakennetunympäristönlupapäätös" title="RakennetunYmpäristönLupapäätös" %}- ja [Rakentamislupa](dokumentaatio/#rakentamislupa)-luokkien objektit, samoin kuin myönnettyyn lupaan liitetyt {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#lupamääräys" title="Lupamääräys" %}- objektit luoda tietojärjestelmään kerralla vasta luvan myöntämisen yhteydessä.
+Varsinainen lupaprosessi alkaa tietomallin näkökulmasta joko rakentamisluvan jättämisestä, jolloin rakentamislupa-asia tulee suoraan vireille, tai rakennusvalvonnan ja luvan hakijan ennakkoneuvottelusta. Mikäli lupahakemusprosessin kulkua ei kuitenkaan haluta tukea tietomallin avulla, voidaan [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia) ja siihen liitetyt [Rakentamislupahakemus](dokumentaatio/#rakentamislupahakemus)-, {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohteentoimenpide" title="RakennuskohteenToimenpide" %}-, {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#rakennetunympäristönlupapäätös" title="RakennetunYmpäristönLupapäätös" %}- ja [Rakentamislupa](dokumentaatio/#rakentamislupa)-luokkien objektit, samoin kuin myönnettyyn lupaan liitetyt {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#lupamääräys" title="Lupamääräys" %}- objektit luoda tietojärjestelmään kerralla vasta luvan myöntämisen yhteydessä.
 
 #### Rakentamislupa-asian synty
 
@@ -221,21 +221,17 @@ Mikäli lupaprosessissa käydään ennakkoneuvottelu ennen lupahakemuksen jätt�
 {% include common/clause_start.html type="req" id="elinkaari/vaat-lupa-asian-synty-hakemuksella" %}
 Mikäli lupaprosessin aikaisia tietoja halutaan kirjata tietomalliin lupahakemuksen jättämisen yhteydessä tai sen jälkeen, mutta ennen lupapäätöksen tekemistä, tulee luvan jättämisvaiheessa luoda uusi [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan objekti attribuutin ```elinkaari``` arvolla ```Virellä```.
 
-Luotavaan RakentamislupaAsia-luokan objektiin tulee liittää jätetty lupahakemus assosiaatiolla ```hakemus``` ja ainakin yksi abstraktin [RakennuskohteenToimenpide](dokumentaatio/#rakennuskohteentoimenpide)-luokan aliluokan objekti assosiaatiolla ```toimenpide```.
+Luotavaan RakentamislupaAsia-luokan objektiin tulee liittää jätetty lupahakemus assosiaatiolla ```hakemus``` ja ainakin yksi abstraktin [{% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohteentoimenpide" title="RakennuskohteenToimenpide" %}-luokan aliluokan objekti assosiaatiolla ```toimenpide```.
 
 RakentamislupaAsia-luokan objektin attribuutille ```virelletuloAika``` annetaan arvoksi lupahakemuksen vastaanottamisen aika.
 {% include common/clause_end.html %}
 
-#### Rakennuskohteen toimenpiteen synty
+#### Luvanvaraisen rakennuskohteen toimenpiteen synty
 
 {% include common/clause_start.html type="req" id="elinkaari/vaat-rakennuskohteen-toimepide-synty-lupaprosessissa" %}
-Luvanvaraisia toimenpiteitä kuvaavat [RakennuskohteenToimenpide](dokumentaatio/#rakennuskohteentoimenpide)-luokan alaluokkien objektit syntyvät samalla kun luodaan ensimmäinen kyseiseen lupa-asiaan liittyvä lupahakemus.
+Luvanvaraisia toimenpiteitä kuvaavat {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohteentoimenpide" title="RakennuskohteenToimenpide" %}-luokan alaluokkien objektit syntyvät samalla kun luodaan ensimmäinen kyseiseen lupa-asiaan liittyvä lupahakemus.
 
-[RakentamislupaAsia](dokumentaatio/#rakentamislupaasia), johon toimenpide kuuluu, tulee liittää luotavaan objektiin assosiaation ```asia``` avulla.
-{% include common/clause_end.html %}
-
-{% include common/clause_start.html type="req" id="elinkaari/vaat-rakennuskohteen-toimepide-synty-ilman-lupa-asiaa" %}
-RakennuskohteenToimenpide-luokan avulla voidaan kuvata myös ei-luvanvaraisia toimenpiteitä. Tällöin assosiaatiota ```asia``` ei käytetä.
+[RakentamislupaAsia](dokumentaatio/#rakentamislupaasia), johon toimenpide kuuluu, tulee liittää luotavaan {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohteentoimenpide" title="RakennuskohteenToimenpide" %}-luokan objektiin assosiaation ```liittyväAsia``` avulla.
 {% include common/clause_end.html %}
 
 ### Hakemuksen käsittely ja päätös
@@ -243,7 +239,7 @@ Rakentamislupa-asiaan liittyviä tietoja voidaan muuttaa ja täydentää asian o
 
 #### Lupahakemuksen käsittelyn aikaiset täydennykset ja muutokset
 {% include common/clause_start.html type="req" id="elinkaari/vaat-vireilla-olevan-asian-muutokset" %}
-[RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan objekteista ja niihin liitetyistä [Rakentamislupahakemus](dokumentaatio/#rakentamislupahakemus)- ja [RakennuskohteenToimenpide](dokumentaatio/#rakennuskohteentoimenpide)-luokkien objeista, ja edelleen niihin liittyvistä [Rakennuspaikka](dokumentaatio/#rakennuspaikka)-, {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennustietomalli" title="Rakennustietomalli" %}-, ja {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennussuunnitelma" title="Rakennussuunnitelma" %}-luokkien objekteista voidaan tehdä päivitettyjä versiota vain mikäli [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan objektin attribuutin ```elinkaaritila``` arvo on ```Vireillä```.
+[RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan objekteista ja niihin liitetyistä [Rakentamislupahakemus](dokumentaatio/#rakentamislupahakemus)- ja {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohteentoimenpide" title="RakennuskohteenToimenpide" %}-luokkien objeista, ja edelleen niihin liittyvistä {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuspaikka" title="Rakennuspaikka" %})-, {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennustietomalli" title="Rakennustietomalli" %}-, ja {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennussuunnitelma" title="Rakennussuunnitelma" %}-luokkien objekteista voidaan tehdä päivitettyjä versiota vain mikäli [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan objektin attribuutin ```elinkaaritila``` arvo on ```Vireillä```.
 {% include common/clause_end.html %}
 
 {% include common/clause_start.html type="req" id="elinkaari/vaat-vaaditut-liitteet" %}
@@ -253,7 +249,7 @@ Mikäli rakentamisluvan myöntämiseen vaaditaan toimitettu rakennussuunnitelma,
 
 Mikäli rakentamisluvan myöntämiseen vaaditaan toimitettu suunnitelmamalli, se tulee olla kuvattu luokan  {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennustietomalli" title="Rakennustietomalli" %} mukaisesti ja liitetty [Rakentamislupahakemus](dokumentaatio/#rakentamislupahakemus)-luokan objektiin assosiaatiolla ```suunnitelmamalli```.
 
-Mikäli rakentamisluvan myöntämiseen vaaditaan toimitettuja ilmastoselvityksiä, niiden tulee olla kuvattu luokan [Ilmastoselvitys](dokumentaatio/#ilmastoselvitys) mukaisesti ja liitetty [Rakentamislupahakemus](dokumentaatio/#rakentamislupahakemus)-luokan objektiin liitettyyn [Rakentamistoimenpide](dokumentaatio/#rakentamistoimenpide)-luokan objektiin  assosiaatiolla ```ilmastoselvitys```.
+Mikäli rakentamisluvan myöntämiseen vaaditaan toimitettuja ilmastoselvityksiä, niiden tulee olla kuvattu luokan {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#ilmastoselvitys" title="Ilmastoselvitys" %} mukaisesti ja liitetty [Rakentamislupahakemus](dokumentaatio/#rakentamislupahakemus)-luokan objektiin liitettyyn {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakentamistoimenpide" title="Rakentamistoimenpide" %}-luokan objektiin  assosiaatiolla ```ilmastoselvitys```.
 
 **TODO: vaaditut materiaaliselosteet**
 {% include common/clause_end.html %}
@@ -291,8 +287,8 @@ Lupapäätösen tultua lainvoimaiseksi seuraavien lupaprosessissa tuotettujen lu
 
 * [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)
 * [Rakentamislupahakemus](dokumentaatio/#rakentamislupahakemus)
-* [Rakentamistoimenpide](dokumentaatio/#rakentamistoimenpide)
-* [Purkamistoimenpide](dokumentaatio/#purkamistoimenpide)
+* {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakentamistoimenpide" title="Rakentamisoimenpide" %}
+* {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#purkamistoimenpide" title="Purkamistoimenpide" %}
 * [Rakentamislupa](dokumentaatio/#rakentamislupa)
 *  {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#lupamääräys" title="Lupamääräys" %} (kun kyseessä rakentamislupaan sisältyvä määräys)
 *  {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#rakennetunympäristönlupapäätös" title="RakennetunYmpäristönLupapäätös" %} (kun kyseessä päätös rakentamislupa-asiassa)
@@ -304,7 +300,7 @@ Luvanvarainen rakentamishanke käynnistyy aloitusilmoituksella tai -kokouksella.
 
 ### Luvitetun rakentamistoimenpiteen jatkoaika
 {% include common/clause_start.html type="req" id="elinkaari/vaat-toimepiteen-jatkoaika" %}
-Myönnetyn rakentamisluvan piiriin kuuluvan rakentamiskohteen toimenpiteen aloittamisen jatkoajasta tehty päätös kuvataan tietomallissa [ToimenpiteenJatkoaikapäätös](dokumentaatio/#toimenpiteenjatkoaikapäätös)-luokan objektina. Assosiaation ```jatkettuLupa``` tulee kohdistua siihen [Rakentamislupa](dokumentaatio/#rakentamislupa)-luokan objektiin, johon kuuluvia toimenpiteitä jatkoaika koskee. Assosiaation ```toimenpide``` tulee viitata niihin [RakentamiskohteenToimenpide](dokumentaatio/#rakentamiskohteentoimenpide)-luokan objekteihin, joiden aloittamista jatkoaikapäätös koskee. Jatkoaikapäätöksen ```jatkoajanPäättymispäivämäärä```-attribuutin arvoa käytetään kyseisen [Rakentamislupa](dokumentaatio/#rakentamislupa)-luokan objektin ```raukeamispäivämäärä```-attribuutin sijaan arvoitaessa rakentamisluvan voimassaoloa kyseisten rakentamiskohteen toimenpiteiden osalta. Luvan lainvoimaiseksi tullessa asetettua alkuperäistä Rakentamislupa-luokan ```raukeamispäivämäärä```-attribuutin arvoa ei muuteta jatkoaikapäätöksen yhteydessä.
+Myönnetyn rakentamisluvan piiriin kuuluvan rakentamiskohteen toimenpiteen aloittamisen jatkoajasta tehty päätös kuvataan tietomallissa [ToimenpiteenJatkoaikapäätös](dokumentaatio/#toimenpiteenjatkoaikapäätös)-luokan objektina. Assosiaation ```jatkettuLupa``` tulee kohdistua siihen [Rakentamislupa](dokumentaatio/#rakentamislupa)-luokan objektiin, johon kuuluvia toimenpiteitä jatkoaika koskee. Assosiaation ```toimenpide``` tulee viitata niihin {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohteentoimenpide" title="RakennuskohteenToimenpide" %}-luokan objekteihin, joiden aloittamista jatkoaikapäätös koskee. Jatkoaikapäätöksen ```jatkoajanPäättymispäivämäärä```-attribuutin arvoa käytetään kyseisen [Rakentamislupa](dokumentaatio/#rakentamislupa)-luokan objektin ```raukeamispäivämäärä```-attribuutin sijaan arvoitaessa rakentamisluvan voimassaoloa kyseisten rakentamiskohteen toimenpiteiden osalta. Luvan lainvoimaiseksi tullessa asetettua alkuperäistä Rakentamislupa-luokan ```raukeamispäivämäärä```-attribuutin arvoa ei muuteta jatkoaikapäätöksen yhteydessä.
 {% include common/clause_end.html %}
 
 Toimenpiteen jatkoaika-asiassa annetusta päätöksestä voidaan valittaa, mikä voi johtaa päätöksen kumoamiseen. 
@@ -319,7 +315,7 @@ Kun toimenpiteen jatkoaika-asiasta annettu päätös tulee lainvoimaiseksi, aset
 
 ### Hankkeen aloittaminen
 {% include common/clause_start.html type="req" id="elinkaari/vaat-rakentamishankkeen-synty" %}
-Uusi rakentamishanke tulee kuvata [Rakentamishanke](dokumentaatio/#rakentamishanke)-luokan objektina. Tyypillisesti Rakentamishanke syntyy tietomallissa hankkeen aloitusilmoituksen tai aloituskokouksen tietojen viennin yhteydessä. Rakentamishanke-luokan ```aloittamispäivämäärä```-attribuutin arvoksi kirjataan sen päivän päivämäärä, joilloin hankkeeseen kuuluva rakennustyö katsotaan aloitetuksi. Mikäli hanke ei ole vielä päättynyt, sen attribuutille ```päättymispäivämäärä``` ei saa antaa arvoa. Hankkeen aloittamisen yhteydessä luotavalla [Rakentamishanke](dokumentaatio/#rakentamishanke)-luokan objektilla on oltava vähintään yksi hankkeessa toteutattava [RakennuskohteenToimenpide](dokumentaatio/#rakennuskohteentoimenpide), jonka tiedot kuvataan [HankkeenToimenpide](dokumentaatio/#hankkeentoimenpide)-luokan mukaisena rakenteisena ```toimenpide```-attribuutin arvona.
+Uusi rakentamishanke tulee kuvata [Rakentamishanke](dokumentaatio/#rakentamishanke)-luokan objektina. Tyypillisesti Rakentamishanke syntyy tietomallissa hankkeen aloitusilmoituksen tai aloituskokouksen tietojen viennin yhteydessä. Rakentamishanke-luokan ```aloittamispäivämäärä```-attribuutin arvoksi kirjataan sen päivän päivämäärä, joilloin hankkeeseen kuuluva rakennustyö katsotaan aloitetuksi. Mikäli hanke ei ole vielä päättynyt, sen attribuutille ```päättymispäivämäärä``` ei saa antaa arvoa. Hankkeen aloittamisen yhteydessä luotavalla [Rakentamishanke](dokumentaatio/#rakentamishanke)-luokan objektilla on oltava vähintään yksi hankkeessa toteutattavaksi suunniteltu {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohteentoimenpide" title="RakennuskohteenToimenpide" %}, jonka tiedot kuvataan [HankkeenToimenpide](dokumentaatio/#hankkeentoimenpide)-luokan mukaisena rakenteisena ```toimenpide```-attribuutin arvona.
 {% include common/clause_end.html %}
 
 {% include common/clause_start.html type="req" id="elinkaari/vaat-rakentamishankkeen-aloituskokous" %}
@@ -343,20 +339,20 @@ Hankkeen edistyessä hankkeen piirissä olevvie toimenpiteiden tilaa päivitetä
 Rakentamishankkeen aikana sen piiriin voidaan ottaa uusia toteutettavia toimenpiteitä, tai osa aloitusvaiheessa kuvatuista toimenpiteistä voidaan keskeyttää tai päättää jättää toteuttamatta.
 
 {% include common/clause_start.html type="req" id="elinkaari/vaat-uudet-toimenpiteet" %}
-Kukin rakentamishankkeen aikana hankkeen piiriin otetty toteutettava toimenpide kuvataan omana [RakennuskohteenToimenpide](dokumentaatio/#rakennuskohteentoimenpide)-luokan objektinaan, joka on liitetty [Rakentamishanke](dokumentaatio/#rakentamishanke)-luokan objektiin [HankkeenToimenpide](dokumentaatio/#hankkeentoimenpide)-luokan mukaisena rakenteisena ```toimenpide```-attribuuttin arvona.
+Kukin rakentamishankkeen aikana hankkeen piiriin otetty toteutettava toimenpide kuvataan omana {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohteentoimenpide" title="RakennuskohteenToimenpide" %}-luokan objektinaan, joka on liitetty [Rakentamishanke](dokumentaatio/#rakentamishanke)-luokan objektiin [HankkeenToimenpide](dokumentaatio/#hankkeentoimenpide)-luokan mukaisena rakenteisena ```toimenpide```-attribuuttin arvona.
 {% include common/clause_end.html %}
 
 #### Katselmukset ja käyttöönotto
 {% include common/clause_start.html type="req" id="elinkaari/vaat-rakentamishankkeen-katselmus" %}
 Kukin rakentamishankkeen aikana pidettävä viranomaiskatselmus tulee kuvata omana [Katselmus](dokumentaatio/#katselmus)-luokan objektina, jonka ```katselmuksenLaji```-attribuutin arvon tulee vastata pidetyn katselmuksen lajia. Katselmus tulee liittää hankkeeseen assosiaatiolla ```liittyväHanke``` ja vastaavasti Rakentamishanke Katselmukseen assosiaatiolla ```toimitettuKatselmus```.
 
-Katselmuksen tuloksena siihen liittyvästä [Rakentamishanke](dokumentaatio/#rakentamishanke)-luokan objektista luodaan uusi versio, jonka tiedot vastaavat hankkeen ja sen toimenpiteiden tilan tietoja katselmuksessa todetuilta osin. Katselmuksessa katselmoidut [RakennuskohteenToimenpide](dokumentaatio/#rakennuskohteentoimenpide)-luokan objektit liitetään Katselmus-objektiin sen assosiaation ```katselmoituToimenpide``` avulla. Uuteen versioon [Rakentamishanke](dokumentaatio/#rakentamishanke)-luokan objektista liitetään myös aiempaan versioon liitetyt, hyväksytysti pidettyjen katselmusten tiedot.
+Katselmuksen tuloksena siihen liittyvästä [Rakentamishanke](dokumentaatio/#rakentamishanke)-luokan objektista luodaan uusi versio, jonka tiedot vastaavat hankkeen ja sen toimenpiteiden tilan tietoja katselmuksessa todetuilta osin. Katselmuksessa katselmoidut {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohteentoimenpide" title="RakennuskohteenToimenpide" %}-luokan objektit liitetään Katselmus-objektiin sen assosiaation ```katselmoituToimenpide``` avulla. Uuteen versioon [Rakentamishanke](dokumentaatio/#rakentamishanke)-luokan objektista liitetään myös aiempaan versioon liitetyt, hyväksytysti pidettyjen katselmusten tiedot.
 
 Rakentamishankkeen piiriin kuuluvien toimenpiteiden kohteena oleviin {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohde" title="Rakennuskohde" %}-luokan objekteihin tai niihin liittyviin suunnitelmiin voidaan tehdä päivityksiä, lisäyksiä tai muutoksia rakentamisluvan myöntämisen jälkeen tai katselmusten välillä. [Katselmus](dokumentaatio/#katselmus)-luokan objektin rakenteisen ```kohteenMuutos```-attribuutin assosiaation ```kohdeMuutoksenJälkeen``` tulee osoittaa {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohde" title="Rakennuskohde" %}-luokan objektin uusimpaan versioon, joka sisältää katselmoinnissa käsitellyt tiedot.
 {% include common/clause_end.html %}
 
 {% include common/clause_start.html type="req" id="elinkaari/vaat-kayttoonottokatselmus" %}
-Mikäli rakentamishankkeessa valmistuva rakennuskohde tai sen osa on katselmuksessa hyväksytty käyttöönotettavaksi kokonaan tai osittain, kuvataan hyväksyntä kyseisen [Katselmus](dokumentaatio/#katselmus)-luokan objektin rakenteisen attribuutin ```käyttöönottohyväksyntä``` avulla. Attribuutin arvona käytettävän [Käyttöönottohyväksyntä](dokumentaatio/#käyttöönottohyväksyntä)-luokan assosiaation ```hyväksyttyToimenpide``` tulee viitata sen hankkeeseen kuuluvan [RakennuskohteenToimenpide](dokumentaatio/#rakennuskohteentoimenpide)-luokan objektiin, joka sisältää suunnitellun rakennuskohteen muutoksen kuvauksen. Assosiaation ```hyväksyttyKohde``` tulee viitata siihen {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohde" title="Rakennuskohde" %}-luokan objektiin, jonka käyttöönotto katselmuksessa on hyväksytty.
+Mikäli rakentamishankkeessa valmistuva rakennuskohde tai sen osa on katselmuksessa hyväksytty käyttöönotettavaksi kokonaan tai osittain, kuvataan hyväksyntä kyseisen [Katselmus](dokumentaatio/#katselmus)-luokan objektin rakenteisen attribuutin ```käyttöönottohyväksyntä``` avulla. Attribuutin arvona käytettävän [Käyttöönottohyväksyntä](dokumentaatio/#käyttöönottohyväksyntä)-luokan assosiaation ```hyväksyttyToimenpide``` tulee viitata sen hankkeeseen kuuluvan {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohteentoimenpide" title="RakennuskohteenToimenpide" %}-luokan objektiin, joka sisältää suunnitellun rakennuskohteen muutoksen kuvauksen. Assosiaation ```hyväksyttyKohde``` tulee viitata siihen {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohde" title="Rakennuskohde" %}-luokan objektiin, jonka käyttöönotto katselmuksessa on hyväksytty.
 {% include common/clause_end.html %}
 
 ### Hankkeen päättäminen
