@@ -6,6 +6,13 @@ id: "muutosloki"
 # Muutosloki
 {:.no_toc}
 
+## 20.12.2022
+
+- Päivitetty uusin ry-yhteiset- ja rakennuskohteet -riippuvuudet. Poistettu  Rakentamislupahakemus-luokan attribuutti elinkaaritila, peritytyy yläluokalta RakennetunYmpäristönLupahakemus
+- Uudelleennimetty RakentamislupaAsianElinkaaritila -> RakennusvalvontaAsianElinkaaritila. Yhteinen rakentamis-, purkamis-, maisematyö-, ja poikkeamislupa-asioille.
+- Lisätty luokat PoikeamislupaHakemus, PoikkeamislupaAsia, Poikkeamislupa, Maisematyölupahakemus, MaisematyölupaAsia, Maisematyölupa, Purkamislupahakemus, PurkamislupaAsia ja Purkamislupa, fixes #26
+- 
+
 ## 7.12.2022
 
 - Siirretty rakentamis- ja purkamistoimenpiteet ja ilmastoselvitys kokonaisuudessaan Rakentamisen lupapäätökset -tietomallista osaksi Rakennuskohteet ja huoneistot -tietomallia. Peruste: Rakennuskohteiden elinkaareen olennaisesti liittyvät rakentamis- ja purkamistoimenpiteet ovat nyt osa rakennuskohteiden tietomallia riippumatta siitä vaativatko ne rakentamislupaa vai eivät. Ilmastoselvityksen tiedot liittyvät rakennuskohteeseen ja rakentamistoimenpiteeseen, jotka molemmat nyt rakennuskohteiden tietomallissa. Mahdollistaa ilmastoselvityksen tuottamisen myös toimenpiteiden yhteydessä, joissa rakentamislupaa ei tarvita. Seuraavat luokat tuotu sellaisenaan lupapäätösten tietomallista: RakennuskohteenToimenpide, Rakentamistoimenpide, Purkamistoimenpide,  RakentamistoimenpiteenLaji, PurkamistoimenpiteenLaji, Ilmastoselvitys, Hiilijalanjälkitiedot, Hiilikädenjälkitiedot, Energiankulutus, RakennuskohteenVähähiilisyystiedot, RakennuspaikanVähähiilisyystiedot, PoikkeamisenPeruste, Energialähde, RakennuksenKäyttötarkoitusluokkaEnergiatehokkuudenArvioinnissa, IlmastoselvityksenrajaArvoistapoikkeamisenPerusteenLaji, IlmastoselvityksenHiilijalanjälkisuure, IlmastoselvityksenHiilikädenjälkisuure, Rakennuspaikka.
