@@ -1316,7 +1316,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_1078EC45_6D0D_433c_8729_48F5DE152ED0">
-					<model ea_localid="2415" type="Class" name="RakennuskohteenToimenpide"/>
+					<model ea_localid="2517" type="Class" name="RakennuskohteenToimenpide"/>
 					<role name="toimenpide" visibility="Public" targetScope="instance"/>
 					<type multiplicity="1" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1385,7 +1385,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_54F077DC_72D7_4160_974E_947FD39A84BC">
-					<model ea_localid="2410" type="Class" name="RakennuskohteenMuutos"/>
+					<model ea_localid="2512" type="Class" name="RakennuskohteenMuutos"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1419,7 +1419,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_1078EC45_6D0D_433c_8729_48F5DE152ED0">
-					<model ea_localid="2415" type="Class" name="RakennuskohteenToimenpide"/>
+					<model ea_localid="2517" type="Class" name="RakennuskohteenToimenpide"/>
 					<role name="katselmoituToimenpide" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1627,7 +1627,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_1078EC45_6D0D_433c_8729_48F5DE152ED0">
-					<model ea_localid="2415" type="Class" name="RakennuskohteenToimenpide"/>
+					<model ea_localid="2517" type="Class" name="RakennuskohteenToimenpide"/>
 					<role name="hyväksyttyToimenpide" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1662,7 +1662,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_C21003F4_E9DC_464b_85A7_D55DD5B0ECFE">
-					<model ea_localid="2409" type="Class" name="Rakennuskohde"/>
+					<model ea_localid="2511" type="Class" name="Rakennuskohde"/>
 					<role name="hyväksyttyKohde" visibility="Public" targetScope="instance"/>
 					<type multiplicity="1..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1697,7 +1697,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_ED55AA62_665B_4bf4_A8E3_C010E60519FF">
-					<model ea_localid="2358" type="Class" name="Huoneisto"/>
+					<model ea_localid="2460" type="Class" name="Huoneisto"/>
 					<role name="hyväksyttyHuoneisto" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2040,7 +2040,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_1078EC45_6D0D_433c_8729_48F5DE152ED0">
-					<model ea_localid="2415" type="Class" name="RakennuskohteenToimenpide"/>
+					<model ea_localid="2517" type="Class" name="RakennuskohteenToimenpide"/>
 					<role name="toimenpide" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2454,7 +2454,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_1078EC45_6D0D_433c_8729_48F5DE152ED0">
-					<model ea_localid="2415" type="Class" name="RakennuskohteenToimenpide"/>
+					<model ea_localid="2517" type="Class" name="RakennuskohteenToimenpide"/>
 					<role name="toimenpide" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2489,7 +2489,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_915025C3_905F_4153_AE3D_3C724B45EB60">
-					<model ea_localid="2420" type="Class" name="Rakennussuunnitelma"/>
+					<model ea_localid="2522" type="Class" name="Rakennussuunnitelma"/>
 					<role name="rakennussuunnitelma" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2524,7 +2524,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_756CA55C_8F0B_4da9_954A_42E08A4FF6BE">
-					<model ea_localid="2422" type="Class" name="Rakennustietomalli"/>
+					<model ea_localid="2524" type="Class" name="Rakennustietomalli"/>
 					<role name="suunnitelmamalli" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2695,7 +2695,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_1078EC45_6D0D_433c_8729_48F5DE152ED0">
-					<model ea_localid="2415" type="Class" name="RakennuskohteenToimenpide"/>
+					<model ea_localid="2517" type="Class" name="RakennuskohteenToimenpide"/>
 					<role name="toimenpide" visibility="Public" targetScope="instance"/>
 					<type multiplicity="1..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
