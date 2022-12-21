@@ -6,6 +6,12 @@ id: "muutosloki"
 # Muutosloki
 {:.no_toc}
 
+## 21.12.2022
+
+- Lisätty yhdensuuntainen assosiaatio PoikkeamislupaAsia-Rakentamishanke (toteutushanke). Poikkeamislupa myönnetään aina hankekohtaisesti. Rakennushanke-luokassa on jo assosiaatio vaadittyLupa:RakennetunYmpäristönLupa, jolla voidaan kuvata hankeen toteuttamiseen vaadittu Poikkeamislupa.
+- Päivitetty Rakennuskohteet-tietomalli-riippuvuus (kaavioasettelumuutos).
+- Lisätty otsikkotason rakenne dokumentaatiosivulle.
+
 ## 20.12.2022
 
 - Päivitetty uusin ry-yhteiset- ja rakennuskohteet -riippuvuudet. Poistettu  Rakentamislupahakemus-luokan attribuutti elinkaaritila, peritytyy yläluokalta RakennetunYmpäristönLupahakemus
