@@ -1316,7 +1316,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_1078EC45_6D0D_433c_8729_48F5DE152ED0">
-					<model ea_localid="2517" type="Class" name="RakennuskohteenToimenpide"/>
+					<model ea_localid="2620" type="Class" name="RakennuskohteenToimenpide"/>
 					<role name="toimenpide" visibility="Public" targetScope="instance"/>
 					<type multiplicity="1" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1385,7 +1385,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_54F077DC_72D7_4160_974E_947FD39A84BC">
-					<model ea_localid="2512" type="Class" name="RakennuskohteenMuutos"/>
+					<model ea_localid="2615" type="Class" name="RakennuskohteenMuutos"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1419,7 +1419,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_1078EC45_6D0D_433c_8729_48F5DE152ED0">
-					<model ea_localid="2517" type="Class" name="RakennuskohteenToimenpide"/>
+					<model ea_localid="2620" type="Class" name="RakennuskohteenToimenpide"/>
 					<role name="katselmoituToimenpide" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1627,7 +1627,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_1078EC45_6D0D_433c_8729_48F5DE152ED0">
-					<model ea_localid="2517" type="Class" name="RakennuskohteenToimenpide"/>
+					<model ea_localid="2620" type="Class" name="RakennuskohteenToimenpide"/>
 					<role name="hyväksyttyToimenpide" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1662,7 +1662,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_C21003F4_E9DC_464b_85A7_D55DD5B0ECFE">
-					<model ea_localid="2511" type="Class" name="Rakennuskohde"/>
+					<model ea_localid="2614" type="Class" name="Rakennuskohde"/>
 					<role name="hyväksyttyKohde" visibility="Public" targetScope="instance"/>
 					<type multiplicity="1..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1697,7 +1697,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_ED55AA62_665B_4bf4_A8E3_C010E60519FF">
-					<model ea_localid="2460" type="Class" name="Huoneisto"/>
+					<model ea_localid="2562" type="Class" name="Huoneisto"/>
 					<role name="hyväksyttyHuoneisto" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2040,7 +2040,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_1078EC45_6D0D_433c_8729_48F5DE152ED0">
-					<model ea_localid="2517" type="Class" name="RakennuskohteenToimenpide"/>
+					<model ea_localid="2620" type="Class" name="RakennuskohteenToimenpide"/>
 					<role name="toimenpide" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2454,7 +2454,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_1078EC45_6D0D_433c_8729_48F5DE152ED0">
-					<model ea_localid="2517" type="Class" name="RakennuskohteenToimenpide"/>
+					<model ea_localid="2620" type="Class" name="RakennuskohteenToimenpide"/>
 					<role name="toimenpide" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2489,7 +2489,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_915025C3_905F_4153_AE3D_3C724B45EB60">
-					<model ea_localid="2522" type="Class" name="Rakennussuunnitelma"/>
+					<model ea_localid="2625" type="Class" name="Rakennussuunnitelma"/>
 					<role name="rakennussuunnitelma" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2524,7 +2524,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_756CA55C_8F0B_4da9_954A_42E08A4FF6BE">
-					<model ea_localid="2524" type="Class" name="Rakennustietomalli"/>
+					<model ea_localid="2627" type="Class" name="Rakennustietomalli"/>
 					<role name="suunnitelmamalli" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2695,7 +2695,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_1078EC45_6D0D_433c_8729_48F5DE152ED0">
-					<model ea_localid="2517" type="Class" name="RakennuskohteenToimenpide"/>
+					<model ea_localid="2620" type="Class" name="RakennuskohteenToimenpide"/>
 					<role name="toimenpide" visibility="Public" targetScope="instance"/>
 					<type multiplicity="1..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2934,7 +2934,7 @@
 				<project author="ior" version="1.0" created="2021-10-15 10:12:45" modified="2022-12-21 09:29:13"/>
 				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=723;DocSize.cy=1065;MarginL=50;MarginR=50;MarginT=50;MarginB=50;ShowDetails=1;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AllDockable=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
 				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;MarginL=50;MarginR=50;MarginT=50;MarginB=50;SuppressedCompartments=;Theme=:119;SaveTag=A82170AF;"/>
-				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-21,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
 				<elements>
@@ -3021,7 +3021,7 @@
 				<project author="ior" version="1.0" created="2021-12-20 23:50:13" modified="2022-12-20 13:24:46"/>
 				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=815;DocSize.cy=1067;ShowDetails=1;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AllDockable=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
 				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;SaveTag=50F625B2;"/>
-				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-21,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
 				<elements>
@@ -3044,7 +3044,7 @@
 				<project author="ior" version="1.0" created="2022-11-15 12:30:47" modified="2022-12-20 13:55:12"/>
 				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=723;DocSize.cy=1065;MarginL=50;MarginR=50;MarginT=50;MarginB=50;ShowDetails=1;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AllDockable=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
 				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;MarginL=50;MarginR=50;MarginT=50;MarginB=50;SuppressedCompartments=;Theme=:119;SaveTag=34355DD6;"/>
-				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-21,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
 				<elements>

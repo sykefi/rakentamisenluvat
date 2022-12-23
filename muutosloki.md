@@ -6,6 +6,10 @@ id: "muutosloki"
 # Muutosloki
 {:.no_toc}
 
+## 23.12.2022
+
+- Päivitetty Rakennuskohteet-tietomalli-riippuvuus, ei muutoksia lupapäätösten tietomalliin. 
+
 ## 21.12.2022
 
 - Lisätty yhdensuuntainen assosiaatio PoikkeamislupaAsia-Rakentamishanke (toteutushanke). Poikkeamislupa myönnetään aina hankekohtaisesti. Rakennushanke-luokassa on jo assosiaatio vaadittyLupa:RakennetunYmpäristönLupa, jolla voidaan kuvata hankeen toteuttamiseen vaadittu Poikkeamislupa.
