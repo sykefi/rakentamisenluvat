@@ -136,18 +136,18 @@ Aikavälejä kuvaavat attribuutit voidaan antaa joko sekä alku- että loppuajan
 
 ## Luokkakohtaiset säännöt
 
-### RakentamislupaAsia
+### Rakentamis,- purkamis-, poikkeamis- ja maisematyölupa asiat
 
 {% include common/clause_start.html type="req" id="laatu/vaat-lupa-asia-vaadittu-poikkeamislupa-asia" %}
 Mikäli rakentamisluvan myöntämisen edellytyksenä on myönnetty poikkeamislupa, poikkeamislupa-asiaa kuvaava  {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#rakennetunympäristönlupaasia" title="RakennetunYmpäristönLupaAsia" %}-luokan objekti liitetään [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan objektiin assosiaation ```liittyväAsia``` avulla.
 {% include common/clause_end.html %}
 
 {% include common/clause_start.html type="req" id="laatu/vaat-lupa-asia-hakemus" %}
-Rakentamislupa-asiaan liittyvät rakentamislupahakemukset tulee liittää [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan objektiin assosiaatiolla ```hakemus```.
+Rakentamis,- purkamis-, poikkeamis-, ja maisematyölupa-asioihin liittyvät lupahakemukset tulee liittää [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-, [PurkamislupaAsia](dokumentaatio/#purkamislupaasia)-, [PoikkemislupaAsia](dokumentaatio/#poikkeamislupaasia)-, [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)- ja [MaisematyölupaAsia](dokumentaatio/#maisematyölupaasia)-luokan objektiin assosiaatiolla ```hakemus```.
 {% include common/clause_end.html %}
 
 {% include common/clause_start.html type="req" id="laatu/vaat-lupa-asian-toimenpiteet" %}
-[RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan objektin ```toimenpide```-assosiaatioiden arvot kuvaavat ne rakentamis- ja purkamistoimenpiteet, joita koskevien lupien myöntämistä rakentamislupa-asiassa käsitellään.
+[RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)- tai [PurkamislupaAsia](dokumentaatio/#purkamislupaasia)-luokan objektin ```toimenpide```-assosiaatioiden arvot kuvaavat ne rakentamis- ja purkamistoimenpiteet, joita koskevien lupien myöntämistä lupa-asiassa käsitellään.
 {% include common/clause_end.html %}
 
 {% include common/clause_start.html type="req" id="laatu/vaat-lupa-asian-aluerajaus" %}
@@ -155,11 +155,11 @@ Rakentamislupa-asiaan liittyvät rakentamislupahakemukset tulee liittää [Raken
 {% include common/clause_end.html %}
 
 {% include common/clause_start.html type="req" id="laatu/vaat-lupa-asian-liitteet" %}
-Kukin lupahakemuksen liitetiedosto tulee kuvata [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan objektin attribuutin ```asianLiite``` avulla, mukaanlukien hakemuksen mukana mahdollisesti toimitettavat BIM-suunnitelmamallit ja rakennussuunnitelmat.
+Kukin lupahakemuksen liitetiedosto tulee kuvata [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-, [PurkamislupaAsia](dokumentaatio/#purkamislupaasia)-, [PoikkemislupaAsia](dokumentaatio/#poikkeamislupaasia)-, [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)- ja [MaisematyölupaAsia](dokumentaatio/#maisematyölupaasia)-luokan objektin attribuutin ```asianLiite``` avulla, mukaanlukien hakemuksen mukana mahdollisesti toimitettavat BIM-suunnitelmamallit ja rakennussuunnitelmat.
 {% include common/clause_end.html %}
 
 {% include common/clause_start.html type="req" id="laatu/vaat-lupa-asian-elinkaaritila" %}
-[RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan ```elinkaaritila```-attribuutin arvona tulee käyttää koodiston [RakentamislupaAsianElinkaaritila](dokumentaatio/#rakentamisluvanelinkaaritila) arvoja.
+[RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-, [PurkamislupaAsia](dokumentaatio/#purkamislupaasia)-, [PoikkemislupaAsia](dokumentaatio/#poikkeamislupaasia)-, [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)- ja [MaisematyölupaAsia](dokumentaatio/#maisematyölupaasia)-luokan ```elinkaaritila```-attribuuttien arvona tulee käyttää koodiston [RakennusvalvontaAsianElinkaaritila](dokumentaatio/#rakenusvalvontaasianelinkaaritila) arvoja.
 {% include common/clause_end.html %}
 
 ### Rakentamislupahakemus

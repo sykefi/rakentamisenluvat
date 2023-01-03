@@ -6,6 +6,13 @@ id: "muutosloki"
 # Muutosloki
 {:.no_toc}
 
+## 3.1.2023
+
+- Lisätty vocabulary-tagit seuraaviin koodistoluokkiin: RakennusvalvontaAsianElinkaaritila, RakennuskohteenToimnepiteenTila.
+- Typokorjauksia elinkaarisääntöihin.
+- Laajennettu laatusääntöjen RakentamisAsia-luvun sisältöä koskemaan myös purkamis-, poikkeamis- ja maisematyölupa-asioita.
+- Päivitetty Rakennuskohteet- ja Yhteiset komponentit- tietomalli-riippuvuudet.
+
 ## 23.12.2022
 
 - Päivitetty Rakennuskohteet-tietomalli-riippuvuus, ei muutoksia lupapäätösten tietomalliin. 
@@ -21,7 +28,6 @@ id: "muutosloki"
 - Päivitetty uusin ry-yhteiset- ja rakennuskohteet -riippuvuudet. Poistettu  Rakentamislupahakemus-luokan attribuutti elinkaaritila, peritytyy yläluokalta RakennetunYmpäristönLupahakemus
 - Uudelleennimetty RakentamislupaAsianElinkaaritila -> RakennusvalvontaAsianElinkaaritila. Yhteinen rakentamis-, purkamis-, maisematyö-, ja poikkeamislupa-asioille.
 - Lisätty luokat PoikeamislupaHakemus, PoikkeamislupaAsia, Poikkeamislupa, Maisematyölupahakemus, MaisematyölupaAsia, Maisematyölupa, Purkamislupahakemus, PurkamislupaAsia ja Purkamislupa, fixes #26
-- 
 
 ## 7.12.2022
 

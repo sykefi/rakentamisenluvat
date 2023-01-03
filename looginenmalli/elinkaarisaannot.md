@@ -359,7 +359,7 @@ Mikäli rakentamishankkeessa valmistuva rakennuskohde tai sen osa on katselmukse
 Kun jokainen rakentamishankkeeseen liitetty toimenpide on valmistunut, keskeytetty tai päätetty jättää tekemättä, ja loppukatselmoinnit sekä käyttöönottohyväksynnät valmistuneiden toimenpiteiden osalta on tehty, voidaan hanke päättää.
 
 {% include common/clause_start.html type="req" id="elinkaari/vaat-hankkeen-toimenpiteiden-lopputilat" %}
-[Rakentamishanke](dokumentaatio/#rakentamishanke)-luokan objektilla, jonka attribuutilla ```päättymispäivämäärä``` on arvo, saa olla vain sellaisia attribuutin ```toimenpide``` rakenteisin arvoja, joiden ```toimenpiteenTila```-attribuutin arvo on joko ```Keskeytetty```, ```Päätetty jättää toteuttamatta``` tai ```Valmistunut```.
+[Rakentamishanke](dokumentaatio/#rakentamishanke)-luokan objektilla, jonka attribuutilla ```päättymispäivämäärä``` on arvo, saa olla vain sellaisia attribuutin ```toimenpide``` rakenteisia arvoja, joiden ```toimenpiteenTila```-attribuutin arvo on joko ```Keskeytetty```, ```Päätetty jättää toteuttamatta``` tai ```Valmistunut```.
 {% include common/clause_end.html %}
 
 {% include common/clause_start.html type="req" id="elinkaari/vaat-hankkeen-loppukatselmointi-suoritettu" %}

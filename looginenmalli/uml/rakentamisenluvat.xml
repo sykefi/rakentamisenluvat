@@ -447,10 +447,10 @@
 		<GML:FeatureType base_Class="EAID_83364A30_672D_463b_9E58_C660A70F777B" noPropertyType="false" isCollection="false" byValuePropertyType="false"/>
 		<GML:CodeList base_Class="EAID_85253B47_2D9E_4c7c_8011_A9E55460E178" asDictionary="true"/>
 		<thecustomprofile:extensibility base_Class="EAID_85253B47_2D9E_4c7c_8011_A9E55460E178" extensibility="http://inspire.ec.europa.eu/registry/extensibility/none"/>
-		<thecustomprofile:vocabulary base_Class="EAID_85253B47_2D9E_4c7c_8011_A9E55460E178" vocabulary="&lt;puuttuu&gt;"/>
+		<thecustomprofile:vocabulary base_Class="EAID_85253B47_2D9E_4c7c_8011_A9E55460E178" vocabulary="http://uri.suomi.fi/codelist/rytj/rakkohteen-toimenpiteen-tila"/>
 		<GML:CodeList base_Class="EAID_45EFD133_622B_4eed_8B2B_69A5E6F9D706" asDictionary="true"/>
 		<thecustomprofile:extensibility base_Class="EAID_45EFD133_622B_4eed_8B2B_69A5E6F9D706" extensibility="http://inspire.ec.europa.eu/registry/extensibility/none"/>
-		<thecustomprofile:vocabulary base_Class="EAID_45EFD133_622B_4eed_8B2B_69A5E6F9D706" vocabulary="&lt;puuttuu&gt;"/>
+		<thecustomprofile:vocabulary base_Class="EAID_45EFD133_622B_4eed_8B2B_69A5E6F9D706" vocabulary="http://uri.suomi.fi/codelist/rytj/rakvalv-asian-elinkaaren-tila"/>
 		<GML:FeatureType base_Class="EAID_FA8E2775_A430_430f_A9F9_41685F246B3D" noPropertyType="false" isCollection="false" byValuePropertyType="false"/>
 		<GML:CodeList base_Class="EAID_74891F7A_6BEE_450b_B9F4_D8FF04A388E2" asDictionary="true"/>
 		<thecustomprofile:extensibility base_Class="EAID_74891F7A_6BEE_450b_B9F4_D8FF04A388E2" extensibility="http://inspire.ec.europa.eu/registry/extensibility/none"/>
@@ -978,7 +978,7 @@
 					<tag xmi:id="EAID_0BE3FA2A_1A09_4e1a_809E_14D44CE5C9EA" name="asDictionary" value="true#NOTES#Values: true,false&#xA;Default: false&#xA;Description: If 'false', the class will be mapped to an XSDsimpleType. Else, it will be exported as an external dictionary.&#xA;" modelElement="EAID_85253B47_2D9E_4c7c_8011_A9E55460E178"/>
 					<tag xmi:id="EAID_D80E6ACC_660B_6966_B847_F0EFDF03510A" name="defaultCodeSpace" value="#NOTES#Description: Default value for the URI representing the dictionary &#xA;" modelElement="EAID_85253B47_2D9E_4c7c_8011_A9E55460E178"/>
 					<tag xmi:id="EAID_892DCD9B_6B68_44e8_B743_E145F5881B1F" name="extensibility" value="http://inspire.ec.europa.eu/registry/extensibility/none" modelElement="EAID_85253B47_2D9E_4c7c_8011_A9E55460E178"/>
-					<tag xmi:id="EAID_792D3ABD_34E8_491d_A1EB_910C5887273E" name="vocabulary" value="&lt;puuttuu&gt;" modelElement="EAID_85253B47_2D9E_4c7c_8011_A9E55460E178"/>
+					<tag xmi:id="EAID_792D3ABD_34E8_491d_A1EB_910C5887273E" name="vocabulary" value="http://uri.suomi.fi/codelist/rytj/rakkohteen-toimenpiteen-tila" modelElement="EAID_85253B47_2D9E_4c7c_8011_A9E55460E178"/>
 				</tags>
 				<xrefs value="$XREFPROP=$XID={C5A7BACE-358C-4978-9FB6-E5E26E67EF37}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=CodeList;FQName=GML::CodeList;@ENDSTEREO;$DES;$CLT={85253B47-2D9E-4c7c-8011-A9E55460E178}$CLT;$ENDXREF;"/>
 				<extendedProperties tagged="0" package_name="Rakentamisen luvat ja hankeet" ea_attsclassified="{3E4F4FB9-DA78-4562-AF4F-72AE391BA39A}"/>
@@ -993,7 +993,7 @@
 					<tag xmi:id="EAID_0BE3FA2A_1A09_4e1a_A261_843E8337C5D1" name="asDictionary" value="true#NOTES#Values: true,false&#xA;Default: false&#xA;Description: If 'false', the class will be mapped to an XSDsimpleType. Else, it will be exported as an external dictionary.&#xA;" modelElement="EAID_45EFD133_622B_4eed_8B2B_69A5E6F9D706"/>
 					<tag xmi:id="EAID_D80E6ACC_660B_6966_865E_2A2731BEF29E" name="defaultCodeSpace" value="#NOTES#Description: Default value for the URI representing the dictionary &#xA;" modelElement="EAID_45EFD133_622B_4eed_8B2B_69A5E6F9D706"/>
 					<tag xmi:id="EAID_892DCD9B_6B68_44e8_A0A7_7A77B275B452" name="extensibility" value="http://inspire.ec.europa.eu/registry/extensibility/none" modelElement="EAID_45EFD133_622B_4eed_8B2B_69A5E6F9D706"/>
-					<tag xmi:id="EAID_792D3ABD_34E8_491d_95CE_38527A0A02BC" name="vocabulary" value="&lt;puuttuu&gt;" modelElement="EAID_45EFD133_622B_4eed_8B2B_69A5E6F9D706"/>
+					<tag xmi:id="EAID_792D3ABD_34E8_491d_95CE_38527A0A02BC" name="vocabulary" value="http://uri.suomi.fi/codelist/rytj/rakvalv-asian-elinkaaren-tila" modelElement="EAID_45EFD133_622B_4eed_8B2B_69A5E6F9D706"/>
 				</tags>
 				<xrefs value="$XREFPROP=$XID={1ABBE2C6-18D5-4f86-99D7-504EC2AB1435}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=CodeList;FQName=GML::CodeList;@ENDSTEREO;$DES;$CLT={45EFD133-622B-4eed-8B2B-69A5E6F9D706}$CLT;$ENDXREF;"/>
 				<extendedProperties tagged="0" package_name="Rakentamisen luvat ja hankeet"/>
@@ -1316,7 +1316,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_1078EC45_6D0D_433c_8729_48F5DE152ED0">
-					<model ea_localid="2620" type="Class" name="RakennuskohteenToimenpide"/>
+					<model ea_localid="2802" type="Class" name="RakennuskohteenToimenpide"/>
 					<role name="toimenpide" visibility="Public" targetScope="instance"/>
 					<type multiplicity="1" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1385,7 +1385,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_54F077DC_72D7_4160_974E_947FD39A84BC">
-					<model ea_localid="2615" type="Class" name="RakennuskohteenMuutos"/>
+					<model ea_localid="2797" type="Class" name="RakennuskohteenMuutos"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1419,7 +1419,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_1078EC45_6D0D_433c_8729_48F5DE152ED0">
-					<model ea_localid="2620" type="Class" name="RakennuskohteenToimenpide"/>
+					<model ea_localid="2802" type="Class" name="RakennuskohteenToimenpide"/>
 					<role name="katselmoituToimenpide" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1454,7 +1454,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_75FFA532_FF9F_4880_AA35_1DC37E0CF36A">
-					<model ea_localid="2227" type="Class" name="VersioituObjekti"/>
+					<model ea_localid="2714" type="Class" name="VersioituObjekti"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1488,7 +1488,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_B761A014_0461_4ac2_9ABE_4B0FE198489C">
-					<model ea_localid="2232" type="Interface" name="Henkilö"/>
+					<model ea_localid="2719" type="Interface" name="Henkilö"/>
 					<role name="läsnäolija" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1558,7 +1558,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_B761A014_0461_4ac2_9ABE_4B0FE198489C">
-					<model ea_localid="2232" type="Interface" name="Henkilö"/>
+					<model ea_localid="2719" type="Interface" name="Henkilö"/>
 					<role name="toimittaja" visibility="Public" targetScope="instance"/>
 					<type multiplicity="1" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1627,7 +1627,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_1078EC45_6D0D_433c_8729_48F5DE152ED0">
-					<model ea_localid="2620" type="Class" name="RakennuskohteenToimenpide"/>
+					<model ea_localid="2802" type="Class" name="RakennuskohteenToimenpide"/>
 					<role name="hyväksyttyToimenpide" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1662,7 +1662,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_C21003F4_E9DC_464b_85A7_D55DD5B0ECFE">
-					<model ea_localid="2614" type="Class" name="Rakennuskohde"/>
+					<model ea_localid="2796" type="Class" name="Rakennuskohde"/>
 					<role name="hyväksyttyKohde" visibility="Public" targetScope="instance"/>
 					<type multiplicity="1..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1697,7 +1697,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_ED55AA62_665B_4bf4_A8E3_C010E60519FF">
-					<model ea_localid="2562" type="Class" name="Huoneisto"/>
+					<model ea_localid="2743" type="Class" name="Huoneisto"/>
 					<role name="hyväksyttyHuoneisto" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1732,7 +1732,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_4E6F5137_F7EF_4358_9076_50A79955E54B">
-					<model ea_localid="2212" type="Class" name="RakennetunYmpäristönLupa"/>
+					<model ea_localid="2699" type="Class" name="RakennetunYmpäristönLupa"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1766,7 +1766,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_C63FD523_5D07_4688_A598_9DC9706263D9">
-					<model ea_localid="2233" type="Interface" name="Kiinteistö"/>
+					<model ea_localid="2720" type="Interface" name="Kiinteistö"/>
 					<role name="työnSuorituskiinteistö" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1801,7 +1801,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_869668CC_B6F0_44c7_9547_B0F457BED9CA">
-					<model ea_localid="2213" type="Class" name="RakennetunYmpäristönLupaAsia"/>
+					<model ea_localid="2700" type="Class" name="RakennetunYmpäristönLupaAsia"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1835,7 +1835,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_A31D33E9_B7E9_41f6_B698_E622D79305C7">
-					<model ea_localid="2214" type="Class" name="RakennetunYmpäristönLupahakemus"/>
+					<model ea_localid="2701" type="Class" name="RakennetunYmpäristönLupahakemus"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1869,7 +1869,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_4E6F5137_F7EF_4358_9076_50A79955E54B">
-					<model ea_localid="2212" type="Class" name="RakennetunYmpäristönLupa"/>
+					<model ea_localid="2699" type="Class" name="RakennetunYmpäristönLupa"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1938,7 +1938,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_869668CC_B6F0_44c7_9547_B0F457BED9CA">
-					<model ea_localid="2213" type="Class" name="RakennetunYmpäristönLupaAsia"/>
+					<model ea_localid="2700" type="Class" name="RakennetunYmpäristönLupaAsia"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -1972,7 +1972,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_A31D33E9_B7E9_41f6_B698_E622D79305C7">
-					<model ea_localid="2214" type="Class" name="RakennetunYmpäristönLupahakemus"/>
+					<model ea_localid="2701" type="Class" name="RakennetunYmpäristönLupahakemus"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2006,7 +2006,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_4E6F5137_F7EF_4358_9076_50A79955E54B">
-					<model ea_localid="2212" type="Class" name="RakennetunYmpäristönLupa"/>
+					<model ea_localid="2699" type="Class" name="RakennetunYmpäristönLupa"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2040,7 +2040,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_1078EC45_6D0D_433c_8729_48F5DE152ED0">
-					<model ea_localid="2620" type="Class" name="RakennuskohteenToimenpide"/>
+					<model ea_localid="2802" type="Class" name="RakennuskohteenToimenpide"/>
 					<role name="toimenpide" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2075,7 +2075,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_869668CC_B6F0_44c7_9547_B0F457BED9CA">
-					<model ea_localid="2213" type="Class" name="RakennetunYmpäristönLupaAsia"/>
+					<model ea_localid="2700" type="Class" name="RakennetunYmpäristönLupaAsia"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2109,7 +2109,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_A31D33E9_B7E9_41f6_B698_E622D79305C7">
-					<model ea_localid="2214" type="Class" name="RakennetunYmpäristönLupahakemus"/>
+					<model ea_localid="2701" type="Class" name="RakennetunYmpäristönLupahakemus"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2143,7 +2143,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_581B4F10_F6C1_4cd1_AA66_0AFDE39CA434">
-					<model ea_localid="2163" type="Class" name="AbstraktiAsianElinkaaritila"/>
+					<model ea_localid="2650" type="Class" name="AbstraktiAsianElinkaaritila"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2177,7 +2177,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_4E6F5137_F7EF_4358_9076_50A79955E54B">
-					<model ea_localid="2212" type="Class" name="RakennetunYmpäristönLupa"/>
+					<model ea_localid="2699" type="Class" name="RakennetunYmpäristönLupa"/>
 					<role name="vaadittuLupa" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2212,7 +2212,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_75FFA532_FF9F_4880_AA35_1DC37E0CF36A">
-					<model ea_localid="2227" type="Class" name="VersioituObjekti"/>
+					<model ea_localid="2714" type="Class" name="VersioituObjekti"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2246,7 +2246,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_04A7A8F5_4A61_41b8_ADDA_7FAE5BC7CE87">
-					<model ea_localid="2236" type="Interface" name="Toimija"/>
+					<model ea_localid="2723" type="Interface" name="Toimija"/>
 					<role name="hankkeeseenRyhtyvä" visibility="Public" targetScope="instance"/>
 					<type multiplicity="1" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2281,7 +2281,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_B761A014_0461_4ac2_9ABE_4B0FE198489C">
-					<model ea_localid="2232" type="Interface" name="Henkilö"/>
+					<model ea_localid="2719" type="Interface" name="Henkilö"/>
 					<role name="vastaavaTyönjohtaja" visibility="Public" targetScope="instance"/>
 					<type multiplicity="1" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2316,7 +2316,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_04A7A8F5_4A61_41b8_ADDA_7FAE5BC7CE87">
-					<model ea_localid="2236" type="Interface" name="Toimija"/>
+					<model ea_localid="2723" type="Interface" name="Toimija"/>
 					<role name="suunnittelija" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2351,7 +2351,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_4E6F5137_F7EF_4358_9076_50A79955E54B">
-					<model ea_localid="2212" type="Class" name="RakennetunYmpäristönLupa"/>
+					<model ea_localid="2699" type="Class" name="RakennetunYmpäristönLupa"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2420,7 +2420,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_869668CC_B6F0_44c7_9547_B0F457BED9CA">
-					<model ea_localid="2213" type="Class" name="RakennetunYmpäristönLupaAsia"/>
+					<model ea_localid="2700" type="Class" name="RakennetunYmpäristönLupaAsia"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2454,7 +2454,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_1078EC45_6D0D_433c_8729_48F5DE152ED0">
-					<model ea_localid="2620" type="Class" name="RakennuskohteenToimenpide"/>
+					<model ea_localid="2802" type="Class" name="RakennuskohteenToimenpide"/>
 					<role name="toimenpide" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2489,7 +2489,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_915025C3_905F_4153_AE3D_3C724B45EB60">
-					<model ea_localid="2625" type="Class" name="Rakennussuunnitelma"/>
+					<model ea_localid="2807" type="Class" name="Rakennussuunnitelma"/>
 					<role name="rakennussuunnitelma" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2524,7 +2524,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_756CA55C_8F0B_4da9_954A_42E08A4FF6BE">
-					<model ea_localid="2627" type="Class" name="Rakennustietomalli"/>
+					<model ea_localid="2809" type="Class" name="Rakennustietomalli"/>
 					<role name="suunnitelmamalli" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2559,7 +2559,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_A31D33E9_B7E9_41f6_B698_E622D79305C7">
-					<model ea_localid="2214" type="Class" name="RakennetunYmpäristönLupahakemus"/>
+					<model ea_localid="2701" type="Class" name="RakennetunYmpäristönLupahakemus"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2593,7 +2593,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_BAE7804C_B4D3_4e32_8CBD_F49C99617CE0">
-					<model ea_localid="2165" type="Class" name="AbstraktiLupamääräyksenLaji"/>
+					<model ea_localid="2652" type="Class" name="AbstraktiLupamääräyksenLaji"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2627,7 +2627,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_8CF1A36D_A7C5_4748_915C_FE80DA2F9F9B">
-					<model ea_localid="2198" type="Class" name="Lupamääräys"/>
+					<model ea_localid="2685" type="Class" name="Lupamääräys"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2661,7 +2661,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_2E68FFCA_40A3_4484_A05F_0AE51FE89A21">
-					<model ea_localid="2175" type="Class" name="AlueidenkäyttöJaRakentamispäätös"/>
+					<model ea_localid="2662" type="Class" name="AlueidenkäyttöJaRakentamispäätös"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2695,7 +2695,7 @@
 					<tags/>
 				</source>
 				<target xmi:idref="EAID_1078EC45_6D0D_433c_8729_48F5DE152ED0">
-					<model ea_localid="2620" type="Class" name="RakennuskohteenToimenpide"/>
+					<model ea_localid="2802" type="Class" name="RakennuskohteenToimenpide"/>
 					<role name="toimenpide" visibility="Public" targetScope="instance"/>
 					<type multiplicity="1..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -2931,10 +2931,10 @@
 			<diagram xmi:id="EAID_87B25121_1202_4d05_9260_9B900A74670D">
 				<model package="EAPK_725DACB2_DAB9_4b52_ABE2_4C02B87BAE21" localID="993" owner="EAPK_725DACB2_DAB9_4b52_ABE2_4C02B87BAE21"/>
 				<properties name="Rakentamisen luvat" type="Logical"/>
-				<project author="ior" version="1.0" created="2021-10-15 10:12:45" modified="2022-12-21 09:29:13"/>
+				<project author="ior" version="1.0" created="2021-10-15 10:12:45" modified="2023-01-03 13:54:16"/>
 				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=723;DocSize.cy=1065;MarginL=50;MarginR=50;MarginT=50;MarginB=50;ShowDetails=1;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AllDockable=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
-				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;MarginL=50;MarginR=50;MarginT=50;MarginB=50;SuppressedCompartments=;Theme=:119;SaveTag=A82170AF;"/>
-				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-21,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;MarginL=50;MarginR=50;MarginT=50;MarginB=50;SuppressedCompartments=;Theme=:119;SaveTag=B8C37F62;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
 				<elements>
@@ -2993,9 +2993,9 @@
 					<element geometry="EDGE=2;SX=0;SY=-51;EX=35;EY=0;$LLB=;LLT=;LMT=;LMB=;LRT=CX=44:CY=14:OX=-4:OY=-1:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=CX=6:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;IRHS=;ILHS=;Path=1445:-552$1445:-672$1528:-672$;" subject="EAID_05D16AA3_FAC6_476f_9124_32126D52BE0B" style="Mode=3;EOID=FBAA6DBB;SOID=108BE7C6;Color=-1;LWidth=0;TREE=OS;Hidden=0;"/>
 					<element geometry="EDGE=2;SX=1;SY=4;EX=1;EY=5;$LLB=CX=17:CY=14:OX=5:OY=1:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LLT=CX=43:CY=14:OX=5:OY=-1:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=22:CY=14:OX=-5:OY=-2:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_007C2F91_C767_44a9_821C_BADEAD88828B" style="Mode=3;EOID=0DB049D2;SOID=5452FC3A;Color=-1;LWidth=0;TREE=OS;Hidden=0;"/>
 					<element geometry="SX=0;SY=24;EX=0;EY=0;EDGE=4;$LLB=CX=17:CY=14:OX=-1:OY=-28:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LLT=CX=33:CY=14:OX=-6:OY=32:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=22:CY=14:OX=1:OY=-6:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=CX=17:CY=14:OX=1:OY=4:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_798250B7_78AB_486c_AD91_29D94BE3773A" style="Mode=3;EOID=789E1356;SOID=411053FF;Color=-1;LWidth=0;TREE=OS;Hidden=0;"/>
-					<element geometry="SX=129;SY=77;EX=6;EY=-7;EDGE=2;$LLB=CX=17:CY=14:OX=1:OY=-27:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=CX=33:CY=14:OX=0:OY=24:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=51:CY=14:OX=-3:OY=-3:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=17:CY=14:OX=-1:OY=4:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_908EFC9A_50C5_42a6_9402_17D9663C11F7" style="Mode=3;EOID=7DE9DA43;SOID=A6DAF411;Color=-1;LWidth=0;TREE=OS;Hidden=0;"/>
-					<element geometry="SX=0;SY=112;EX=0;EY=-96;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=CX=50:CY=14:OX=-8:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=CX=17:CY=14:OX=-2:OY=5:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;IRHS=;ILHS=;Path=409:-968$409:-277$;" subject="EAID_DE6A0333_BE24_44e6_A13C_DC54F78EEFE8" style="Mode=3;EOID=789E1356;SOID=7DE9DA43;Color=-1;LWidth=0;TREE=OS;Hidden=0;"/>
+					<element geometry="SX=129;SY=77;EX=6;EY=-7;EDGE=2;$LLB=CX=6:CY=14:OX=1:OY=-27:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=CX=33:CY=14:OX=0:OY=24:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=51:CY=14:OX=-3:OY=-3:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=17:CY=14:OX=-1:OY=4:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_908EFC9A_50C5_42a6_9402_17D9663C11F7" style="Mode=3;EOID=7DE9DA43;SOID=A6DAF411;Color=-1;LWidth=0;TREE=OS;Hidden=0;"/>
 					<element geometry="SCTR=1;SCME=1;SX=0;SY=0;EX=0;EY=0;EDGE=1;SCTR.LEFT=469;SCTR.TOP=-67;SCTR.RIGHT=543;SCTR.BOTTOM=-21;$LLB=;LLT=;LMT=;LMB=;LRT=CX=68:CY=14:OX=-8:OY=33:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=;IRHS=;ILHS=;Path=543:-38$543:-21$469:-21$469:-67$513:-67$;" subject="EAID_1DED9BFD_9E68_4240_9B4A_72C233B42798" style="Mode=3;EOID=789E1356;SOID=789E1356;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=112;EX=0;EY=-96;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=CX=50:CY=14:OX=-8:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=CX=17:CY=14:OX=-2:OY=5:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;IRHS=;ILHS=;Path=409:-968$409:-277$;" subject="EAID_DE6A0333_BE24_44e6_A13C_DC54F78EEFE8" style="Mode=3;EOID=789E1356;SOID=7DE9DA43;Color=-1;LWidth=0;TREE=OS;Hidden=0;"/>
 					<element geometry="SX=53;SY=0;EX=1;EY=0;EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=CX=96:CY=14:OX=-4:OY=-2:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=CX=17:CY=14:OX=-4:OY=5:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;IRHS=;ILHS=;Path=269:-1270$1591:-1270$;" subject="EAID_2290FCF8_AC44_40f9_ADF6_E58EC801D4E2" style="Mode=3;EOID=88FBE19E;SOID=A6DAF411;Color=-1;LWidth=0;TREE=OS;Hidden=0;"/>
 					<element geometry="EDGE=2;EX=87;EY=0;SX=0;SY=-103;$LLB=;LLT=;LMT=;LMB=;LRT=CX=28:CY=14:OX=47:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=CX=6:CY=14:OX=-23:OY=2:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;IRHS=;ILHS=;Path=1304:-277$1304:-517$1464:-517$1464:-630$1580:-630$;" subject="EAID_B6E93992_064C_47f4_97C9_C7F2ECE754B2" style="Mode=3;EOID=FBAA6DBB;SOID=411053FF;Color=-1;LWidth=0;TREE=OS;Hidden=0;"/>
 					<element geometry="SX=45;SY=-2;EX=104;EY=-2;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_230D595F_FFDB_40c9_B89A_96F244215DCC" style="Mode=3;EOID=0DB049D2;SOID=1915E18F;Color=-1;LWidth=0;TREE=OS;Hidden=0;"/>
@@ -3021,7 +3021,7 @@
 				<project author="ior" version="1.0" created="2021-12-20 23:50:13" modified="2022-12-20 13:24:46"/>
 				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=815;DocSize.cy=1067;ShowDetails=1;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AllDockable=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
 				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;SaveTag=50F625B2;"/>
-				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-21,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
 				<elements>
@@ -3044,7 +3044,7 @@
 				<project author="ior" version="1.0" created="2022-11-15 12:30:47" modified="2022-12-20 13:55:12"/>
 				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=723;DocSize.cy=1065;MarginL=50;MarginR=50;MarginT=50;MarginB=50;ShowDetails=1;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AllDockable=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
 				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;MarginL=50;MarginR=50;MarginT=50;MarginB=50;SuppressedCompartments=;Theme=:119;SaveTag=34355DD6;"/>
-				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-21,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
 				<elements>
