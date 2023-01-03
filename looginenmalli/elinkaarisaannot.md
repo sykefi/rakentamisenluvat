@@ -215,7 +215,7 @@ Varsinainen lupaprosessi alkaa tietomallin näkökulmasta joko rakentamisluvan j
 #### Rakentamislupa-asian synty
 
 {% include common/clause_start.html type="req" id="elinkaari/vaat-lupa-asian-synty-ennakkoneuvottelulla" %}
-Mikäli lupaprosessissa käydään ennakkoneuvottelu ennen lupahakemuksen jättämistä, ja sen tietoja halutaan kirjata tietomalliin, tulee luoda uusi [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan objekti attribuutin ```elinkaari``` arvolla ```Ennakkoneuvottelu```. Attribuutille ```virelletuloAika``` ei tässä vaiheessa saa antaa arvoa.
+Mikäli lupaprosessissa käydään ennakkoneuvottelu ennen lupahakemuksen jättämistä, ja sen tietoja halutaan kirjata tietomalliin, tulee luoda uusi [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)-luokan objekti attribuutin ```elinkaari``` arvolla ```Ennakkoneuvottelu tai valmistelu```. Attribuutille ```virelletuloAika``` ei tässä vaiheessa saa antaa arvoa.
 {% include common/clause_end.html %}
 
 {% include common/clause_start.html type="req" id="elinkaari/vaat-lupa-asian-synty-hakemuksella" %}
