@@ -6,6 +6,10 @@ id: "muutosloki"
 # Muutosloki
 {:.no_toc}
 
+## 10.1.2023
+
+- Päivitetty Rakennuskohteet-riipppuvuuus.
+
 ## 3.1.2023
 
 - Lisätty vocabulary-tagit seuraaviin koodistoluokkiin: RakennusvalvontaAsianElinkaaritila, RakennuskohteenToimnepiteenTila.
