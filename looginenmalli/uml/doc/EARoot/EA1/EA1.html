@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Ilmastoselvitys</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA2.png" usemap="#EA2" border="0" />
+
+<MAP NAME="EA2">
+<area shape="rect" coords="234,1007,414,1114" href="../EA3/EA198.html" target="_self">
+<area shape="rect" coords="835,1002,1055,1092" href="../EA3/EA209.html" target="_self">
+<area shape="rect" coords="601,826,788,896" href="../EA3/EA226.html" target="_self">
+<area shape="rect" coords="589,945,799,1051" href="../EA3/EA227.html" target="_self">
+<area shape="rect" coords="497,264,859,459" href="EA84.html" target="_self">
+<area shape="rect" coords="438,37,679,245" href="../EA3/EA225.html" target="_self">
+<area shape="rect" coords="472,1085,799,1162" href="EA66.html" target="_self">
+<area shape="rect" coords="700,563,998,635" href="EA98.html" target="_self">
+<area shape="rect" coords="46,605,462,703" href="EA87.html" target="_self">
+<area shape="rect" coords="849,752,1323,934" href="EA22.html" target="_self">
+<area shape="rect" coords="46,751,524,989" href="EA21.html" target="_self">
+<area shape="rect" coords="46,148,393,541" href="EA41.html" target="_self">
+<area shape="rect" coords="1055,442,1323,721" href="EA93.html" target="_self">
+<area shape="rect" coords="717,37,1001,174" href="EA85.html" target="_self">
+<area shape="rect" coords="883,306,1128,417" href="EA96.html" target="_self">
+<area shape="rect" coords="1077,37,1321,284" href="../EA3/EA220.html" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">Ilmastoselvitys : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">1.11.2022 13.29.23</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">19.1.2023 11.37.28</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">ior</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.1</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{60F50FBA-20CC-45dc-9311-8E830FD8D5CA}</td>
+		</tr>
+	</table>
+	
+</div>
+ 
+</body>
+</html>
