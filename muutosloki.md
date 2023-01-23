@@ -6,13 +6,20 @@ id: "muutosloki"
 # Muutosloki
 {:.no_toc}
 
+## 23.1.2023
+
+- Lisätty laatusääntö rakentamishankkeen aloittamis- ja valmistumispäivämääriä koskien, fixes #33
+- Lisättu laatusääntö koskien rakentamisluvan tunnusta (järjestysnumero), fixes #32
+- Täydennetty dokumentaatiosivustoa: koodistot lisätty, samoin ry-yhteiset- ja rakennuskohteet-malleista hyödynnetyt luokat, ks. #30 
+- Lisätty laatusääntö koskien lupahakemukseen liittyvien huoneistojen huoneiden lukumäärä-attribuuttia, fixes https://github.com/sykefi/rakennuskohteet/issues/74
+
 ## 10.1.2023
 
 - Päivitetty Rakennuskohteet-riipppuvuuus.
 
 ## 3.1.2023
 
-- Lisätty vocabulary-tagit seuraaviin koodistoluokkiin: RakennusvalvontaAsianElinkaaritila, RakennuskohteenToimnepiteenTila.
+- Lisätty vocabulary-tagit seuraaviin koodistoluokkiin: RakennusvalvontaAsianElinkaaritila, RakennuskohteenToimnepiteenTila, fixes #29, fixes #28.
 - Typokorjauksia elinkaarisääntöihin.
 - Laajennettu laatusääntöjen RakentamisAsia-luvun sisältöä koskemaan myös purkamis-, poikkeamis- ja maisematyölupa-asioita.
 - Päivitetty Rakennuskohteet- ja Yhteiset komponentit- tietomalli-riippuvuudet.

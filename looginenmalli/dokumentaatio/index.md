@@ -7,6 +7,8 @@ status: "Keskeneräinen"
 # Loogisen tason rakentamiseen liittyvien lupapäätösten tietomalli
 {:.no_toc}
 
+{% include common/note.html content="Tietomallin dokumentaatio on toistaiseksi puutteellinen. Täydelliset luokkien, niiden attribuuttien ja assosiaatioden kuvaukset laaditaan mahdollisimman pian" %}
+
 1. 
 {:toc}
 
@@ -15,7 +17,8 @@ Loogisen tason Rakentamisen lupapäätösten tietomalli määrittelee yhteiset t
 
 ## Normatiiviset viittaukset
 Seuraavat dokumentit ovat välttämättömiä tämän dokumentin täysipainoisessa soveltamisessa:
-
+* {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/" title="Rakennetun ympäristön yhteiset tietokomponentit" %}, versio 1.0
+* {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/" title="Rakennuskohteet ja huoneistot" %}, versio 1.0
 * [ISO 639-2:1998 Codes for the representation of names of languages — Part 2: Alpha-3 code][ISO-639-2]
 * [ISO 8601-1:2019 Date and time — Representations for information interchange — Part 1: Basic rules][ISO-8601-1]
 * [ISO 19103:2015 Geographic information — Conceptual schema language][ISO-19103]
@@ -30,6 +33,37 @@ Kuvattu tietomalli perustuu [ISO 19109][ISO-19109]-standardin yleinen kohdetieto
 [ISO 19109][ISO-19109] -standardin lisäksi tietomalli perustuu muihin paikkatiedon ISO-standardeihin, joista keskeisimpiä ovat [ISO 19103][ISO-19103] (UML-kielen käyttö paikkatietojen mallinnuksessa), [ISO 19107][ISO-19107] (sijaintitiedon mallintaminen) ja [ISO 19108][ISO-19108] (aikaan sidotun tiedon mallintaminen).
 
 ### Muulla määritellyt luokat ja tietotyypit
+
+#### Rakennetun ympäristön yhteiset tietokomponentit
+Malli perustuu {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/" title="Rakennetun ympäristön yhteiset tietokomponentit" %} -kirjaston määrittelyille. Tässä mallissa hyönnetään suoraan seuraavia kirjaston luokkia:
+
+* {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#versioituobjekti" title="VersioituObjekti" %}
+* {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#liiteasiakirja" title="Liiteasiakirja" %}
+* {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#alueidenkäyttöjarakentamisasia" title="AlueidenkäyttöJaRakentamisasia" %}
+* {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#alueidenkäyttöjarakentamispäätös" title="AlueidenkäyttöJaRakentamispäätös" %}
+* {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#alueidenkäyttöjarakentamismääräys" title="AlueidenkäyttöJaRakentamismääräys" %}
+* {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#rakennetunympäristönlupaasia" title="RakennetunYmpäristönLupaAsia" %}
+* {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#rakennetunympäristönlupahakemus" title="RakennetunYmpäristönLupahakemus" %}
+* {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#rakennetunymäristönlupapäätös" title="RakennetunYmpäristönLupapäätös" %}
+* {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#rakennetunympäristönlupa" title="RakennetunYmpäristönLupa" %}
+* {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#toimija" title="Toimija" %}
+* {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#osoite" title="Osoite" %}
+* {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#kiinteistö" title="Kiinteistö" %}
+* {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#henkilö" title="Henkilö" %}
+* {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#abstraktiasiaelinkaaritila" title="AbstraktiAsianElinkaaritila" %}
+* {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#abstraktilupamääräyksenlaji" title="AbstraktiLupamääräyksenlaji" %}
+
+#### Rakennuskohteet ja huoneistot -tietomallin luokat
+Malli hyödyntää laajasti {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/" title="Rakennuskohteet ja huoneistot" %} -tietomallin määrittelyjä. Tässä mallissa hyönnetään suoraan seuraavia tietomallin luokkia:
+
+* {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennussuunnitelma" title="Rakennussuunnitelma" %}
+* {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#erityissuunnitelma" title="Erityissuunnitelma" %}
+* {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennustietomalli" title="Rakennustietomalli" %}
+* {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohteentoimenpide" title="RakennuskohteenToimenpide" %}
+* {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohteenmuutos" title="RakennuskohteenMuutos" %}
+* {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennussuunnitelma" title="Rakennussuunnitelma" %}
+* {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohde" title="Rakennuskohde" %}
+* {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#huoneisto" title="Huoneisto" %}
 
 #### CharacterString
 
@@ -123,6 +157,35 @@ Täsmälleen yhdestä pisteestä koostuva geometriatyyppi. Määritelty rajapint
 ### Käyttöönottohyväksyntä
 
 ## Koodistot
+
+### RakennusvalvontaAsianElinkaaritila
+
+{% include common/codelistref.html registry="rytj" id="rakvalv-asian-elinkaaren-tila" name="Rakennusvalvonta-asian elinkaaren tila" %}
+
+### RakennuslupamääräyksenLaji
+
+{% include common/codelistref.html registry="rytj" id="Lupamaarayshierarkinen" name="Lupamääräys" %}
+
+### RakennuskohteenToimenpiteenTila
+
+{% include common/codelistref.html registry="rytj" id="rakkohteen-toimenpiteen-tila" name="Rakennuskohteen toimenpiteen tila" %}
+
+### RakentamisluvanLaji
+
+{% include common/codelistref.html registry="rytj" id="LuvanSisalto" name="Sijoittamis-/toteuttamislupa" %}
+
+### KatsemuksenLopullisuudenLaji
+
+{% include common/codelistref.html registry="rytj" id="OsittainenLopullinen" name="Katselmuksen lopullisuus (osittainen / lopullinen katselmus)" %}
+
+### RakentamishankkeenKatselmuksenLaji
+
+{% include common/codelistref.html registry="rytj" id="Katselmuslaji" name="Katselmuslaji" %}
+
+### KatselmuksenTila
+
+{% include common/codelistref.html registry="rytj" id="KatselmuksenTilanne" name="Katselmuksen tilanne" %}
+
 
 [ISO-8601-1]: https://www.iso.org/standard/70907.html "ISO 8601-1:2019 Date and time — Representations for information interchange — Part 1: Basic rules"
 [ISO-639-2]: https://www.iso.org/standard/4767.html "ISO 639-2:1998 Codes for the representation of names of languages — Part 2: Alpha-3 code"

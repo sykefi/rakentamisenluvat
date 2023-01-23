@@ -188,6 +188,10 @@ Mikäli hakemukseen on liitetty BIM-suunnitelmamalleja, ne tulee kytkeä [Rakent
 Haettavan luvan tyyppi (sijoittamis- tai toteuttamislupa tai niiden yhdistelmä) tulee ilmaista [Rakentamislupahakemus](dokumentaatio/#rakentamislupahakemus)-luokan attribuutin ```lupatyyppi``` avulla. Haetun luvan tyypin ei tarvitse olla sama kuin lupaprosessin lopputuloksena mahdollisesti myönnetyn luvan tyypin.
 {% include common/clause_end.html %}
 
+{% include common/clause_start.html type="req" id="laatu/vaat-lupahakemus-huoneiston-huoneiden-lkm" %}
+Kun [Rakentamislupahakemus](dokumentaatio/#rakentamislupahakemus)-luokan objektin liittyy [RakentamislupaAsia](dokumentaatio/#rakentamislupaasia)- ja edelleen {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohteentoimenpide" title="RakennuskohteenToimenpide" %}-, {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#rakennuskohteenmuutos" title="RakennuskohteenMuutos" %}- ja {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#huoneistonmuutos" title="HuoneistonMuutos" %}-luokkien kautta luokan {% include common/moduleLink.html moduleId="rakennuskohteet" path="looginenmalli/dokumentaatio/#huoneisto" title="Huoneisto" %} objekteja, niiden attribuutti ```huoneidenLukumäärä``` on annettava.
+{% include common/clause_end.html %}
+
 {% include common/clause_start.html type="req" id="laatu/vaat-haetut-poikkeamiset" %}
 Lupahakemuksessa tunnistetut rakentamistoimenpiteen toteuttamisen vaatimat vähäiset poikkeamiset {% include common/moduleLink.html moduleId="yhteisetkomponentit" path="looginenmalli/dokumentaatio/#alueidenkäyttöjarakentamismääräys" title="AlueidenkäyttöJaRakentamismääräys" %}-luokan avulla kuvatuista rakentamista koskevista määräyksistä kuvataan [Rakentamislupahakemus](dokumentaatio/#rakentamislupahakemus)-luokan perityn ```haettuPoikkeaminen```-attribuutin arvojen avulla.
 {% include common/clause_end.html %}
@@ -207,6 +211,11 @@ Myönnettyyn rakentamislupaan sisältyvät lupamääräykset kuvataan {% include
 {% include common/clause_end.html %}
 {% include common/clause_start.html type="req" id="elinkaari/vaat-myonnetty-poikkeamislupa" %}
 Mikäli rakentamisluvan myöntämisen edellytyksenä on ollut erillinen poikkeamislupa, se liitetään luotavaan [Rakentamislupa](dokumentaatio/#rakentamislupa)-luokan objektiin assosiaation ```liittyväLupa``` avulla.
+{% include common/clause_end.html %}
+
+
+{% include common/clause_start.html type="req" id="laatu/vaat-rakentamisluvan-jarjestysnumero" %}
+[Rakentamislupa](dokumentaatio/#rakentamislupa)-luokan objektilla tulee olla ```lupaTunnus```-attribuutin arvo, joka sisältää myönnetyn rakentamisluvan järjestysnumero. Merkkijonon tulee koostua merkeistä "A" - "Ö" ja "0" - "9", eikä se saa olla "000".
 {% include common/clause_end.html %}
 
 ### ToimenpiteenJatkoaikapäätös
@@ -236,6 +245,12 @@ Rakentamishankkeen pääsuunnittelija, {% include common/moduleLink.html moduleI
 {% include common/clause_end.html %}
 
 {% include common/question.html content="Onko tarvetta olla erilliset assosiaatiot hankkeen pääsuunnittelijalle, vastaavalle rakennussuunnittelijalle ja vastaaville erityissuunnittejoille?" %}
+
+{% include common/clause_start.html type="req" id="laatu/vaat-rakentamishankkeeseen-paivamaarat" %}
+Mikäli [Rakentamishanke](dokumentaatio/#rakentamishanke)-luokan objektille on annettu sekä ```aloittamispäivä```- että ```valmistumispäivämäärä```-attribuutin arvot, tulee ```valmistumispäivämäärä```-attribuutin päivämäärän olla myöhempi tai sama kuin ```aloittamispäivä```-attribuutin päivämäärä.
+
+Mikäli [Rakentamishanke](dokumentaatio/#rakentamishanke)-luokan objektille ei ole annettu ```aloittamispäivä```-attribuutin arvoa, ei sillä saa olla ```valmistumispäivämäärä```-attribuutin arvoa.
+{% include common/clause_end.html %}
 
 ### Katselmus
 
