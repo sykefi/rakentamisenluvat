@@ -12,10 +12,11 @@ id: "muutosloki"
 - Lisättu laatusääntö koskien rakentamisluvan tunnusta (järjestysnumero), fixes #32
 - Täydennetty dokumentaatiosivustoa: koodistot lisätty, samoin ry-yhteiset- ja rakennuskohteet-malleista hyödynnetyt luokat, ks. #30 
 - Lisätty laatusääntö koskien lupahakemukseen liittyvien huoneistojen huoneiden lukumäärä-attribuuttia, fixes https://github.com/sykefi/rakennuskohteet/issues/74
+- Päivitetty Rakennuskohteet- ja Yhteiset komponentit -riippuvuudet.
 
 ## 10.1.2023
 
-- Päivitetty Rakennuskohteet-riipppuvuuus.
+- Päivitetty Rakennuskohteet-riippuvuuus.
 
 ## 3.1.2023
 
