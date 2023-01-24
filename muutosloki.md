@@ -6,6 +6,10 @@ id: "muutosloki"
 # Muutosloki
 {:.no_toc}
 
+## Versio 1.0.0
+
+- Ensimmäinen julkaisuversio. 
+
 ## 23.1.2023
 
 - Lisätty laatusääntö rakentamishankkeen aloittamis- ja valmistumispäivämääriä koskien, fixes #33
